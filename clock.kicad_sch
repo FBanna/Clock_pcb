@@ -5149,6 +5149,16 @@
 	)
 	(wire
 		(pts
+			(xy 114.3 92.71) (xy 118.11 92.71)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "58d97774-48ec-483f-ab6c-8785535ba25b")
+	)
+	(wire
+		(pts
 			(xy 252.73 26.67) (xy 262.89 26.67)
 		)
 		(stroke
@@ -6388,6 +6398,71 @@
 		)
 	)
 	(symbol
+		(lib_id "power:+5V")
+		(at 118.11 95.25 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "17740158-d2ea-496f-93be-36312af1ca23")
+		(property "Reference" "#PWR027"
+			(at 121.92 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+5V"
+			(at 112.776 95.25 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 118.11 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 118.11 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
+			(at 118.11 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "d8a7a053-bf14-41fd-9d56-9823e7467b34")
+		)
+		(instances
+			(project "clock"
+				(path "/959d2641-02eb-4caa-b1c6-84a86321825f"
+					(reference "#PWR027")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:C")
 		(at 44.45 104.14 0)
 		(unit 1)
@@ -6514,7 +6589,7 @@
 			(uuid "26146519-3a82-4ac2-a750-2d7bca907971")
 		)
 		(instances
-			(project ""
+			(project "clock"
 				(path "/959d2641-02eb-4caa-b1c6-84a86321825f"
 					(reference "#PWR028")
 					(unit 1)
@@ -6721,6 +6796,74 @@
 			(project "clock"
 				(path "/959d2641-02eb-4caa-b1c6-84a86321825f"
 					(reference "#PWR03")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 110.49 92.71 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "212bb4e8-01ad-4421-96bd-ddcf9049afb9")
+		(property "Reference" "R5"
+			(at 110.49 86.36 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "1kR"
+			(at 110.49 88.9 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 110.49 94.488 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 110.49 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 110.49 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "2e250e94-b191-4500-a2b1-c233c6d1e79e")
+		)
+		(pin "1"
+			(uuid "c0f1a999-691a-4045-a390-c91ec5bef1f7")
+		)
+		(instances
+			(project "clock"
+				(path "/959d2641-02eb-4caa-b1c6-84a86321825f"
+					(reference "R5")
 					(unit 1)
 				)
 			)
@@ -6984,7 +7127,7 @@
 			(uuid "c557afb6-cb8f-4d32-962a-d69c9d29f808")
 		)
 		(instances
-			(project ""
+			(project "clock"
 				(path "/959d2641-02eb-4caa-b1c6-84a86321825f"
 					(reference "#PWR021")
 					(unit 1)
@@ -9218,7 +9361,7 @@
 			(uuid "d98d628b-c29b-4bc6-899a-29efc3bee645")
 		)
 		(instances
-			(project ""
+			(project "clock"
 				(path "/959d2641-02eb-4caa-b1c6-84a86321825f"
 					(reference "#PWR024")
 					(unit 1)
@@ -9550,7 +9693,7 @@
 			(uuid "382f516a-898c-4782-85de-f1f41011f975")
 		)
 		(instances
-			(project ""
+			(project "clock"
 				(path "/959d2641-02eb-4caa-b1c6-84a86321825f"
 					(reference "U4")
 					(unit 1)
@@ -9620,7 +9763,7 @@
 			(uuid "94eae4ea-be8f-48f5-96b0-5b0b7d2718ca")
 		)
 		(instances
-			(project ""
+			(project "clock"
 				(path "/959d2641-02eb-4caa-b1c6-84a86321825f"
 					(reference "C15")
 					(unit 1)
@@ -9685,7 +9828,7 @@
 			(uuid "becee55c-ef78-497c-b152-6cba299a7aac")
 		)
 		(instances
-			(project ""
+			(project "clock"
 				(path "/959d2641-02eb-4caa-b1c6-84a86321825f"
 					(reference "#PWR023")
 					(unit 1)
