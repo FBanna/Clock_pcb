@@ -6164,6 +6164,16 @@
 	)
 	(wire
 		(pts
+			(xy 212.09 96.52) (xy 217.17 96.52)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2b281107-ed30-4d43-9ade-fa155700871e")
+	)
+	(wire
+		(pts
 			(xy 154.94 26.67) (xy 170.18 26.67)
 		)
 		(stroke
@@ -6321,6 +6331,16 @@
 			(type default)
 		)
 		(uuid "4713c73b-01d2-49c1-af6c-0407b568ada7")
+	)
+	(wire
+		(pts
+			(xy 186.69 96.52) (xy 191.77 96.52)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4744f85e-1690-4ba1-8f35-de966fb66278")
 	)
 	(wire
 		(pts
@@ -6894,6 +6914,16 @@
 	)
 	(wire
 		(pts
+			(xy 238.76 96.52) (xy 243.84 96.52)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d398ab05-3f06-43b9-8586-bafbeebd830a")
+	)
+	(wire
+		(pts
 			(xy 29.21 100.33) (xy 35.56 100.33)
 		)
 		(stroke
@@ -7172,7 +7202,7 @@
 	)
 	(text "SELECT\n"
 		(exclude_from_sim no)
-		(at 227.838 86.868 0)
+		(at 225.806 86.106 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -7202,13 +7232,35 @@
 	)
 	(text "RIGHT"
 		(exclude_from_sim no)
-		(at 250.444 87.63 0)
+		(at 250.444 86.36 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 		)
 		(uuid "da8faa9b-2e14-4f3f-b61a-434655d31054")
+	)
+	(global_label "RIGHT"
+		(shape input)
+		(at 21.59 158.75 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "0616d99e-2350-4c15-823a-322307faeed9")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 13.1619 158.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
 	)
 	(global_label "OSC_IN"
 		(shape input)
@@ -7223,6 +7275,28 @@
 		(uuid "0894ff27-202b-42c5-8ba0-eb737a3f2cbb")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 44.9119 125.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "SELECT"
+		(shape input)
+		(at 21.59 154.94 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "1b4fa877-f9ba-4064-82ae-a35fbe63b723")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 11.8316 154.94 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7254,6 +7328,28 @@
 			)
 		)
 	)
+	(global_label "LEFT"
+		(shape input)
+		(at 21.59 151.13 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "2189780b-3620-466a-b10c-1e48ab734746")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 14.3715 151.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
 	(global_label "M4"
 		(shape input)
 		(at 21.59 173.99 180)
@@ -7278,7 +7374,7 @@
 	)
 	(global_label "LBO"
 		(shape input)
-		(at 21.59 142.24 180)
+		(at 21.59 143.51 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -7288,7 +7384,7 @@
 		)
 		(uuid "2713ea91-b3ae-4a52-9b33-7af4b27ab034")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 14.9762 142.24 0)
+			(at 14.9762 143.51 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7311,6 +7407,28 @@
 		(uuid "2851b03e-15dc-4026-982e-e9a1a19f729e")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 97.2676 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "RIGHT"
+		(shape input)
+		(at 254 96.52 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "2a87a1cb-c8bb-4f90-b332-bd8228630964")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 262.4281 96.52 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7410,7 +7528,7 @@
 	)
 	(global_label "CE"
 		(shape input)
-		(at 21.59 146.05 180)
+		(at 21.59 147.32 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -7420,7 +7538,7 @@
 		)
 		(uuid "58a4e85f-fee6-45af-8931-df3ad12fe13b")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 16.1858 146.05 0)
+			(at 16.1858 147.32 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7606,6 +7724,28 @@
 			)
 		)
 	)
+	(global_label "SELECT"
+		(shape input)
+		(at 227.33 96.52 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "cd953fbc-b2aa-4666-93ec-b17c0e9f75ce")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 237.0884 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
 	(global_label "D-"
 		(shape input)
 		(at 91.44 30.48 0)
@@ -7778,6 +7918,28 @@
 					(size 1.27 1.27)
 				)
 				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "LEFT"
+		(shape input)
+		(at 201.93 96.52 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "f07f7b9c-f228-404e-8203-1c63b52414e2")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 209.1485 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
 				(hide yes)
 			)
 		)
@@ -8023,72 +8185,6 @@
 			(project "clock"
 				(path "/959d2641-02eb-4caa-b1c6-84a86321825f"
 					(reference "#PWR03")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+3.3V")
-		(at 248.92 96.52 180)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "0c936617-99ef-4ea9-9205-1ef0a28f6727")
-		(property "Reference" "#PWR020"
-			(at 248.92 92.71 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+3.3V"
-			(at 248.92 101.6 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 248.92 96.52 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 248.92 96.52 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
-			(at 248.92 96.52 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "a5fc51b1-f830-4fe1-9d6f-91c423e2c7bd")
-		)
-		(instances
-			(project "clock"
-				(path "/959d2641-02eb-4caa-b1c6-84a86321825f"
-					(reference "#PWR020")
 					(unit 1)
 				)
 			)
@@ -8430,6 +8526,72 @@
 			(project "clock"
 				(path "/959d2641-02eb-4caa-b1c6-84a86321825f"
 					(reference "R5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3.3V")
+		(at 238.76 96.52 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "2140f0ee-9f45-4a14-ada5-8065c147a2ac")
+		(property "Reference" "#PWR020"
+			(at 238.76 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+3.3V"
+			(at 238.76 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 238.76 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 238.76 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
+			(at 238.76 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "72f8ffb9-7fc6-41f1-b772-b1b054ec9199")
+		)
+		(instances
+			(project "clock"
+				(path "/959d2641-02eb-4caa-b1c6-84a86321825f"
+					(reference "#PWR020")
 					(unit 1)
 				)
 			)
@@ -9002,6 +9164,72 @@
 			(project "clock"
 				(path "/959d2641-02eb-4caa-b1c6-84a86321825f"
 					(reference "C7")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3.3V")
+		(at 186.69 96.52 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "4e6c68c4-5b7c-44bc-a310-3f2ba8cbd327")
+		(property "Reference" "#PWR018"
+			(at 186.69 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+3.3V"
+			(at 186.69 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 186.69 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 186.69 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
+			(at 186.69 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "3bbe788c-ea0b-4577-9386-05c2661ba5dc")
+		)
+		(instances
+			(project "clock"
+				(path "/959d2641-02eb-4caa-b1c6-84a86321825f"
+					(reference "#PWR018")
 					(unit 1)
 				)
 			)
@@ -9678,72 +9906,6 @@
 			(project "clock"
 				(path "/959d2641-02eb-4caa-b1c6-84a86321825f"
 					(reference "#PWR04")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+3.3V")
-		(at 224.79 96.52 180)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "5fceb907-8f25-4f94-beb2-07b4933d3003")
-		(property "Reference" "#PWR019"
-			(at 224.79 92.71 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+3.3V"
-			(at 224.79 101.6 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 224.79 96.52 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 224.79 96.52 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
-			(at 224.79 96.52 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "7f24cbb8-01be-41cc-920e-5c5caee99dd2")
-		)
-		(instances
-			(project "clock"
-				(path "/959d2641-02eb-4caa-b1c6-84a86321825f"
-					(reference "#PWR019")
 					(unit 1)
 				)
 			)
@@ -11128,74 +11290,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Switch:SW_Push")
-		(at 243.84 96.52 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "94f4bc71-15d9-497a-b5dd-7bd59dee7c9b")
-		(property "Reference" "SW3"
-			(at 243.84 88.9 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "SW_Push"
-			(at 243.84 91.44 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 243.84 91.44 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 243.84 91.44 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Push button switch, generic, two pins"
-			(at 243.84 96.52 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "6a401de8-a6ae-4061-9607-39de79370fa7")
-		)
-		(pin "2"
-			(uuid "ef122d84-1092-4c3a-9b67-f5885ddc6741")
-		)
-		(instances
-			(project "clock"
-				(path "/959d2641-02eb-4caa-b1c6-84a86321825f"
-					(reference "SW3")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:C")
 		(at 22.86 104.14 0)
 		(unit 1)
@@ -11663,6 +11757,72 @@
 			(project "clock"
 				(path "/959d2641-02eb-4caa-b1c6-84a86321825f"
 					(reference "F1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3.3V")
+		(at 212.09 96.52 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "ac6e0406-0aee-49ec-908e-c80d780920e3")
+		(property "Reference" "#PWR019"
+			(at 212.09 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+3.3V"
+			(at 212.09 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 212.09 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 212.09 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
+			(at 212.09 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "11fc0625-61ae-48c9-8298-82ce3199a238")
+		)
+		(instances
+			(project "clock"
+				(path "/959d2641-02eb-4caa-b1c6-84a86321825f"
+					(reference "#PWR019")
 					(unit 1)
 				)
 			)
@@ -12416,74 +12576,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Switch:SW_Push")
-		(at 219.71 96.52 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "bdfaf2e9-39e0-4192-9972-a0975145c7a1")
-		(property "Reference" "SW2"
-			(at 219.71 88.9 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "SW_Push"
-			(at 219.71 91.44 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 219.71 91.44 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 219.71 91.44 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Push button switch, generic, two pins"
-			(at 219.71 96.52 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "7bcae4e0-b1e7-41d0-b7bb-fc374108551c")
-		)
-		(pin "2"
-			(uuid "18a6838b-fab0-4e78-962f-e036464837be")
-		)
-		(instances
-			(project "clock"
-				(path "/959d2641-02eb-4caa-b1c6-84a86321825f"
-					(reference "SW2")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Battery_Management:MCP73871-2CC")
 		(at 135.89 97.79 0)
 		(unit 1)
@@ -12879,6 +12971,74 @@
 			(project "clock"
 				(path "/959d2641-02eb-4caa-b1c6-84a86321825f"
 					(reference "C3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Switch:SW_Push")
+		(at 248.92 96.52 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "cc3748d1-95ff-4bd0-b576-640f82a10624")
+		(property "Reference" "SW3"
+			(at 248.92 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SW_Push"
+			(at 248.92 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 248.92 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 248.92 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Push button switch, generic, two pins"
+			(at 248.92 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "e177afb2-1ed6-444d-a38a-46169684e997")
+		)
+		(pin "2"
+			(uuid "02fc0770-71fd-4e47-90bc-6958de619efc")
+		)
+		(instances
+			(project "clock"
+				(path "/959d2641-02eb-4caa-b1c6-84a86321825f"
+					(reference "SW3")
 					(unit 1)
 				)
 			)
@@ -13360,26 +13520,25 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+3.3V")
-		(at 201.93 96.52 180)
+		(lib_id "Switch:SW_Push")
+		(at 222.25 96.52 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "e14d9ad0-6f64-4396-a074-6781355a3938")
-		(property "Reference" "#PWR018"
-			(at 201.93 92.71 0)
+		(uuid "df83703b-2431-4313-a022-9b18bb108678")
+		(property "Reference" "SW2"
+			(at 222.25 88.9 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(property "Value" "+3.3V"
-			(at 201.93 101.6 0)
+		(property "Value" "SW_Push"
+			(at 222.25 91.44 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13387,7 +13546,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 201.93 96.52 0)
+			(at 222.25 91.44 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13395,8 +13554,8 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" ""
-			(at 201.93 96.52 0)
+		(property "Datasheet" "~"
+			(at 222.25 91.44 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13404,8 +13563,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
-			(at 201.93 96.52 0)
+		(property "Description" "Push button switch, generic, two pins"
+			(at 222.25 96.52 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13414,12 +13573,15 @@
 			)
 		)
 		(pin "1"
-			(uuid "8043d0f5-f38f-4cb8-a922-d4bc05dcbc2a")
+			(uuid "9d2169f4-b9fa-4ee5-ae98-af0c42cd1c84")
+		)
+		(pin "2"
+			(uuid "4d78cee6-90b7-475a-9348-d67a590be66a")
 		)
 		(instances
 			(project "clock"
 				(path "/959d2641-02eb-4caa-b1c6-84a86321825f"
-					(reference "#PWR018")
+					(reference "SW2")
 					(unit 1)
 				)
 			)
