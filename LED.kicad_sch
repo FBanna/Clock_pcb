@@ -3613,7 +3613,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder"
 			(at 86.36 53.34 90)
 			(effects
 				(font
@@ -3674,7 +3674,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "65R"
+		(property "Value" "68R"
 			(at 95.25 177.7999 0)
 			(effects
 				(font
@@ -3683,7 +3683,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric_Pad0.72x0.64mm_HandSolder"
 			(at 94.488 176.53 90)
 			(effects
 				(font
@@ -3744,7 +3744,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "65R"
+		(property "Value" "68R"
 			(at 130.81 177.7999 0)
 			(effects
 				(font
@@ -3753,7 +3753,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric_Pad0.72x0.64mm_HandSolder"
 			(at 130.048 176.53 90)
 			(effects
 				(font
@@ -3814,7 +3814,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "65R"
+		(property "Value" "68R"
 			(at 113.03 177.7999 0)
 			(effects
 				(font
@@ -3823,7 +3823,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric_Pad0.72x0.64mm_HandSolder"
 			(at 112.268 176.53 90)
 			(effects
 				(font
@@ -3895,7 +3895,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder"
 			(at 90.17 99.06 90)
 			(effects
 				(font
@@ -3967,7 +3967,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder"
 			(at 121.92 129.54 90)
 			(effects
 				(font
@@ -4039,7 +4039,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder"
 			(at 50.8 83.82 90)
 			(effects
 				(font
@@ -4111,7 +4111,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder"
 			(at 54.61 99.06 90)
 			(effects
 				(font
@@ -4183,7 +4183,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder"
 			(at 68.58 144.78 90)
 			(effects
 				(font
@@ -4243,7 +4243,7 @@
 				)
 			)
 		)
-		(property "Value" "65R"
+		(property "Value" "68R"
 			(at 36.83 107.95 90)
 			(effects
 				(font
@@ -4251,7 +4251,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric_Pad0.72x0.64mm_HandSolder"
 			(at 36.83 113.538 90)
 			(effects
 				(font
@@ -4311,7 +4311,7 @@
 				)
 			)
 		)
-		(property "Value" "65R"
+		(property "Value" "68R"
 			(at 36.83 92.71 90)
 			(effects
 				(font
@@ -4319,7 +4319,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric_Pad0.72x0.64mm_HandSolder"
 			(at 36.83 98.298 90)
 			(effects
 				(font
@@ -4391,7 +4391,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder"
 			(at 50.8 129.54 90)
 			(effects
 				(font
@@ -4463,7 +4463,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder"
 			(at 90.17 129.54 90)
 			(effects
 				(font
@@ -4535,7 +4535,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder"
 			(at 107.95 114.3 90)
 			(effects
 				(font
@@ -4607,7 +4607,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder"
 			(at 121.92 53.34 90)
 			(effects
 				(font
@@ -4679,7 +4679,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder"
 			(at 86.36 99.06 90)
 			(effects
 				(font
@@ -4751,7 +4751,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder"
 			(at 50.8 99.06 90)
 			(effects
 				(font
@@ -4823,7 +4823,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder"
 			(at 54.61 160.02 90)
 			(effects
 				(font
@@ -4895,7 +4895,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder"
 			(at 125.73 129.54 90)
 			(effects
 				(font
@@ -4967,7 +4967,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder"
 			(at 86.36 68.58 90)
 			(effects
 				(font
@@ -5039,7 +5039,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder"
 			(at 104.14 129.54 90)
 			(effects
 				(font
@@ -5111,7 +5111,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder"
 			(at 72.39 144.78 90)
 			(effects
 				(font
@@ -5183,7 +5183,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder"
 			(at 50.8 144.78 90)
 			(effects
 				(font
@@ -5255,7 +5255,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder"
 			(at 104.14 53.34 90)
 			(effects
 				(font
@@ -5327,7 +5327,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder"
 			(at 90.17 114.3 90)
 			(effects
 				(font
@@ -5388,7 +5388,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "65R"
+		(property "Value" "68R"
 			(at 180.34 116.8399 0)
 			(effects
 				(font
@@ -5397,7 +5397,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric_Pad0.72x0.64mm_HandSolder"
 			(at 179.578 115.57 90)
 			(effects
 				(font
@@ -5469,7 +5469,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder"
 			(at 90.17 53.34 90)
 			(effects
 				(font
@@ -5541,7 +5541,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder"
 			(at 90.17 144.78 90)
 			(effects
 				(font
@@ -5613,7 +5613,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder"
 			(at 72.39 99.06 90)
 			(effects
 				(font
@@ -5685,7 +5685,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder"
 			(at 86.36 160.02 90)
 			(effects
 				(font
@@ -5757,7 +5757,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder"
 			(at 54.61 68.58 90)
 			(effects
 				(font
@@ -5829,7 +5829,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder"
 			(at 50.8 114.3 90)
 			(effects
 				(font
@@ -5901,7 +5901,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder"
 			(at 90.17 68.58 90)
 			(effects
 				(font
@@ -5973,7 +5973,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder"
 			(at 54.61 83.82 90)
 			(effects
 				(font
@@ -6043,7 +6043,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder"
 			(at 180.34 107.95 90)
 			(effects
 				(font
@@ -6115,7 +6115,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder"
 			(at 68.58 114.3 90)
 			(effects
 				(font
@@ -6187,7 +6187,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder"
 			(at 121.92 160.02 90)
 			(effects
 				(font
@@ -6259,7 +6259,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder"
 			(at 125.73 160.02 90)
 			(effects
 				(font
@@ -6331,7 +6331,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder"
 			(at 107.95 68.58 90)
 			(effects
 				(font
@@ -6392,7 +6392,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "65R"
+		(property "Value" "68R"
 			(at 180.34 101.5999 0)
 			(effects
 				(font
@@ -6401,7 +6401,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric_Pad0.72x0.64mm_HandSolder"
 			(at 179.578 100.33 90)
 			(effects
 				(font
@@ -6473,7 +6473,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder"
 			(at 86.36 129.54 90)
 			(effects
 				(font
@@ -6545,7 +6545,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder"
 			(at 68.58 129.54 90)
 			(effects
 				(font
@@ -6617,7 +6617,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder"
 			(at 68.58 160.02 90)
 			(effects
 				(font
@@ -6689,7 +6689,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder"
 			(at 90.17 160.02 90)
 			(effects
 				(font
@@ -6761,7 +6761,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder"
 			(at 107.95 53.34 90)
 			(effects
 				(font
@@ -6833,7 +6833,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder"
 			(at 104.14 160.02 90)
 			(effects
 				(font
@@ -6905,7 +6905,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder"
 			(at 104.14 68.58 90)
 			(effects
 				(font
@@ -6966,7 +6966,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "65R"
+		(property "Value" "68R"
 			(at 59.69 177.7999 0)
 			(effects
 				(font
@@ -6975,7 +6975,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric_Pad0.72x0.64mm_HandSolder"
 			(at 58.928 176.53 90)
 			(effects
 				(font
@@ -7047,7 +7047,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder"
 			(at 107.95 160.02 90)
 			(effects
 				(font
@@ -7119,7 +7119,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder"
 			(at 104.14 144.78 90)
 			(effects
 				(font
@@ -7191,7 +7191,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder"
 			(at 68.58 83.82 90)
 			(effects
 				(font
@@ -7251,7 +7251,7 @@
 				)
 			)
 		)
-		(property "Value" "65R"
+		(property "Value" "68R"
 			(at 36.83 46.99 90)
 			(effects
 				(font
@@ -7259,7 +7259,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric_Pad0.72x0.64mm_HandSolder"
 			(at 36.83 52.578 90)
 			(effects
 				(font
@@ -7319,7 +7319,7 @@
 				)
 			)
 		)
-		(property "Value" "65R"
+		(property "Value" "68R"
 			(at 36.83 77.47 90)
 			(effects
 				(font
@@ -7327,7 +7327,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric_Pad0.72x0.64mm_HandSolder"
 			(at 36.83 83.058 90)
 			(effects
 				(font
@@ -7387,7 +7387,7 @@
 				)
 			)
 		)
-		(property "Value" "65R"
+		(property "Value" "68R"
 			(at 36.83 123.19 90)
 			(effects
 				(font
@@ -7395,7 +7395,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric_Pad0.72x0.64mm_HandSolder"
 			(at 36.83 128.778 90)
 			(effects
 				(font
@@ -7455,7 +7455,7 @@
 				)
 			)
 		)
-		(property "Value" "65R"
+		(property "Value" "68R"
 			(at 36.83 153.67 90)
 			(effects
 				(font
@@ -7463,7 +7463,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric_Pad0.72x0.64mm_HandSolder"
 			(at 36.83 159.258 90)
 			(effects
 				(font
@@ -7535,7 +7535,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder"
 			(at 121.92 99.06 90)
 			(effects
 				(font
@@ -7607,7 +7607,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder"
 			(at 54.61 144.78 90)
 			(effects
 				(font
@@ -7679,7 +7679,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder"
 			(at 72.39 83.82 90)
 			(effects
 				(font
@@ -7751,7 +7751,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder"
 			(at 121.92 144.78 90)
 			(effects
 				(font
@@ -7811,7 +7811,7 @@
 				)
 			)
 		)
-		(property "Value" "65R"
+		(property "Value" "68R"
 			(at 36.83 62.23 90)
 			(effects
 				(font
@@ -7819,7 +7819,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric_Pad0.72x0.64mm_HandSolder"
 			(at 36.83 67.818 90)
 			(effects
 				(font
@@ -7891,7 +7891,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder"
 			(at 125.73 68.58 90)
 			(effects
 				(font
@@ -7961,7 +7961,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder"
 			(at 175.26 107.95 90)
 			(effects
 				(font
@@ -8033,7 +8033,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder"
 			(at 86.36 144.78 90)
 			(effects
 				(font
@@ -8105,7 +8105,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder"
 			(at 125.73 99.06 90)
 			(effects
 				(font
@@ -8177,7 +8177,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder"
 			(at 125.73 83.82 90)
 			(effects
 				(font
@@ -8249,7 +8249,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder"
 			(at 107.95 144.78 90)
 			(effects
 				(font
@@ -8321,7 +8321,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder"
 			(at 125.73 144.78 90)
 			(effects
 				(font
@@ -8393,7 +8393,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder"
 			(at 72.39 53.34 90)
 			(effects
 				(font
@@ -8465,7 +8465,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder"
 			(at 54.61 114.3 90)
 			(effects
 				(font
@@ -8537,7 +8537,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder"
 			(at 121.92 83.82 90)
 			(effects
 				(font
@@ -8609,7 +8609,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder"
 			(at 50.8 160.02 90)
 			(effects
 				(font
@@ -8681,7 +8681,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder"
 			(at 68.58 53.34 90)
 			(effects
 				(font
@@ -8741,7 +8741,7 @@
 				)
 			)
 		)
-		(property "Value" "65R"
+		(property "Value" "68R"
 			(at 36.83 138.43 90)
 			(effects
 				(font
@@ -8749,7 +8749,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric_Pad0.72x0.64mm_HandSolder"
 			(at 36.83 144.018 90)
 			(effects
 				(font
@@ -8821,7 +8821,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder"
 			(at 104.14 83.82 90)
 			(effects
 				(font
@@ -8893,7 +8893,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder"
 			(at 72.39 114.3 90)
 			(effects
 				(font
@@ -8965,7 +8965,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder"
 			(at 54.61 129.54 90)
 			(effects
 				(font
@@ -9037,7 +9037,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder"
 			(at 72.39 129.54 90)
 			(effects
 				(font
@@ -9109,7 +9109,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder"
 			(at 107.95 129.54 90)
 			(effects
 				(font
@@ -9181,7 +9181,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder"
 			(at 50.8 68.58 90)
 			(effects
 				(font
@@ -9253,7 +9253,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder"
 			(at 107.95 83.82 90)
 			(effects
 				(font
@@ -9325,7 +9325,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder"
 			(at 125.73 53.34 90)
 			(effects
 				(font
@@ -9397,7 +9397,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder"
 			(at 68.58 99.06 90)
 			(effects
 				(font
@@ -9469,7 +9469,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder"
 			(at 104.14 114.3 90)
 			(effects
 				(font
@@ -9541,7 +9541,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder"
 			(at 86.36 114.3 90)
 			(effects
 				(font
@@ -9613,7 +9613,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder"
 			(at 72.39 160.02 90)
 			(effects
 				(font
@@ -9685,7 +9685,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder"
 			(at 121.92 68.58 90)
 			(effects
 				(font
@@ -9746,7 +9746,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "65R"
+		(property "Value" "68R"
 			(at 77.47 177.7999 0)
 			(effects
 				(font
@@ -9755,7 +9755,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric_Pad0.72x0.64mm_HandSolder"
 			(at 76.708 176.53 90)
 			(effects
 				(font
