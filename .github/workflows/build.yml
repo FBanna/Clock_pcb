@@ -10,21 +10,7 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v4
-    - uses: nerdyscout/kicad-exports@v2.3.1
+    - uses: emilymclean/kicad-pdf@v1
       with:
-      # Required - kibot config file
-        config: any.kibot.yaml
-      # optional - prefix to output defined in config
-        dir: docs
-      # optional - schematic file
-        schema: '*.sch'
-      # optional - PCB design file
-        board: '*.kicad_pcb'
-      # optional - verbose output info
-        verbose: 0
-    - name: upload results
-      uses: actions/upload-artifact@v2
-      with:
-        name: docs
-        path: docs
+        input-files: clock.kicad_sch
+        output-file: schematic.pdf
