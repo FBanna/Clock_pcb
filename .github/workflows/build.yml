@@ -20,7 +20,7 @@ jobs:
         with:
           file: "./clock.kicad_sch"
           type: "schematic_pdf"
-          black-and-white: true
+          black-and-white: false
       - name: Upload
         uses: actions/upload-artifact@v4
         with:
