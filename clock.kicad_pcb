@@ -149,74 +149,72 @@
 	(net 28 "unconnected-(J1-SBU2-PadB8)")
 	(net 29 "D_BUS-")
 	(net 30 "unconnected-(J1-SBU1-PadA8)")
-	(net 31 "Net-(J2-Pin_1)")
-	(net 32 "Net-(Q1-D)")
-	(net 33 "Net-(Q1-G)")
-	(net 34 "Net-(Q2-B)")
-	(net 35 "OSC_IN")
-	(net 36 "Net-(C12-Pad2)")
-	(net 37 "LBO")
-	(net 38 "Net-(U4-VPCC)")
-	(net 39 "CE")
-	(net 40 "BUZZER")
-	(net 41 "Net-(SW4-B)")
-	(net 42 "5V_TEST")
-	(net 43 "M1")
-	(net 44 "M2")
-	(net 45 "M3")
-	(net 46 "M4")
-	(net 47 "M5")
-	(net 48 "M6")
-	(net 49 "M7")
-	(net 50 "M8")
-	(net 51 "COLON")
-	(net 52 "unconnected-(U1-PC15-Pad4)")
-	(net 53 "unconnected-(U1-PB3-Pad39)")
-	(net 54 "unconnected-(U1-PB9-Pad46)")
-	(net 55 "unconnected-(U1-PC14-Pad3)")
-	(net 56 "unconnected-(U1-PB7-Pad43)")
-	(net 57 "unconnected-(U1-PB15-Pad28)")
-	(net 58 "unconnected-(U1-PA13-Pad34)")
-	(net 59 "unconnected-(U1-PA0-Pad10)")
-	(net 60 "unconnected-(U1-PA4-Pad14)")
-	(net 61 "unconnected-(U1-PB5-Pad41)")
-	(net 62 "unconnected-(U1-PA15-Pad38)")
-	(net 63 "unconnected-(U1-PA3-Pad13)")
-	(net 64 "unconnected-(U1-PB11-Pad22)")
-	(net 65 "unconnected-(U1-PA7-Pad17)")
-	(net 66 "unconnected-(U1-PA2-Pad12)")
-	(net 67 "unconnected-(U1-PA1-Pad11)")
-	(net 68 "unconnected-(U1-PA14-Pad37)")
-	(net 69 "D-")
-	(net 70 "unconnected-(U1-PA9-Pad30)")
-	(net 71 "unconnected-(U1-PA8-Pad29)")
-	(net 72 "unconnected-(U1-PB14-Pad27)")
-	(net 73 "unconnected-(U1-PB2-Pad20)")
-	(net 74 "OSC_OUT")
-	(net 75 "unconnected-(U1-PA6-Pad16)")
-	(net 76 "unconnected-(U1-PB12-Pad25)")
-	(net 77 "unconnected-(U1-PB1-Pad19)")
-	(net 78 "unconnected-(U1-PB0-Pad18)")
-	(net 79 "unconnected-(U1-PC13-Pad2)")
-	(net 80 "unconnected-(U1-PB4-Pad40)")
-	(net 81 "unconnected-(U1-PB13-Pad26)")
-	(net 82 "unconnected-(U1-PB10-Pad21)")
-	(net 83 "unconnected-(U1-PA5-Pad15)")
-	(net 84 "unconnected-(U1-PB8-Pad45)")
-	(net 85 "unconnected-(U1-PB6-Pad42)")
-	(net 86 "unconnected-(U1-PA10-Pad31)")
-	(net 87 "D+")
-	(net 88 "Net-(J5-Pin_1)")
-	(net 89 "Net-(U4-PROG1)")
-	(net 90 "Net-(U4-THERM)")
-	(net 91 "Net-(U4-PROG3)")
-	(net 92 "unconnected-(U4-STAT2-Pad7)")
-	(net 93 "unconnected-(U4-~{PG}-Pad6)")
-	(net 94 "unconnected-(U5-NC-Pad4)")
+	(net 31 "Net-(Q1-D)")
+	(net 32 "Net-(Q1-G)")
+	(net 33 "Net-(Q2-B)")
+	(net 34 "OSC_IN")
+	(net 35 "LBO")
+	(net 36 "Net-(U4-VPCC)")
+	(net 37 "CE")
+	(net 38 "BUZZER")
+	(net 39 "Net-(SW4-B)")
+	(net 40 "5V_TEST")
+	(net 41 "M1")
+	(net 42 "M2")
+	(net 43 "M3")
+	(net 44 "M4")
+	(net 45 "M5")
+	(net 46 "M6")
+	(net 47 "M7")
+	(net 48 "M8")
+	(net 49 "COLON")
+	(net 50 "unconnected-(U1-PC15-Pad4)")
+	(net 51 "unconnected-(U1-PB3-Pad39)")
+	(net 52 "unconnected-(U1-PB9-Pad46)")
+	(net 53 "unconnected-(U1-PC14-Pad3)")
+	(net 54 "unconnected-(U1-PB7-Pad43)")
+	(net 55 "unconnected-(U1-PB15-Pad28)")
+	(net 56 "unconnected-(U1-PA13-Pad34)")
+	(net 57 "unconnected-(U1-PA0-Pad10)")
+	(net 58 "unconnected-(U1-PA4-Pad14)")
+	(net 59 "unconnected-(U1-PB5-Pad41)")
+	(net 60 "unconnected-(U1-PA15-Pad38)")
+	(net 61 "unconnected-(U1-PA3-Pad13)")
+	(net 62 "unconnected-(U1-PB11-Pad22)")
+	(net 63 "unconnected-(U1-PA7-Pad17)")
+	(net 64 "unconnected-(U1-PA2-Pad12)")
+	(net 65 "unconnected-(U1-PA1-Pad11)")
+	(net 66 "unconnected-(U1-PA14-Pad37)")
+	(net 67 "D-")
+	(net 68 "unconnected-(U1-PA9-Pad30)")
+	(net 69 "unconnected-(U1-PA8-Pad29)")
+	(net 70 "unconnected-(U1-PB14-Pad27)")
+	(net 71 "unconnected-(U1-PB2-Pad20)")
+	(net 72 "OSC_OUT")
+	(net 73 "unconnected-(U1-PA6-Pad16)")
+	(net 74 "unconnected-(U1-PB12-Pad25)")
+	(net 75 "unconnected-(U1-PB1-Pad19)")
+	(net 76 "unconnected-(U1-PB0-Pad18)")
+	(net 77 "unconnected-(U1-PC13-Pad2)")
+	(net 78 "unconnected-(U1-PB4-Pad40)")
+	(net 79 "unconnected-(U1-PB13-Pad26)")
+	(net 80 "unconnected-(U1-PB10-Pad21)")
+	(net 81 "unconnected-(U1-PA5-Pad15)")
+	(net 82 "unconnected-(U1-PB8-Pad45)")
+	(net 83 "unconnected-(U1-PB6-Pad42)")
+	(net 84 "unconnected-(U1-PA10-Pad31)")
+	(net 85 "D+")
+	(net 86 "Net-(J5-Pin_1)")
+	(net 87 "Net-(U4-PROG1)")
+	(net 88 "Net-(U4-THERM)")
+	(net 89 "Net-(U4-PROG3)")
+	(net 90 "unconnected-(U4-STAT2-Pad7)")
+	(net 91 "unconnected-(U4-~{PG}-Pad6)")
+	(net 92 "unconnected-(U5-NC-Pad4)")
 	(footprint "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical"
 		(layer "F.Cu")
 		(uuid "04bffed9-76e1-4833-88ad-b71056b80965")
-		(at 167.21125 77.57)
+		(at 262.75 104.975)
 		(descr "Through hole straight pin header, 1x02, 2.54mm pitch, single row")
 		(tags "Through hole pin header THT 1x02 2.54mm single row")
 		(property "Reference" "J4"
@@ -709,7 +707,7 @@
 	(footprint "LED_SMD:LED_0402_1005Metric_Pad0.77x0.64mm_HandSolder"
 		(layer "F.Cu")
 		(uuid "09048f44-6862-4358-b75c-8b9094a9acb5")
-		(at 118.0725 86.25)
+		(at 118.5725 89.75)
 		(descr "LED SMD 0402 (1005 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: http://www.tortai-tech.com/upload/download/2011102023233369053.pdf), generated with kicad-footprint-generator")
 		(tags "LED handsolder")
 		(property "Reference" "D63"
@@ -935,7 +933,7 @@
 	(footprint "LED_SMD:LED_0402_1005Metric_Pad0.77x0.64mm_HandSolder"
 		(layer "F.Cu")
 		(uuid "09d105f7-4e9c-4a39-a0e1-4208a804a006")
-		(at 121.3225 87.5)
+		(at 121.8225 91)
 		(descr "LED SMD 0402 (1005 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: http://www.tortai-tech.com/upload/download/2011102023233369053.pdf), generated with kicad-footprint-generator")
 		(tags "LED handsolder")
 		(property "Reference" "D71"
@@ -1346,7 +1344,7 @@
 			(size 0.715 0.64)
 			(layers "F.Cu" "F.Paste" "F.Mask")
 			(roundrect_rratio 0.25)
-			(net 48 "M6")
+			(net 46 "M6")
 			(pintype "passive")
 			(uuid "fac30d08-58eb-41b5-8585-629ebf49ba4d")
 		)
@@ -1374,7 +1372,7 @@
 	(footprint "LED_SMD:LED_0402_1005Metric_Pad0.77x0.64mm_HandSolder"
 		(layer "F.Cu")
 		(uuid "0c520948-9328-4cab-896d-d750fd4e03a3")
-		(at 100.5 77.5 90)
+		(at 100.5 76.5 90)
 		(descr "LED SMD 0402 (1005 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: http://www.tortai-tech.com/upload/download/2011102023233369053.pdf), generated with kicad-footprint-generator")
 		(tags "LED handsolder")
 		(property "Reference" "D11"
@@ -1600,11 +1598,11 @@
 	(footprint "LED_SMD:LED_0402_1005Metric_Pad0.77x0.64mm_HandSolder"
 		(layer "F.Cu")
 		(uuid "0e1ea621-d4f0-4816-b3ca-757a1c815387")
-		(at 126.75 78.75 180)
+		(at 126.75 78.25 180)
 		(descr "LED SMD 0402 (1005 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: http://www.tortai-tech.com/upload/download/2011102023233369053.pdf), generated with kicad-footprint-generator")
 		(tags "LED handsolder")
 		(property "Reference" "D57"
-			(at 0 -1.17 360)
+			(at 0 -1.17 0)
 			(layer "F.SilkS")
 			(uuid "f92db75e-ecb1-4e97-9fba-e7d3e9b451b0")
 			(effects
@@ -1615,7 +1613,7 @@
 			)
 		)
 		(property "Value" "LED_Small"
-			(at 0 1.17 360)
+			(at 0 1.17 0)
 			(layer "F.Fab")
 			(uuid "04b4263f-378f-4c12-8777-804858d10d33")
 			(effects
@@ -1781,7 +1779,7 @@
 			(uuid "52fb517b-1357-4202-bac6-be059fb13178")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(uuid "3ef522d6-010b-4d45-adfc-b9fc3e83640a")
 			(effects
@@ -2052,7 +2050,7 @@
 	(footprint "LED_SMD:LED_0402_1005Metric_Pad0.77x0.64mm_HandSolder"
 		(layer "F.Cu")
 		(uuid "116ab4d4-7953-4e4f-a4e9-0886789a23a0")
-		(at 124.25 84)
+		(at 124.25 84.25)
 		(descr "LED SMD 0402 (1005 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: http://www.tortai-tech.com/upload/download/2011102023233369053.pdf), generated with kicad-footprint-generator")
 		(tags "LED handsolder")
 		(property "Reference" "D55"
@@ -2278,7 +2276,7 @@
 	(footprint "Resistor_SMD:R_0402_1005Metric_Pad0.72x0.64mm_HandSolder"
 		(layer "F.Cu")
 		(uuid "132633df-aa19-478d-b046-bd4dbeb36af7")
-		(at 165.27125 89.41)
+		(at 201.8475 108)
 		(descr "Resistor SMD 0402 (1005 Metric), square (rectangular) end terminal, IPC_7351 nominal with elongated pad for handsoldering. (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
 		(tags "resistor handsolder")
 		(property "Reference" "R31"
@@ -2463,7 +2461,7 @@
 			(size 0.715 0.64)
 			(layers "F.Cu" "F.Paste" "F.Mask")
 			(roundrect_rratio 0.25)
-			(net 41 "Net-(SW4-B)")
+			(net 39 "Net-(SW4-B)")
 			(pintype "passive")
 			(uuid "2c54e898-435e-434a-9b5c-d6371c3b31b0")
 		)
@@ -2491,7 +2489,7 @@
 	(footprint "LED_SMD:LED_0402_1005Metric_Pad0.77x0.64mm_HandSolder"
 		(layer "F.Cu")
 		(uuid "140689de-58bb-400d-a52a-c76e9eef323e")
-		(at 126.75 84)
+		(at 126.75 84.25)
 		(descr "LED SMD 0402 (1005 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: http://www.tortai-tech.com/upload/download/2011102023233369053.pdf), generated with kicad-footprint-generator")
 		(tags "LED handsolder")
 		(property "Reference" "D48"
@@ -2717,7 +2715,7 @@
 	(footprint "Resistor_SMD:R_0402_1005Metric_Pad0.72x0.64mm_HandSolder"
 		(layer "F.Cu")
 		(uuid "1813d8bb-a159-419e-b37a-72938e68daea")
-		(at 162.02125 83.44)
+		(at 209.3475 57.5)
 		(descr "Resistor SMD 0402 (1005 Metric), square (rectangular) end terminal, IPC_7351 nominal with elongated pad for handsoldering. (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
 		(tags "resistor handsolder")
 		(property "Reference" "R1"
@@ -2930,7 +2928,7 @@
 	(footprint "LED_SMD:LED_0402_1005Metric_Pad0.77x0.64mm_HandSolder"
 		(layer "F.Cu")
 		(uuid "1bacbda1-ea92-40b7-8cd8-9272b600be5d")
-		(at 100.5 75 90)
+		(at 100.5 74 90)
 		(descr "LED SMD 0402 (1005 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: http://www.tortai-tech.com/upload/download/2011102023233369053.pdf), generated with kicad-footprint-generator")
 		(tags "LED handsolder")
 		(property "Reference" "D4"
@@ -3156,7 +3154,7 @@
 	(footprint "LED_SMD:LED_0402_1005Metric_Pad0.77x0.64mm_HandSolder"
 		(layer "F.Cu")
 		(uuid "1c0f3202-c5a4-4339-b698-2a63698fb951")
-		(at 120.25 77.5 90)
+		(at 120.25 76.5 90)
 		(descr "LED SMD 0402 (1005 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: http://www.tortai-tech.com/upload/download/2011102023233369053.pdf), generated with kicad-footprint-generator")
 		(tags "LED handsolder")
 		(property "Reference" "D39"
@@ -3636,7 +3634,7 @@
 			(size 1.325 0.6)
 			(layers "F.Cu" "F.Paste" "F.Mask")
 			(roundrect_rratio 0.25)
-			(net 94 "unconnected-(U5-NC-Pad4)")
+			(net 92 "unconnected-(U5-NC-Pad4)")
 			(pinfunction "NC")
 			(pintype "no_connect")
 			(uuid "3e1a6e57-e97b-49ce-bcab-340a1aba2a2b")
@@ -3892,11 +3890,11 @@
 	(footprint "LED_SMD:LED_0402_1005Metric_Pad0.77x0.64mm_HandSolder"
 		(layer "F.Cu")
 		(uuid "2672c645-b1fc-48f2-b2b2-fc056ef89833")
-		(at 118.5 73.5 180)
+		(at 118.5 72.25 180)
 		(descr "LED SMD 0402 (1005 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: http://www.tortai-tech.com/upload/download/2011102023233369053.pdf), generated with kicad-footprint-generator")
 		(tags "LED handsolder")
 		(property "Reference" "D38"
-			(at 0 -1.17 360)
+			(at 0 -1.17 0)
 			(layer "F.SilkS")
 			(uuid "2fa1a398-d212-4912-acde-a9eef1676bc2")
 			(effects
@@ -3907,7 +3905,7 @@
 			)
 		)
 		(property "Value" "LED_Small"
-			(at 0 1.17 360)
+			(at 0 1.17 0)
 			(layer "F.Fab")
 			(uuid "eeb0eff2-c7d9-437a-8fb8-1e55421386c9")
 			(effects
@@ -4073,7 +4071,7 @@
 			(uuid "8690999d-a7ef-471d-be4b-0a1b030e66f8")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(uuid "69d52340-79b8-4c1c-9828-b4426813fc0d")
 			(effects
@@ -4118,7 +4116,7 @@
 	(footprint "Resistor_SMD:R_0402_1005Metric_Pad0.72x0.64mm_HandSolder"
 		(layer "F.Cu")
 		(uuid "29b6b983-1405-46a8-91cd-1e4d7f9e457d")
-		(at 165.27125 85.43)
+		(at 202.0975 106)
 		(descr "Resistor SMD 0402 (1005 Metric), square (rectangular) end terminal, IPC_7351 nominal with elongated pad for handsoldering. (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
 		(tags "resistor handsolder")
 		(property "Reference" "R14"
@@ -4303,7 +4301,7 @@
 			(size 0.715 0.64)
 			(layers "F.Cu" "F.Paste" "F.Mask")
 			(roundrect_rratio 0.25)
-			(net 41 "Net-(SW4-B)")
+			(net 39 "Net-(SW4-B)")
 			(pintype "passive")
 			(uuid "29f53389-7fac-4a45-9bdd-c568b55e32ce")
 		)
@@ -4312,7 +4310,7 @@
 			(size 0.715 0.64)
 			(layers "F.Cu" "F.Paste" "F.Mask")
 			(roundrect_rratio 0.25)
-			(net 42 "5V_TEST")
+			(net 40 "5V_TEST")
 			(pintype "passive")
 			(uuid "36f3d058-7c74-4033-add5-1b88441f328e")
 		)
@@ -4557,7 +4555,7 @@
 	(footprint "LED_SMD:LED_0402_1005Metric_Pad0.77x0.64mm_HandSolder"
 		(layer "F.Cu")
 		(uuid "2a2ed187-bb7d-4e7b-8932-98555668ce87")
-		(at 107 84)
+		(at 107 84.25)
 		(descr "LED SMD 0402 (1005 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: http://www.tortai-tech.com/upload/download/2011102023233369053.pdf), generated with kicad-footprint-generator")
 		(tags "LED handsolder")
 		(property "Reference" "D20"
@@ -4783,11 +4781,11 @@
 	(footprint "LED_SMD:LED_0402_1005Metric_Pad0.77x0.64mm_HandSolder"
 		(layer "F.Cu")
 		(uuid "2ea9b0d5-6433-4267-95e3-715ba04a4daa")
-		(at 107 78.75 180)
+		(at 107 78.25 180)
 		(descr "LED SMD 0402 (1005 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: http://www.tortai-tech.com/upload/download/2011102023233369053.pdf), generated with kicad-footprint-generator")
 		(tags "LED handsolder")
 		(property "Reference" "D29"
-			(at 0 -1.17 360)
+			(at 0 -1.17 0)
 			(layer "F.SilkS")
 			(uuid "83ece2f0-60b6-4edb-91e6-f4bc5dda382e")
 			(effects
@@ -4798,7 +4796,7 @@
 			)
 		)
 		(property "Value" "LED_Small"
-			(at 0 1.17 360)
+			(at 0 1.17 0)
 			(layer "F.Fab")
 			(uuid "52be05e2-5481-4f5b-89c1-cff314a05246")
 			(effects
@@ -4964,7 +4962,7 @@
 			(uuid "d73dbfab-c5c9-4683-87ec-89043d3a400c")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(uuid "4eb21617-0224-48f5-93ec-658b2f8b449d")
 			(effects
@@ -5194,7 +5192,7 @@
 			(size 0.715 0.64)
 			(layers "F.Cu" "F.Paste" "F.Mask")
 			(roundrect_rratio 0.25)
-			(net 47 "M5")
+			(net 45 "M5")
 			(pintype "passive")
 			(uuid "8608b788-7bed-4db1-9391-c606711d2750")
 		)
@@ -5674,7 +5672,7 @@
 	(footprint "Capacitor_SMD:C_0402_1005Metric_Pad0.74x0.62mm_HandSolder"
 		(layer "F.Cu")
 		(uuid "39abf9fc-d093-4de4-b165-324630d10b01")
-		(at 168.50125 93.28)
+		(at 249.75 112.75)
 		(descr "Capacitor SMD 0402 (1005 Metric), square (rectangular) end terminal, IPC_7351 nominal with elongated pad for handsoldering. (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
 		(tags "capacitor handsolder")
 		(property "Reference" "C13"
@@ -6072,7 +6070,7 @@
 			(size 0.715 0.64)
 			(layers "F.Cu" "F.Paste" "F.Mask")
 			(roundrect_rratio 0.25)
-			(net 47 "M5")
+			(net 45 "M5")
 			(pintype "passive")
 			(uuid "359fe5b0-fee2-4df1-afdf-0ccf35e679bd")
 		)
@@ -6100,7 +6098,7 @@
 	(footprint "LED_SMD:LED_0402_1005Metric_Pad0.77x0.64mm_HandSolder"
 		(layer "F.Cu")
 		(uuid "3b053ead-7f40-40aa-ba4d-e3df077cc71e")
-		(at 114.25 75 -90)
+		(at 114.25 74 -90)
 		(descr "LED SMD 0402 (1005 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: http://www.tortai-tech.com/upload/download/2011102023233369053.pdf), generated with kicad-footprint-generator")
 		(tags "LED handsolder")
 		(property "Reference" "D37"
@@ -6326,11 +6324,11 @@
 	(footprint "LED_SMD:LED_0402_1005Metric_Pad0.77x0.64mm_HandSolder"
 		(layer "F.Cu")
 		(uuid "3c366dc6-78b9-44e4-9c40-4b045d5dc23f")
-		(at 118.5 78.75 180)
+		(at 118.5 78.25 180)
 		(descr "LED SMD 0402 (1005 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: http://www.tortai-tech.com/upload/download/2011102023233369053.pdf), generated with kicad-footprint-generator")
 		(tags "LED handsolder")
 		(property "Reference" "D43"
-			(at 0 -1.17 360)
+			(at 0 -1.17 0)
 			(layer "F.SilkS")
 			(uuid "d9ea1a12-9f9b-4cb3-bfc9-05f0eb27948b")
 			(effects
@@ -6341,7 +6339,7 @@
 			)
 		)
 		(property "Value" "LED_Small"
-			(at 0 1.17 360)
+			(at 0 1.17 0)
 			(layer "F.Fab")
 			(uuid "ca480f75-59af-470b-b03c-22461df378dd")
 			(effects
@@ -6507,7 +6505,7 @@
 			(uuid "d57f1c66-4c4f-44e3-9a8e-32fb2d5edd05")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(uuid "8a7cdc9e-e73e-4e51-b356-5404801264c9")
 			(effects
@@ -6552,7 +6550,7 @@
 	(footprint "LED_SMD:LED_0402_1005Metric_Pad0.77x0.64mm_HandSolder"
 		(layer "F.Cu")
 		(uuid "3fbfd61c-d157-4a7e-af47-f1942e49e880")
-		(at 98.75 73.5 180)
+		(at 98.75 72.25 180)
 		(descr "LED SMD 0402 (1005 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: http://www.tortai-tech.com/upload/download/2011102023233369053.pdf), generated with kicad-footprint-generator")
 		(tags "LED handsolder")
 		(property "Reference" "D10"
@@ -6778,7 +6776,7 @@
 	(footprint "LED_SMD:LED_0402_1005Metric_Pad0.77x0.64mm_HandSolder"
 		(layer "F.Cu")
 		(uuid "41f36d3b-15e5-4e94-bd6c-e6f2d1147d08")
-		(at 94.5 75 -90)
+		(at 94.5 74 -90)
 		(descr "LED SMD 0402 (1005 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: http://www.tortai-tech.com/upload/download/2011102023233369053.pdf), generated with kicad-footprint-generator")
 		(tags "LED handsolder")
 		(property "Reference" "D9"
@@ -7004,7 +7002,7 @@
 	(footprint "Resistor_SMD:R_0402_1005Metric_Pad0.72x0.64mm_HandSolder"
 		(layer "F.Cu")
 		(uuid "45daef04-e252-4b75-af8d-987557c92797")
-		(at 162.02125 89.41)
+		(at 225.25 74.5)
 		(descr "Resistor SMD 0402 (1005 Metric), square (rectangular) end terminal, IPC_7351 nominal with elongated pad for handsoldering. (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
 		(tags "resistor handsolder")
 		(property "Reference" "R6"
@@ -7189,7 +7187,7 @@
 			(size 0.715 0.64)
 			(layers "F.Cu" "F.Paste" "F.Mask")
 			(roundrect_rratio 0.25)
-			(net 37 "LBO")
+			(net 35 "LBO")
 			(pintype "passive")
 			(uuid "04801f6e-f245-4943-aea0-baf620d9442b")
 		)
@@ -7217,7 +7215,7 @@
 	(footprint "Buzzer_Beeper:MagneticBuzzer_CUI_CMT-8504-100-SMT"
 		(layer "F.Cu")
 		(uuid "489b8c07-7e95-4c7c-a1aa-d318e131b389")
-		(at 160.95625 69.505)
+		(at 248.75 42)
 		(descr "magnetic transducer buzzer, 5V, SPL of 100 dB at 10 cm, https://www.cuidevices.com/product/resource/pdf/cmt-8504-100-smt-tr.pdf")
 		(tags "CMT 8504")
 		(property "Reference" "BZ1"
@@ -7715,7 +7713,7 @@
 	(footprint "LED_SMD:LED_0402_1005Metric_Pad0.77x0.64mm_HandSolder"
 		(layer "F.Cu")
 		(uuid "4a93d76d-794a-43ce-a11b-ef0b18a78f9a")
-		(at 108.75 75 90)
+		(at 108.75 74 90)
 		(descr "LED SMD 0402 (1005 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: http://www.tortai-tech.com/upload/download/2011102023233369053.pdf), generated with kicad-footprint-generator")
 		(tags "LED handsolder")
 		(property "Reference" "D18"
@@ -8126,7 +8124,7 @@
 			(size 0.715 0.64)
 			(layers "F.Cu" "F.Paste" "F.Mask")
 			(roundrect_rratio 0.25)
-			(net 46 "M4")
+			(net 44 "M4")
 			(pintype "passive")
 			(uuid "9b69cba9-6a65-4c86-bb37-3e3f27c9d587")
 		)
@@ -8154,7 +8152,7 @@
 	(footprint "LED_SMD:LED_0402_1005Metric_Pad0.77x0.64mm_HandSolder"
 		(layer "F.Cu")
 		(uuid "4bfbef00-f153-4ef3-8b20-0dec8325c84b")
-		(at 128.5 77.5 90)
+		(at 128.5 76.5 90)
 		(descr "LED SMD 0402 (1005 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: http://www.tortai-tech.com/upload/download/2011102023233369053.pdf), generated with kicad-footprint-generator")
 		(tags "LED handsolder")
 		(property "Reference" "D53"
@@ -8380,7 +8378,7 @@
 	(footprint "LED_SMD:LED_0402_1005Metric_Pad0.77x0.64mm_HandSolder"
 		(layer "F.Cu")
 		(uuid "4c1e627b-e89d-483a-93f5-3346275b49b5")
-		(at 111.5725 87.5)
+		(at 112.0725 91)
 		(descr "LED SMD 0402 (1005 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: http://www.tortai-tech.com/upload/download/2011102023233369053.pdf), generated with kicad-footprint-generator")
 		(tags "LED handsolder")
 		(property "Reference" "D68"
@@ -8606,11 +8604,11 @@
 	(footprint "LED_SMD:LED_0402_1005Metric_Pad0.77x0.64mm_HandSolder"
 		(layer "F.Cu")
 		(uuid "4c85a900-6813-4a61-aa50-c90fb31fa9cf")
-		(at 96.25 78.75 180)
+		(at 96.25 78.25 180)
 		(descr "LED SMD 0402 (1005 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: http://www.tortai-tech.com/upload/download/2011102023233369053.pdf), generated with kicad-footprint-generator")
 		(tags "LED handsolder")
 		(property "Reference" "D8"
-			(at 0 -1.17 360)
+			(at 0 -1.17 0)
 			(layer "F.SilkS")
 			(uuid "633dbfe6-39b0-4bec-8b56-416c99bcfda3")
 			(effects
@@ -8621,7 +8619,7 @@
 			)
 		)
 		(property "Value" "LED_Small"
-			(at 0 1.17 360)
+			(at 0 1.17 0)
 			(layer "F.Fab")
 			(uuid "45733e94-d82e-40db-ad13-ca3172c37b74")
 			(effects
@@ -8787,7 +8785,7 @@
 			(uuid "d4a281c8-30f4-4006-990d-8849d7e4995a")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(uuid "d2d983a1-a9d9-4057-a22d-eef9c11763c6")
 			(effects
@@ -8832,7 +8830,7 @@
 	(footprint "LED_SMD:LED_0402_1005Metric_Pad0.77x0.64mm_HandSolder"
 		(layer "F.Cu")
 		(uuid "5316c650-67af-4ae1-a664-ac7d60213595")
-		(at 104.5 73.5 180)
+		(at 104.5 72.25 180)
 		(descr "LED SMD 0402 (1005 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: http://www.tortai-tech.com/upload/download/2011102023233369053.pdf), generated with kicad-footprint-generator")
 		(tags "LED handsolder")
 		(property "Reference" "D17"
@@ -9243,7 +9241,7 @@
 			(size 0.715 0.64)
 			(layers "F.Cu" "F.Paste" "F.Mask")
 			(roundrect_rratio 0.25)
-			(net 43 "M1")
+			(net 41 "M1")
 			(pintype "passive")
 			(uuid "1eab1300-8293-4c7a-ad73-972810050d17")
 		)
@@ -9271,7 +9269,7 @@
 	(footprint "LED_SMD:LED_0402_1005Metric_Pad0.77x0.64mm_HandSolder"
 		(layer "F.Cu")
 		(uuid "5426cdc4-ae14-477b-8728-2b23dd292b2f")
-		(at 96.25 84)
+		(at 96.25 84.25)
 		(descr "LED SMD 0402 (1005 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: http://www.tortai-tech.com/upload/download/2011102023233369053.pdf), generated with kicad-footprint-generator")
 		(tags "LED handsolder")
 		(property "Reference" "D13"
@@ -10005,7 +10003,7 @@
 	(footprint "Resistor_SMD:R_0402_1005Metric_Pad0.72x0.64mm_HandSolder"
 		(layer "F.Cu")
 		(uuid "587402f6-efaa-4881-822f-a3a0e9df9465")
-		(at 165.27125 87.42)
+		(at 201.8475 107)
 		(descr "Resistor SMD 0402 (1005 Metric), square (rectangular) end terminal, IPC_7351 nominal with elongated pad for handsoldering. (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
 		(tags "resistor handsolder")
 		(property "Reference" "R15"
@@ -10199,7 +10197,7 @@
 			(size 0.715 0.64)
 			(layers "F.Cu" "F.Paste" "F.Mask")
 			(roundrect_rratio 0.25)
-			(net 42 "5V_TEST")
+			(net 40 "5V_TEST")
 			(pintype "passive")
 			(uuid "1cbc3074-2321-44ca-816a-9078e5736e8c")
 		)
@@ -10218,7 +10216,7 @@
 	(footprint "LED_SMD:LED_0402_1005Metric_Pad0.77x0.64mm_HandSolder"
 		(layer "F.Cu")
 		(uuid "58bd511f-3456-40c1-a3fa-4d6cb8217d7f")
-		(at 104.5 84)
+		(at 104.5 84.25)
 		(descr "LED SMD 0402 (1005 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: http://www.tortai-tech.com/upload/download/2011102023233369053.pdf), generated with kicad-footprint-generator")
 		(tags "LED handsolder")
 		(property "Reference" "D27"
@@ -10444,7 +10442,7 @@
 	(footprint "LED_SMD:LED_0402_1005Metric_Pad0.77x0.64mm_HandSolder"
 		(layer "F.Cu")
 		(uuid "5b71639a-3262-4a17-b793-f92f92c52eba")
-		(at 128.5 75 90)
+		(at 128.5 74 90)
 		(descr "LED SMD 0402 (1005 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: http://www.tortai-tech.com/upload/download/2011102023233369053.pdf), generated with kicad-footprint-generator")
 		(tags "LED handsolder")
 		(property "Reference" "D46"
@@ -10670,11 +10668,11 @@
 	(footprint "LED_SMD:LED_0402_1005Metric_Pad0.77x0.64mm_HandSolder"
 		(layer "F.Cu")
 		(uuid "5e1ac9d9-c9a5-4a73-b3cf-5ed67b4287bf")
-		(at 124.25 78.75 180)
+		(at 124.25 78.25 180)
 		(descr "LED SMD 0402 (1005 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: http://www.tortai-tech.com/upload/download/2011102023233369053.pdf), generated with kicad-footprint-generator")
 		(tags "LED handsolder")
 		(property "Reference" "D50"
-			(at 0 -1.17 360)
+			(at 0 -1.17 0)
 			(layer "F.SilkS")
 			(uuid "c7b95ef3-e905-47d5-be38-07444af8ca7b")
 			(effects
@@ -10685,7 +10683,7 @@
 			)
 		)
 		(property "Value" "LED_Small"
-			(at 0 1.17 360)
+			(at 0 1.17 0)
 			(layer "F.Fab")
 			(uuid "820243fb-ce04-4038-b9be-90f1376ad2f9")
 			(effects
@@ -10851,7 +10849,7 @@
 			(uuid "de7a9eda-2003-4edd-b101-122b8810ba5e")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(uuid "c1923359-27c7-48d9-920d-16bb71dc4e00")
 			(effects
@@ -11109,11 +11107,11 @@
 	(footprint "LED_SMD:LED_0402_1005Metric_Pad0.77x0.64mm_HandSolder"
 		(layer "F.Cu")
 		(uuid "61151c43-0cae-4e25-85eb-58e5d32cf755")
-		(at 98.75 78.75 180)
+		(at 98.75 78.25 180)
 		(descr "LED SMD 0402 (1005 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: http://www.tortai-tech.com/upload/download/2011102023233369053.pdf), generated with kicad-footprint-generator")
 		(tags "LED handsolder")
 		(property "Reference" "D15"
-			(at 0 -1.17 360)
+			(at 0 -1.17 0)
 			(layer "F.SilkS")
 			(uuid "17af192a-ef73-4783-8322-a8fe44f1be32")
 			(effects
@@ -11124,7 +11122,7 @@
 			)
 		)
 		(property "Value" "LED_Small"
-			(at 0 1.17 360)
+			(at 0 1.17 0)
 			(layer "F.Fab")
 			(uuid "c4ce1fa2-39fc-4905-a54d-9ed293ab9f9b")
 			(effects
@@ -11290,7 +11288,7 @@
 			(uuid "79c53e89-582a-4dc2-9cfd-3689eb792138")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(uuid "6e3a1b5a-7dd0-41bc-bd80-1dc85e9d23cf")
 			(effects
@@ -11529,7 +11527,7 @@
 			(size 0.715 0.64)
 			(layers "F.Cu" "F.Paste" "F.Mask")
 			(roundrect_rratio 0.25)
-			(net 51 "COLON")
+			(net 49 "COLON")
 			(pintype "passive")
 			(uuid "c3176ba8-e599-4672-928b-5cfbdabdc96f")
 		)
@@ -11548,7 +11546,7 @@
 	(footprint "LED_SMD:LED_0402_1005Metric_Pad0.77x0.64mm_HandSolder"
 		(layer "F.Cu")
 		(uuid "636723bb-5850-4f6b-93d1-50682ea78a36")
-		(at 101.3225 86.25)
+		(at 101.8225 89.75)
 		(descr "LED SMD 0402 (1005 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: http://www.tortai-tech.com/upload/download/2011102023233369053.pdf), generated with kicad-footprint-generator")
 		(tags "LED handsolder")
 		(property "Reference" "D58"
@@ -11774,7 +11772,7 @@
 	(footprint "LED_SMD:LED_0402_1005Metric_Pad0.77x0.64mm_HandSolder"
 		(layer "F.Cu")
 		(uuid "67ca6487-b28a-4bcc-9a2b-003fd6fac737")
-		(at 114.8225 86.25)
+		(at 115.3225 89.75)
 		(descr "LED SMD 0402 (1005 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: http://www.tortai-tech.com/upload/download/2011102023233369053.pdf), generated with kicad-footprint-generator")
 		(tags "LED handsolder")
 		(property "Reference" "D62"
@@ -12000,7 +11998,7 @@
 	(footprint "LED_SMD:LED_0402_1005Metric_Pad0.77x0.64mm_HandSolder"
 		(layer "F.Cu")
 		(uuid "68188cbb-a57b-4fbc-a49e-893645f8ecc8")
-		(at 96.25 73.5 180)
+		(at 96.25 72.25 180)
 		(descr "LED SMD 0402 (1005 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: http://www.tortai-tech.com/upload/download/2011102023233369053.pdf), generated with kicad-footprint-generator")
 		(tags "LED handsolder")
 		(property "Reference" "D3"
@@ -12226,7 +12224,7 @@
 	(footprint "LED_SMD:LED_0402_1005Metric_Pad0.77x0.64mm_HandSolder"
 		(layer "F.Cu")
 		(uuid "6861b5ea-17b4-4775-9d57-902a3f65b888")
-		(at 114.25 77.5 -90)
+		(at 114.25 76.5 -90)
 		(descr "LED SMD 0402 (1005 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: http://www.tortai-tech.com/upload/download/2011102023233369053.pdf), generated with kicad-footprint-generator")
 		(tags "LED handsolder")
 		(property "Reference" "D30"
@@ -12678,7 +12676,7 @@
 	(footprint "LED_SMD:LED_0402_1005Metric_Pad0.77x0.64mm_HandSolder"
 		(layer "F.Cu")
 		(uuid "6979c057-a0b2-4ebd-a239-3f1a558f867a")
-		(at 94.5 77.5 -90)
+		(at 94.5 76.5 -90)
 		(descr "LED SMD 0402 (1005 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: http://www.tortai-tech.com/upload/download/2011102023233369053.pdf), generated with kicad-footprint-generator")
 		(tags "LED handsolder")
 		(property "Reference" "D2"
@@ -13089,7 +13087,7 @@
 			(size 0.715 0.64)
 			(layers "F.Cu" "F.Paste" "F.Mask")
 			(roundrect_rratio 0.25)
-			(net 45 "M3")
+			(net 43 "M3")
 			(pintype "passive")
 			(uuid "246b96e9-c808-4235-94b0-01cc6a20f5b1")
 		)
@@ -13302,7 +13300,7 @@
 			(size 0.715 0.64)
 			(layers "F.Cu" "F.Paste" "F.Mask")
 			(roundrect_rratio 0.25)
-			(net 44 "M2")
+			(net 42 "M2")
 			(pintype "passive")
 			(uuid "cef3902c-e344-453b-9554-51930ed43d9a")
 		)
@@ -13554,7 +13552,7 @@
 			(size 1.475 0.6)
 			(layers "F.Cu" "F.Paste" "F.Mask")
 			(roundrect_rratio 0.25)
-			(net 33 "Net-(Q1-G)")
+			(net 32 "Net-(Q1-G)")
 			(pinfunction "G")
 			(pintype "input")
 			(uuid "938b5557-048d-40a3-8c2c-79596e81ad4b")
@@ -13574,7 +13572,7 @@
 			(size 1.475 0.6)
 			(layers "F.Cu" "F.Paste" "F.Mask")
 			(roundrect_rratio 0.25)
-			(net 32 "Net-(Q1-D)")
+			(net 31 "Net-(Q1-D)")
 			(pinfunction "D")
 			(pintype "passive")
 			(uuid "8683cf70-e3fe-42a0-90d8-c4cf5a0f9793")
@@ -13594,7 +13592,7 @@
 	(footprint "LED_SMD:LED_0402_1005Metric_Pad0.77x0.64mm_HandSolder"
 		(layer "F.Cu")
 		(uuid "7bb1a561-765b-42f1-82a2-99b5ba100942")
-		(at 104.8225 87.5)
+		(at 105.3225 91)
 		(descr "LED SMD 0402 (1005 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: http://www.tortai-tech.com/upload/download/2011102023233369053.pdf), generated with kicad-footprint-generator")
 		(tags "LED handsolder")
 		(property "Reference" "D66"
@@ -14046,7 +14044,7 @@
 	(footprint "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
 		(layer "F.Cu")
 		(uuid "825bf1ea-de23-463d-b0dd-163c899c24c4")
-		(at 172.28125 86.21)
+		(at 219.8375 60.75)
 		(descr "Resistor SMD 0603 (1608 Metric), square (rectangular) end terminal, IPC_7351 nominal with elongated pad for handsoldering. (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
 		(tags "resistor handsolder")
 		(property "Reference" "R10"
@@ -14240,7 +14238,7 @@
 			(size 0.975 0.95)
 			(layers "F.Cu" "F.Paste" "F.Mask")
 			(roundrect_rratio 0.25)
-			(net 38 "Net-(U4-VPCC)")
+			(net 36 "Net-(U4-VPCC)")
 			(pintype "passive")
 			(uuid "391fb829-0419-4417-9841-a0244b4c5f37")
 		)
@@ -14485,11 +14483,11 @@
 	(footprint "LED_SMD:LED_0402_1005Metric_Pad0.77x0.64mm_HandSolder"
 		(layer "F.Cu")
 		(uuid "8632844c-f23f-4c79-9a77-ffc82a4afcbe")
-		(at 101.3225 87.5)
+		(at 101.8225 91)
 		(descr "LED SMD 0402 (1005 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: http://www.tortai-tech.com/upload/download/2011102023233369053.pdf), generated with kicad-footprint-generator")
 		(tags "LED handsolder")
 		(property "Reference" "D65"
-			(at 0 -1.17 360)
+			(at 0 -1.17 0)
 			(layer "F.SilkS")
 			(uuid "622bb4f2-f62d-440c-9047-0b16e601c68e")
 			(effects
@@ -14500,7 +14498,7 @@
 			)
 		)
 		(property "Value" "LED_Small"
-			(at 0 1.17 360)
+			(at 0 1.17 0)
 			(layer "F.Fab")
 			(uuid "19151241-7d19-4ba5-962c-cdc92ea4c9ec")
 			(effects
@@ -14666,7 +14664,7 @@
 			(uuid "fc8cb272-487d-43d4-b705-3f198aaa9e2c")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(uuid "64d1c8d2-9a9f-4be0-8fd3-a2c1dbd41929")
 			(effects
@@ -14711,7 +14709,7 @@
 	(footprint "LED_SMD:LED_0402_1005Metric_Pad0.77x0.64mm_HandSolder"
 		(layer "F.Cu")
 		(uuid "86f2b9c3-1848-45a1-a4ea-ba2b21e5ba0c")
-		(at 102.75 77.5 -90)
+		(at 102.75 76.5 -90)
 		(descr "LED SMD 0402 (1005 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: http://www.tortai-tech.com/upload/download/2011102023233369053.pdf), generated with kicad-footprint-generator")
 		(tags "LED handsolder")
 		(property "Reference" "D16"
@@ -14937,7 +14935,7 @@
 	(footprint "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
 		(layer "F.Cu")
 		(uuid "8896b4fd-6d6f-459e-99b6-6e143f56d696")
-		(at 172.28125 88.72)
+		(at 219.8375 63.26)
 		(descr "Resistor SMD 0603 (1608 Metric), square (rectangular) end terminal, IPC_7351 nominal with elongated pad for handsoldering. (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
 		(tags "resistor handsolder")
 		(property "Reference" "R11"
@@ -15131,7 +15129,7 @@
 			(size 0.975 0.95)
 			(layers "F.Cu" "F.Paste" "F.Mask")
 			(roundrect_rratio 0.25)
-			(net 38 "Net-(U4-VPCC)")
+			(net 36 "Net-(U4-VPCC)")
 			(pintype "passive")
 			(uuid "d53b4a84-a5f7-4e7e-b376-78dc4c28db9f")
 		)
@@ -15150,7 +15148,7 @@
 	(footprint "LED_SMD:LED_0402_1005Metric_Pad0.77x0.64mm_HandSolder"
 		(layer "F.Cu")
 		(uuid "896bb460-f864-4962-a702-b74105af7c6f")
-		(at 111.5725 86.25)
+		(at 112.0725 89.75)
 		(descr "LED SMD 0402 (1005 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: http://www.tortai-tech.com/upload/download/2011102023233369053.pdf), generated with kicad-footprint-generator")
 		(tags "LED handsolder")
 		(property "Reference" "D61"
@@ -15376,7 +15374,7 @@
 	(footprint "LED_SMD:LED_0402_1005Metric_Pad0.77x0.64mm_HandSolder"
 		(layer "F.Cu")
 		(uuid "921a066c-c977-42c3-b928-89569a392a1c")
-		(at 108.75 77.5 90)
+		(at 108.75 76.5 90)
 		(descr "LED SMD 0402 (1005 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: http://www.tortai-tech.com/upload/download/2011102023233369053.pdf), generated with kicad-footprint-generator")
 		(tags "LED handsolder")
 		(property "Reference" "D25"
@@ -15602,7 +15600,7 @@
 	(footprint "Fuse:Fuse_0805_2012Metric_Pad1.15x1.40mm_HandSolder"
 		(layer "F.Cu")
 		(uuid "95b18463-9be9-4cb5-bd32-9ce478599f1b")
-		(at 146.37125 95.95)
+		(at 195.725 66.75)
 		(descr "Fuse SMD 0805 (2012 Metric), square (rectangular) end terminal, IPC_7351 nominal with elongated pad for handsoldering. (Body size source: https://docs.google.com/spreadsheets/d/1BsfQQcO9C6DZCsRaXUlFlo91Tg2WpOkGARC1WS5S8t0/edit?usp=sharing), generated with kicad-footprint-generator")
 		(tags "fuse handsolder")
 		(property "Reference" "F1"
@@ -16028,7 +16026,7 @@
 	(footprint "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical"
 		(layer "F.Cu")
 		(uuid "96e4a67d-4f5c-43ec-af08-dba7a7d00ecf")
-		(at 162.56125 77.57)
+		(at 255.75 101.975)
 		(descr "Through hole straight pin header, 1x02, 2.54mm pitch, single row")
 		(tags "Through hole pin header THT 1x02 2.54mm single row")
 		(property "Reference" "J3"
@@ -16295,7 +16293,7 @@
 	(footprint "LED_SMD:LED_0402_1005Metric_Pad0.77x0.64mm_HandSolder"
 		(layer "F.Cu")
 		(uuid "984bd101-9f5b-47a1-9079-ecb770066140")
-		(at 102.75 75 -90)
+		(at 102.75 74 -90)
 		(descr "LED SMD 0402 (1005 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: http://www.tortai-tech.com/upload/download/2011102023233369053.pdf), generated with kicad-footprint-generator")
 		(tags "LED handsolder")
 		(property "Reference" "D23"
@@ -16521,11 +16519,11 @@
 	(footprint "LED_SMD:LED_0402_1005Metric_Pad0.77x0.64mm_HandSolder"
 		(layer "F.Cu")
 		(uuid "9907ac45-db3a-42a5-b6fc-242e5bafbbb6")
-		(at 124.25 73.5 180)
+		(at 124.25 72.25 180)
 		(descr "LED SMD 0402 (1005 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: http://www.tortai-tech.com/upload/download/2011102023233369053.pdf), generated with kicad-footprint-generator")
 		(tags "LED handsolder")
 		(property "Reference" "D45"
-			(at 0 -1.17 360)
+			(at 0 -1.17 0)
 			(layer "F.SilkS")
 			(uuid "df41f51b-b0fc-4edb-9c0b-d855ba669056")
 			(effects
@@ -16536,7 +16534,7 @@
 			)
 		)
 		(property "Value" "LED_Small"
-			(at 0 1.17 360)
+			(at 0 1.17 0)
 			(layer "F.Fab")
 			(uuid "70b5d69a-5a1d-4af0-a227-df3f40fa4efc")
 			(effects
@@ -16702,7 +16700,7 @@
 			(uuid "237769b8-e3eb-416a-a1d0-34358c0eb9c0")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(uuid "8ec50c52-8686-466f-9eb3-a8823a80984a")
 			(effects
@@ -16744,276 +16742,10 @@
 			)
 		)
 	)
-	(footprint "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical"
-		(layer "F.Cu")
-		(uuid "99e7072c-8583-4b38-86a0-62b6dd76d50c")
-		(at 150.8125 77.7875)
-		(descr "Through hole straight pin header, 1x02, 2.54mm pitch, single row")
-		(tags "Through hole pin header THT 1x02 2.54mm single row")
-		(property "Reference" "J2"
-			(at 0 -2.33 0)
-			(layer "F.SilkS")
-			(uuid "ee0edf17-5729-486c-bfb2-49f4ff40cf2d")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Value" "Conn_01x02_Pin"
-			(at 0 4.87 0)
-			(layer "F.Fab")
-			(uuid "2bd380bd-21c8-491c-a13e-58ab351ab89d")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical"
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "21c3a987-1d59-4418-b673-cf1e9a20a9bd")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "659e4d62-e063-4b7e-aee7-be37a0b8f14c")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Description" "Generic connector, single row, 01x02, script generated"
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "e2184f16-6a97-4a64-be17-c9f392ff13e6")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property ki_fp_filters "Connector*:*_1x??_*")
-		(sheetname "Root")
-		(sheetfile "clock.kicad_sch")
-		(attr through_hole)
-		(fp_line
-			(start -1.33 -1.33)
-			(end 0 -1.33)
-			(stroke
-				(width 0.12)
-				(type solid)
-			)
-			(layer "F.SilkS")
-			(uuid "724a1595-071c-40fa-93b7-474f987af1b8")
-		)
-		(fp_line
-			(start -1.33 0)
-			(end -1.33 -1.33)
-			(stroke
-				(width 0.12)
-				(type solid)
-			)
-			(layer "F.SilkS")
-			(uuid "c87360e6-7db4-4ea3-96b2-51bcd514d3ff")
-		)
-		(fp_line
-			(start -1.33 1.27)
-			(end -1.33 3.87)
-			(stroke
-				(width 0.12)
-				(type solid)
-			)
-			(layer "F.SilkS")
-			(uuid "b25e5d1b-c48a-4f7f-969f-60c83d3dd119")
-		)
-		(fp_line
-			(start -1.33 1.27)
-			(end 1.33 1.27)
-			(stroke
-				(width 0.12)
-				(type solid)
-			)
-			(layer "F.SilkS")
-			(uuid "ff674d65-ca86-49fb-b8ba-fa2343c2044c")
-		)
-		(fp_line
-			(start -1.33 3.87)
-			(end 1.33 3.87)
-			(stroke
-				(width 0.12)
-				(type solid)
-			)
-			(layer "F.SilkS")
-			(uuid "4817a3bb-d4f0-4d34-9dd8-a187ff041955")
-		)
-		(fp_line
-			(start 1.33 1.27)
-			(end 1.33 3.87)
-			(stroke
-				(width 0.12)
-				(type solid)
-			)
-			(layer "F.SilkS")
-			(uuid "3e7bca0e-5731-449b-a9a8-f65338654c34")
-		)
-		(fp_line
-			(start -1.8 -1.8)
-			(end -1.8 4.35)
-			(stroke
-				(width 0.05)
-				(type solid)
-			)
-			(layer "F.CrtYd")
-			(uuid "ec90ec7b-579d-42ff-8b4e-2f33bc23fdbd")
-		)
-		(fp_line
-			(start -1.8 4.35)
-			(end 1.8 4.35)
-			(stroke
-				(width 0.05)
-				(type solid)
-			)
-			(layer "F.CrtYd")
-			(uuid "6906d058-feab-47dd-b4a8-b9b421f582cf")
-		)
-		(fp_line
-			(start 1.8 -1.8)
-			(end -1.8 -1.8)
-			(stroke
-				(width 0.05)
-				(type solid)
-			)
-			(layer "F.CrtYd")
-			(uuid "f25da4f3-7379-4dff-99e5-0f7356f6fd1d")
-		)
-		(fp_line
-			(start 1.8 4.35)
-			(end 1.8 -1.8)
-			(stroke
-				(width 0.05)
-				(type solid)
-			)
-			(layer "F.CrtYd")
-			(uuid "9ed4bb35-c068-4e3d-bffb-57d8049d8332")
-		)
-		(fp_line
-			(start -1.27 -0.635)
-			(end -0.635 -1.27)
-			(stroke
-				(width 0.1)
-				(type solid)
-			)
-			(layer "F.Fab")
-			(uuid "bff818e4-2d6c-47aa-b779-548177cc0c2c")
-		)
-		(fp_line
-			(start -1.27 3.81)
-			(end -1.27 -0.635)
-			(stroke
-				(width 0.1)
-				(type solid)
-			)
-			(layer "F.Fab")
-			(uuid "7dd61b3e-18db-4bc3-aa16-5eda731d89ff")
-		)
-		(fp_line
-			(start -0.635 -1.27)
-			(end 1.27 -1.27)
-			(stroke
-				(width 0.1)
-				(type solid)
-			)
-			(layer "F.Fab")
-			(uuid "d26efb0f-8b70-4875-8d1d-b7dc4db09f3b")
-		)
-		(fp_line
-			(start 1.27 -1.27)
-			(end 1.27 3.81)
-			(stroke
-				(width 0.1)
-				(type solid)
-			)
-			(layer "F.Fab")
-			(uuid "8de6a316-e40d-49e0-b5f1-107c9d35606e")
-		)
-		(fp_line
-			(start 1.27 3.81)
-			(end -1.27 3.81)
-			(stroke
-				(width 0.1)
-				(type solid)
-			)
-			(layer "F.Fab")
-			(uuid "9bc20d63-63ec-4f00-bde4-c5d7e8201bc1")
-		)
-		(fp_text user "${REFERENCE}"
-			(at 0 1.27 90)
-			(layer "F.Fab")
-			(uuid "2270f62e-228c-4dde-ab22-983ded6bd3d6")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(pad "1" thru_hole rect
-			(at 0 0)
-			(size 1.7 1.7)
-			(drill 1)
-			(layers "*.Cu" "*.Mask")
-			(remove_unused_layers no)
-			(net 31 "Net-(J2-Pin_1)")
-			(pinfunction "Pin_1")
-			(pintype "passive")
-			(uuid "0662e51b-cd53-4ed7-97f3-597ea936a275")
-		)
-		(pad "2" thru_hole oval
-			(at 0 2.54)
-			(size 1.7 1.7)
-			(drill 1)
-			(layers "*.Cu" "*.Mask")
-			(remove_unused_layers no)
-			(net 3 "GND")
-			(pinfunction "Pin_2")
-			(pintype "passive")
-			(uuid "d7bdf042-52bf-471c-9e3e-aa391cf0ea92")
-		)
-		(model "${KICAD8_3DMODEL_DIR}/Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x02_P2.54mm_Vertical.wrl"
-			(offset
-				(xyz 0 0 0)
-			)
-			(scale
-				(xyz 1 1 1)
-			)
-			(rotate
-				(xyz 0 0 0)
-			)
-		)
-	)
 	(footprint "LED_SMD:LED_0402_1005Metric_Pad0.77x0.64mm_HandSolder"
 		(layer "F.Cu")
 		(uuid "9ce68a3a-2195-4419-af46-37a33fecc32a")
-		(at 122.5 75 -90)
+		(at 122.5 74 -90)
 		(descr "LED SMD 0402 (1005 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: http://www.tortai-tech.com/upload/download/2011102023233369053.pdf), generated with kicad-footprint-generator")
 		(tags "LED handsolder")
 		(property "Reference" "D51"
@@ -17541,7 +17273,7 @@
 			(size 0.825 0.25)
 			(layers "F.Cu" "F.Paste" "F.Mask")
 			(roundrect_rratio 0.25)
-			(net 38 "Net-(U4-VPCC)")
+			(net 36 "Net-(U4-VPCC)")
 			(pinfunction "VPCC")
 			(pintype "input")
 			(uuid "a3dc6798-999d-4b53-9134-6608be158d7b")
@@ -17571,7 +17303,7 @@
 			(size 0.825 0.25)
 			(layers "F.Cu" "F.Paste" "F.Mask")
 			(roundrect_rratio 0.25)
-			(net 90 "Net-(U4-THERM)")
+			(net 88 "Net-(U4-THERM)")
 			(pinfunction "THERM")
 			(pintype "bidirectional")
 			(uuid "357f9fdb-5743-4d09-9f35-3df31a00637d")
@@ -17581,7 +17313,7 @@
 			(size 0.25 0.825)
 			(layers "F.Cu" "F.Paste" "F.Mask")
 			(roundrect_rratio 0.25)
-			(net 93 "unconnected-(U4-~{PG}-Pad6)")
+			(net 91 "unconnected-(U4-~{PG}-Pad6)")
 			(pinfunction "~{PG}")
 			(pintype "open_collector+no_connect")
 			(uuid "bcb16955-bd67-4e39-8b40-4b688d8e962b")
@@ -17591,7 +17323,7 @@
 			(size 0.25 0.825)
 			(layers "F.Cu" "F.Paste" "F.Mask")
 			(roundrect_rratio 0.25)
-			(net 92 "unconnected-(U4-STAT2-Pad7)")
+			(net 90 "unconnected-(U4-STAT2-Pad7)")
 			(pinfunction "STAT2")
 			(pintype "open_collector+no_connect")
 			(uuid "56accb2a-b570-4ed9-8f46-d8a86a967480")
@@ -17601,7 +17333,7 @@
 			(size 0.25 0.825)
 			(layers "F.Cu" "F.Paste" "F.Mask")
 			(roundrect_rratio 0.25)
-			(net 37 "LBO")
+			(net 35 "LBO")
 			(pinfunction "STAT1/~{LBO}")
 			(pintype "open_collector")
 			(uuid "d8b171f0-84b6-4a53-8b09-62d9aad308db")
@@ -17641,7 +17373,7 @@
 			(size 0.825 0.25)
 			(layers "F.Cu" "F.Paste" "F.Mask")
 			(roundrect_rratio 0.25)
-			(net 91 "Net-(U4-PROG3)")
+			(net 89 "Net-(U4-PROG3)")
 			(pinfunction "PROG3")
 			(pintype "bidirectional")
 			(uuid "3f5111eb-2a6c-4d4a-9df0-eb9459da911b")
@@ -17651,7 +17383,7 @@
 			(size 0.825 0.25)
 			(layers "F.Cu" "F.Paste" "F.Mask")
 			(roundrect_rratio 0.25)
-			(net 89 "Net-(U4-PROG1)")
+			(net 87 "Net-(U4-PROG1)")
 			(pinfunction "PROG1")
 			(pintype "bidirectional")
 			(uuid "1ebf3bd2-1125-42c0-9031-1c70ed661283")
@@ -17661,7 +17393,7 @@
 			(size 0.825 0.25)
 			(layers "F.Cu" "F.Paste" "F.Mask")
 			(roundrect_rratio 0.25)
-			(net 88 "Net-(J5-Pin_1)")
+			(net 86 "Net-(J5-Pin_1)")
 			(pinfunction "V_{BAT}")
 			(pintype "power_out")
 			(uuid "08493159-ef53-4a7b-aad5-74591be5b0bf")
@@ -17671,7 +17403,7 @@
 			(size 0.825 0.25)
 			(layers "F.Cu" "F.Paste" "F.Mask")
 			(roundrect_rratio 0.25)
-			(net 88 "Net-(J5-Pin_1)")
+			(net 86 "Net-(J5-Pin_1)")
 			(pinfunction "V_{BAT}")
 			(pintype "passive")
 			(uuid "b6ecada8-c8bd-4f4a-9ca8-a57dd136ecba")
@@ -17681,7 +17413,7 @@
 			(size 0.25 0.825)
 			(layers "F.Cu" "F.Paste" "F.Mask")
 			(roundrect_rratio 0.25)
-			(net 88 "Net-(J5-Pin_1)")
+			(net 86 "Net-(J5-Pin_1)")
 			(pinfunction "V_{BAT_SENSE}")
 			(pintype "input")
 			(uuid "e7b886e3-165f-4543-97b0-eeaabf3aa70d")
@@ -17691,7 +17423,7 @@
 			(size 0.25 0.825)
 			(layers "F.Cu" "F.Paste" "F.Mask")
 			(roundrect_rratio 0.25)
-			(net 32 "Net-(Q1-D)")
+			(net 31 "Net-(Q1-D)")
 			(pinfunction "CE")
 			(pintype "input")
 			(uuid "9e457eaa-104e-4cfc-9fce-8145339875e0")
@@ -17752,7 +17484,7 @@
 	(footprint "Resistor_SMD:R_0402_1005Metric_Pad0.72x0.64mm_HandSolder"
 		(layer "F.Cu")
 		(uuid "9ee7dc58-17f2-4b6b-bdc5-249b74a64b19")
-		(at 162.02125 93.39)
+		(at 191.5 91.75)
 		(descr "Resistor SMD 0402 (1005 Metric), square (rectangular) end terminal, IPC_7351 nominal with elongated pad for handsoldering. (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
 		(tags "resistor handsolder")
 		(property "Reference" "R12"
@@ -17937,7 +17669,7 @@
 			(size 0.715 0.64)
 			(layers "F.Cu" "F.Paste" "F.Mask")
 			(roundrect_rratio 0.25)
-			(net 33 "Net-(Q1-G)")
+			(net 32 "Net-(Q1-G)")
 			(pintype "passive")
 			(uuid "d1c081eb-7223-4d16-8049-10d4727f92f5")
 		)
@@ -17946,7 +17678,7 @@
 			(size 0.715 0.64)
 			(layers "F.Cu" "F.Paste" "F.Mask")
 			(roundrect_rratio 0.25)
-			(net 39 "CE")
+			(net 37 "CE")
 			(pintype "passive")
 			(uuid "f291ef1d-3e70-44bd-a04b-a026403a380e")
 		)
@@ -18150,7 +17882,7 @@
 			(size 0.715 0.64)
 			(layers "F.Cu" "F.Paste" "F.Mask")
 			(roundrect_rratio 0.25)
-			(net 49 "M7")
+			(net 47 "M7")
 			(pintype "passive")
 			(uuid "07e14ee1-21d1-4b77-bc95-c0966de64e6f")
 		)
@@ -18178,7 +17910,7 @@
 	(footprint "LED_SMD:LED_0402_1005Metric_Pad0.77x0.64mm_HandSolder"
 		(layer "F.Cu")
 		(uuid "a7bc1dce-8794-4fa8-b1bf-e17fb59a069c")
-		(at 114.8225 87.5)
+		(at 115.3225 91)
 		(descr "LED SMD 0402 (1005 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: http://www.tortai-tech.com/upload/download/2011102023233369053.pdf), generated with kicad-footprint-generator")
 		(tags "LED handsolder")
 		(property "Reference" "D69"
@@ -18617,7 +18349,7 @@
 	(footprint "Resistor_SMD:R_0402_1005Metric_Pad0.72x0.64mm_HandSolder"
 		(layer "F.Cu")
 		(uuid "aa7d258e-efad-4d40-8903-70f6df2c84ad")
-		(at 162.02125 85.43)
+		(at 209.3475 58.75)
 		(descr "Resistor SMD 0402 (1005 Metric), square (rectangular) end terminal, IPC_7351 nominal with elongated pad for handsoldering. (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
 		(tags "resistor handsolder")
 		(property "Reference" "R2"
@@ -19015,7 +18747,7 @@
 			(size 0.715 0.64)
 			(layers "F.Cu" "F.Paste" "F.Mask")
 			(roundrect_rratio 0.25)
-			(net 45 "M3")
+			(net 43 "M3")
 			(pintype "passive")
 			(uuid "85a1e695-999c-4c9e-975d-e3fd9815d1e1")
 		)
@@ -19043,7 +18775,7 @@
 	(footprint "LED_SMD:LED_0402_1005Metric_Pad0.77x0.64mm_HandSolder"
 		(layer "F.Cu")
 		(uuid "ac3d96a3-95c6-4097-a126-a98e4c457748")
-		(at 121.3225 86.25)
+		(at 121.8225 89.75)
 		(descr "LED SMD 0402 (1005 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: http://www.tortai-tech.com/upload/download/2011102023233369053.pdf), generated with kicad-footprint-generator")
 		(tags "LED handsolder")
 		(property "Reference" "D64"
@@ -19269,7 +19001,7 @@
 	(footprint "LED_SMD:LED_0402_1005Metric_Pad0.77x0.64mm_HandSolder"
 		(layer "F.Cu")
 		(uuid "aef17339-64a5-4dec-9bbc-7168785893c2")
-		(at 151.36625 96.12)
+		(at 202 109.25)
 		(descr "LED SMD 0402 (1005 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: http://www.tortai-tech.com/upload/download/2011102023233369053.pdf), generated with kicad-footprint-generator")
 		(tags "LED handsolder")
 		(property "Reference" "D74"
@@ -19495,7 +19227,7 @@
 	(footprint "LED_SMD:LED_0402_1005Metric_Pad0.77x0.64mm_HandSolder"
 		(layer "F.Cu")
 		(uuid "af1f9f66-3e98-49e7-bc7b-03dec7c0d79e")
-		(at 120.25 75 90)
+		(at 120.25 74 90)
 		(descr "LED SMD 0402 (1005 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: http://www.tortai-tech.com/upload/download/2011102023233369053.pdf), generated with kicad-footprint-generator")
 		(tags "LED handsolder")
 		(property "Reference" "D32"
@@ -19721,7 +19453,7 @@
 	(footprint "LED_SMD:LED_0402_1005Metric_Pad0.77x0.64mm_HandSolder"
 		(layer "F.Cu")
 		(uuid "b25e57b4-a0cf-4cc6-8be9-f8cdab601416")
-		(at 108.3225 87.5)
+		(at 108.8225 91)
 		(descr "LED SMD 0402 (1005 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: http://www.tortai-tech.com/upload/download/2011102023233369053.pdf), generated with kicad-footprint-generator")
 		(tags "LED handsolder")
 		(property "Reference" "D67"
@@ -19947,7 +19679,7 @@
 	(footprint "Package_TO_SOT_SMD:SOT-23_Handsoldering"
 		(layer "F.Cu")
 		(uuid "b2b98b86-b5c2-4b62-93e3-49e7f963abad")
-		(at 185.7375 74.6125)
+		(at 248.25 50.25)
 		(descr "SOT-23, Handsoldering")
 		(tags "SOT-23")
 		(property "Reference" "Q2"
@@ -20232,7 +19964,7 @@
 			(size 1.9 0.8)
 			(layers "F.Cu" "F.Paste" "F.Mask")
 			(roundrect_rratio 0.25)
-			(net 34 "Net-(Q2-B)")
+			(net 33 "Net-(Q2-B)")
 			(pinfunction "B")
 			(pintype "input")
 			(uuid "9482dbf4-13a1-47e3-a979-50cf5f2d61dd")
@@ -20447,7 +20179,7 @@
 			(size 0.715 0.64)
 			(layers "F.Cu" "F.Paste" "F.Mask")
 			(roundrect_rratio 0.25)
-			(net 50 "M8")
+			(net 48 "M8")
 			(pintype "passive")
 			(uuid "87f402ef-f207-46a9-8c29-17c2b1b5c0de")
 		)
@@ -20886,7 +20618,7 @@
 			(size 0.715 0.64)
 			(layers "F.Cu" "F.Paste" "F.Mask")
 			(roundrect_rratio 0.25)
-			(net 46 "M4")
+			(net 44 "M4")
 			(pintype "passive")
 			(uuid "832721e8-37d7-4c2d-b99f-559ff013f7a1")
 		)
@@ -21140,7 +20872,7 @@
 	(footprint "Resistor_SMD:R_0402_1005Metric_Pad0.72x0.64mm_HandSolder"
 		(layer "F.Cu")
 		(uuid "c28b1d76-e5a7-479c-a22c-b409db2147f2")
-		(at 162.02125 87.42)
+		(at 258 111.5)
 		(descr "Resistor SMD 0402 (1005 Metric), square (rectangular) end terminal, IPC_7351 nominal with elongated pad for handsoldering. (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
 		(tags "resistor handsolder")
 		(property "Reference" "R4"
@@ -21353,11 +21085,11 @@
 	(footprint "LED_SMD:LED_0402_1005Metric_Pad0.77x0.64mm_HandSolder"
 		(layer "F.Cu")
 		(uuid "c4adfde9-d5f1-4f75-ac15-5fd80dffef41")
-		(at 116 78.75 180)
+		(at 116 78.25 180)
 		(descr "LED SMD 0402 (1005 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: http://www.tortai-tech.com/upload/download/2011102023233369053.pdf), generated with kicad-footprint-generator")
 		(tags "LED handsolder")
 		(property "Reference" "D36"
-			(at 0 -1.17 360)
+			(at 0 -1.17 0)
 			(layer "F.SilkS")
 			(uuid "7565bfef-cadf-45a1-b6ca-eb06cca168a7")
 			(effects
@@ -21368,7 +21100,7 @@
 			)
 		)
 		(property "Value" "LED_Small"
-			(at 0 1.17 360)
+			(at 0 1.17 0)
 			(layer "F.Fab")
 			(uuid "148f49b3-490c-4a70-9c43-3fa9274a721e")
 			(effects
@@ -21534,7 +21266,7 @@
 			(uuid "222b1fd5-4f56-448c-abbd-f965513b6206")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(uuid "585cbc27-1293-48a8-a00f-eada3f066def")
 			(effects
@@ -21805,7 +21537,7 @@
 	(footprint "LED_SMD:LED_0402_1005Metric_Pad0.77x0.64mm_HandSolder"
 		(layer "F.Cu")
 		(uuid "c84bba06-e4cb-490b-ab83-c46b0132f734")
-		(at 104.8225 86.25)
+		(at 105.3225 89.75)
 		(descr "LED SMD 0402 (1005 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: http://www.tortai-tech.com/upload/download/2011102023233369053.pdf), generated with kicad-footprint-generator")
 		(tags "LED handsolder")
 		(property "Reference" "D59"
@@ -22017,218 +21749,6 @@
 			(uuid "019cba4e-a0f8-4bc5-9b7d-eb2322878d9d")
 		)
 		(model "${KICAD8_3DMODEL_DIR}/LED_SMD.3dshapes/LED_0402_1005Metric.wrl"
-			(offset
-				(xyz 0 0 0)
-			)
-			(scale
-				(xyz 1 1 1)
-			)
-			(rotate
-				(xyz 0 0 0)
-			)
-		)
-	)
-	(footprint "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
-		(layer "F.Cu")
-		(uuid "cca43df8-65f7-4b37-ae98-f823be84536d")
-		(at 172.28125 83.7)
-		(descr "Resistor SMD 0603 (1608 Metric), square (rectangular) end terminal, IPC_7351 nominal with elongated pad for handsoldering. (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
-		(tags "resistor handsolder")
-		(property "Reference" "R3"
-			(at 0 -1.43 0)
-			(layer "F.SilkS")
-			(uuid "4bb959bf-88a4-4c41-a186-02759a95ba0f")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Value" "200k"
-			(at 0 1.43 0)
-			(layer "F.Fab")
-			(uuid "01a4fddb-d295-45cd-8099-43cbb537d2f8")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "bb2c31b5-399a-4b48-9a84-6dbd59b8c5af")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "f8efc62a-6d32-425c-a358-5eca5164f2bc")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "efee1297-ebc2-4839-a691-52d21fc76257")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property ki_fp_filters "R_*")
-		(sheetname "Root")
-		(sheetfile "clock.kicad_sch")
-		(attr smd)
-		(fp_line
-			(start -0.254724 -0.5225)
-			(end 0.254724 -0.5225)
-			(stroke
-				(width 0.12)
-				(type solid)
-			)
-			(layer "F.SilkS")
-			(uuid "475bc1ca-14e6-4fc8-bf25-cba10338003f")
-		)
-		(fp_line
-			(start -0.254724 0.5225)
-			(end 0.254724 0.5225)
-			(stroke
-				(width 0.12)
-				(type solid)
-			)
-			(layer "F.SilkS")
-			(uuid "d0d8fded-269d-4ec3-836d-d56aa763af93")
-		)
-		(fp_line
-			(start -1.65 -0.73)
-			(end 1.65 -0.73)
-			(stroke
-				(width 0.05)
-				(type solid)
-			)
-			(layer "F.CrtYd")
-			(uuid "a4e4645d-3cd7-438a-b536-385a587e4aa1")
-		)
-		(fp_line
-			(start -1.65 0.73)
-			(end -1.65 -0.73)
-			(stroke
-				(width 0.05)
-				(type solid)
-			)
-			(layer "F.CrtYd")
-			(uuid "310057f2-1d66-4daf-b012-8fb221fe2b5b")
-		)
-		(fp_line
-			(start 1.65 -0.73)
-			(end 1.65 0.73)
-			(stroke
-				(width 0.05)
-				(type solid)
-			)
-			(layer "F.CrtYd")
-			(uuid "b5e6949f-18de-43c4-bb18-8adb404bd858")
-		)
-		(fp_line
-			(start 1.65 0.73)
-			(end -1.65 0.73)
-			(stroke
-				(width 0.05)
-				(type solid)
-			)
-			(layer "F.CrtYd")
-			(uuid "31784b1a-b2a8-4ecd-a166-a8b4439d414e")
-		)
-		(fp_line
-			(start -0.8 -0.4125)
-			(end 0.8 -0.4125)
-			(stroke
-				(width 0.1)
-				(type solid)
-			)
-			(layer "F.Fab")
-			(uuid "e406c4bf-87a3-48db-8c34-73ba039e633f")
-		)
-		(fp_line
-			(start -0.8 0.4125)
-			(end -0.8 -0.4125)
-			(stroke
-				(width 0.1)
-				(type solid)
-			)
-			(layer "F.Fab")
-			(uuid "56afe1e2-fc34-42e2-aaa7-0c430ce3fdf6")
-		)
-		(fp_line
-			(start 0.8 -0.4125)
-			(end 0.8 0.4125)
-			(stroke
-				(width 0.1)
-				(type solid)
-			)
-			(layer "F.Fab")
-			(uuid "eddf0cb6-3eea-4b75-8a7b-498e8d506e72")
-		)
-		(fp_line
-			(start 0.8 0.4125)
-			(end -0.8 0.4125)
-			(stroke
-				(width 0.1)
-				(type solid)
-			)
-			(layer "F.Fab")
-			(uuid "7e0cad2f-cad2-48e3-9e74-e6f127e3879b")
-		)
-		(fp_text user "${REFERENCE}"
-			(at 0 0 0)
-			(layer "F.Fab")
-			(uuid "7167d348-0fe8-48af-8643-77777a1dd95a")
-			(effects
-				(font
-					(size 0.4 0.4)
-					(thickness 0.06)
-				)
-			)
-		)
-		(pad "1" smd roundrect
-			(at -0.9125 0)
-			(size 0.975 0.95)
-			(layers "F.Cu" "F.Paste" "F.Mask")
-			(roundrect_rratio 0.25)
-			(net 36 "Net-(C12-Pad2)")
-			(pintype "passive")
-			(uuid "c17e1472-d173-4489-8a40-1df8892b9925")
-		)
-		(pad "2" smd roundrect
-			(at 0.9125 0)
-			(size 0.975 0.95)
-			(layers "F.Cu" "F.Paste" "F.Mask")
-			(roundrect_rratio 0.25)
-			(net 35 "OSC_IN")
-			(pintype "passive")
-			(uuid "7216364d-eab3-484c-a63d-575ffcb20737")
-		)
-		(model "${KICAD8_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.wrl"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -22695,7 +22215,7 @@
 	(footprint "LED_SMD:LED_0402_1005Metric_Pad0.77x0.64mm_HandSolder"
 		(layer "F.Cu")
 		(uuid "d2771623-4f85-4e87-a043-880da033cff6")
-		(at 108.3225 86.25)
+		(at 108.8225 89.75)
 		(descr "LED SMD 0402 (1005 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: http://www.tortai-tech.com/upload/download/2011102023233369053.pdf), generated with kicad-footprint-generator")
 		(tags "LED handsolder")
 		(property "Reference" "D60"
@@ -22921,7 +22441,7 @@
 	(footprint "Resistor_SMD:R_0402_1005Metric_Pad0.72x0.64mm_HandSolder"
 		(layer "F.Cu")
 		(uuid "d2ae0795-e12d-44dc-9803-ad9e1ab2cf91")
-		(at 162.02125 91.4)
+		(at 187.5 90.75)
 		(descr "Resistor SMD 0402 (1005 Metric), square (rectangular) end terminal, IPC_7351 nominal with elongated pad for handsoldering. (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
 		(tags "resistor handsolder")
 		(property "Reference" "R7"
@@ -23115,7 +22635,7 @@
 			(size 0.715 0.64)
 			(layers "F.Cu" "F.Paste" "F.Mask")
 			(roundrect_rratio 0.25)
-			(net 32 "Net-(Q1-D)")
+			(net 31 "Net-(Q1-D)")
 			(pintype "passive")
 			(uuid "0c388432-7559-4b8f-87ba-5975a5ad0609")
 		)
@@ -23586,11 +23106,11 @@
 	(footprint "LED_SMD:LED_0402_1005Metric_Pad0.77x0.64mm_HandSolder"
 		(layer "F.Cu")
 		(uuid "d55c1ee1-a1fb-47b7-9753-428454465614")
-		(at 116 73.5 180)
+		(at 116 72.25 180)
 		(descr "LED SMD 0402 (1005 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: http://www.tortai-tech.com/upload/download/2011102023233369053.pdf), generated with kicad-footprint-generator")
 		(tags "LED handsolder")
 		(property "Reference" "D31"
-			(at 0 -1.17 360)
+			(at 0 -1.17 0)
 			(layer "F.SilkS")
 			(uuid "a2fc1c4b-8950-474b-ae37-eb262059fffd")
 			(effects
@@ -23601,7 +23121,7 @@
 			)
 		)
 		(property "Value" "LED_Small"
-			(at 0 1.17 360)
+			(at 0 1.17 0)
 			(layer "F.Fab")
 			(uuid "ebb47711-b1d5-443e-8802-175553fac962")
 			(effects
@@ -23767,7 +23287,7 @@
 			(uuid "67f43946-2092-41e6-b2b3-ab7f4c099441")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(uuid "f9cfd30a-0b52-46a9-b6ec-464bccb4b99a")
 			(effects
@@ -23812,7 +23332,7 @@
 	(footprint "LED_SMD:LED_0402_1005Metric_Pad0.77x0.64mm_HandSolder"
 		(layer "F.Cu")
 		(uuid "d5900285-479f-48a5-875c-a686d1547d03")
-		(at 118.5 84)
+		(at 118.5 84.25)
 		(descr "LED SMD 0402 (1005 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: http://www.tortai-tech.com/upload/download/2011102023233369053.pdf), generated with kicad-footprint-generator")
 		(tags "LED handsolder")
 		(property "Reference" "D34"
@@ -24038,7 +23558,7 @@
 	(footprint "LED_SMD:LED_0402_1005Metric_Pad0.77x0.64mm_HandSolder"
 		(layer "F.Cu")
 		(uuid "d607b64c-9b6a-44a7-9c6f-567fb975fdf1")
-		(at 122.5 77.5 -90)
+		(at 122.5 76.5 -90)
 		(descr "LED SMD 0402 (1005 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: http://www.tortai-tech.com/upload/download/2011102023233369053.pdf), generated with kicad-footprint-generator")
 		(tags "LED handsolder")
 		(property "Reference" "D44"
@@ -24449,7 +23969,7 @@
 			(size 0.715 0.64)
 			(layers "F.Cu" "F.Paste" "F.Mask")
 			(roundrect_rratio 0.25)
-			(net 44 "M2")
+			(net 42 "M2")
 			(pintype "passive")
 			(uuid "64e2d944-0812-47ac-8ba9-cfe1a54e97ff")
 		)
@@ -24662,7 +24182,7 @@
 			(size 0.715 0.64)
 			(layers "F.Cu" "F.Paste" "F.Mask")
 			(roundrect_rratio 0.25)
-			(net 43 "M1")
+			(net 41 "M1")
 			(pintype "passive")
 			(uuid "be8a66c5-516f-4911-8cfb-0927d9b22ae5")
 		)
@@ -24690,11 +24210,11 @@
 	(footprint "LED_SMD:LED_0402_1005Metric_Pad0.77x0.64mm_HandSolder"
 		(layer "F.Cu")
 		(uuid "dd0571bd-5da3-4e3f-a8b9-52a819186952")
-		(at 126.75 73.5 180)
+		(at 126.75 72.25 180)
 		(descr "LED SMD 0402 (1005 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: http://www.tortai-tech.com/upload/download/2011102023233369053.pdf), generated with kicad-footprint-generator")
 		(tags "LED handsolder")
 		(property "Reference" "D52"
-			(at 0 -1.17 360)
+			(at 0 -1.17 0)
 			(layer "F.SilkS")
 			(uuid "ae9d1c0f-67ec-4aa4-85d2-3c4082a8f454")
 			(effects
@@ -24705,7 +24225,7 @@
 			)
 		)
 		(property "Value" "LED_Small"
-			(at 0 1.17 360)
+			(at 0 1.17 0)
 			(layer "F.Fab")
 			(uuid "434be2e1-98bc-4492-92bb-fdd61c85f161")
 			(effects
@@ -24871,7 +24391,7 @@
 			(uuid "6cae81a7-70ad-485e-84b4-6d600a0a3ba4")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(uuid "3c68b9e1-3b5f-4091-b354-03a64e7b459a")
 			(effects
@@ -25848,7 +25368,7 @@
 			(size 1.325 0.6)
 			(layers "F.Cu" "F.Paste" "F.Mask")
 			(roundrect_rratio 0.25)
-			(net 87 "D+")
+			(net 85 "D+")
 			(pinfunction "I/O2")
 			(pintype "passive")
 			(uuid "9e410b3b-d467-46b9-8d15-a29774bba042")
@@ -25868,7 +25388,7 @@
 			(size 1.325 0.6)
 			(layers "F.Cu" "F.Paste" "F.Mask")
 			(roundrect_rratio 0.25)
-			(net 69 "D-")
+			(net 67 "D-")
 			(pinfunction "I/O1")
 			(pintype "passive")
 			(uuid "f5934865-eaeb-4873-88db-ca39a94e0ae5")
@@ -25888,7 +25408,7 @@
 	(footprint "LED_SMD:LED_0402_1005Metric_Pad0.77x0.64mm_HandSolder"
 		(layer "F.Cu")
 		(uuid "efbc856d-274b-4933-90f9-36c7e66e08f9")
-		(at 118.0725 87.5)
+		(at 118.5725 91)
 		(descr "LED SMD 0402 (1005 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: http://www.tortai-tech.com/upload/download/2011102023233369053.pdf), generated with kicad-footprint-generator")
 		(tags "LED handsolder")
 		(property "Reference" "D70"
@@ -26114,11 +25634,11 @@
 	(footprint "LED_SMD:LED_0402_1005Metric_Pad0.77x0.64mm_HandSolder"
 		(layer "F.Cu")
 		(uuid "efc1ef90-da83-4d99-82e5-e9896d663d2e")
-		(at 104.5 78.75 180)
+		(at 104.5 78.25 180)
 		(descr "LED SMD 0402 (1005 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: http://www.tortai-tech.com/upload/download/2011102023233369053.pdf), generated with kicad-footprint-generator")
 		(tags "LED handsolder")
 		(property "Reference" "D22"
-			(at 0 -1.17 360)
+			(at 0 -1.17 0)
 			(layer "F.SilkS")
 			(uuid "c9adbe5c-998d-4bde-bf03-50ab279adf32")
 			(effects
@@ -26129,7 +25649,7 @@
 			)
 		)
 		(property "Value" "LED_Small"
-			(at 0 1.17 360)
+			(at 0 1.17 0)
 			(layer "F.Fab")
 			(uuid "f2d8ca94-8efe-4793-b24c-359d96d8c604")
 			(effects
@@ -26295,7 +25815,7 @@
 			(uuid "b73ee025-2a86-4594-9d67-779a22caa9b8")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(uuid "79de3816-7fa4-4b90-9c9d-e3bdd87d87f8")
 			(effects
@@ -26525,7 +26045,7 @@
 			(size 1.175 1.45)
 			(layers "F.Cu" "F.Paste" "F.Mask")
 			(roundrect_rratio 0.212766)
-			(net 88 "Net-(J5-Pin_1)")
+			(net 86 "Net-(J5-Pin_1)")
 			(pintype "passive")
 			(uuid "38e2fbf1-7748-4764-8345-82310b84f8b3")
 		)
@@ -26553,7 +26073,7 @@
 	(footprint "LED_SMD:LED_0402_1005Metric_Pad0.77x0.64mm_HandSolder"
 		(layer "F.Cu")
 		(uuid "f767a39f-59f8-470d-9eb3-87a4601f30b0")
-		(at 98.75 84)
+		(at 98.75 84.25)
 		(descr "LED SMD 0402 (1005 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: http://www.tortai-tech.com/upload/download/2011102023233369053.pdf), generated with kicad-footprint-generator")
 		(tags "LED handsolder")
 		(property "Reference" "D6"
@@ -26779,7 +26299,7 @@
 	(footprint "Resistor_SMD:R_0402_1005Metric_Pad0.72x0.64mm_HandSolder"
 		(layer "F.Cu")
 		(uuid "f7f1f88c-5e80-4860-9dab-bfa614003949")
-		(at 165.27125 83.44)
+		(at 248.25 53.25)
 		(descr "Resistor SMD 0402 (1005 Metric), square (rectangular) end terminal, IPC_7351 nominal with elongated pad for handsoldering. (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
 		(tags "resistor handsolder")
 		(property "Reference" "R13"
@@ -26964,7 +26484,7 @@
 			(size 0.715 0.64)
 			(layers "F.Cu" "F.Paste" "F.Mask")
 			(roundrect_rratio 0.25)
-			(net 40 "BUZZER")
+			(net 38 "BUZZER")
 			(pintype "passive")
 			(uuid "e34f15d0-e53c-4be5-9658-8c01293b4cad")
 		)
@@ -26973,7 +26493,7 @@
 			(size 0.715 0.64)
 			(layers "F.Cu" "F.Paste" "F.Mask")
 			(roundrect_rratio 0.25)
-			(net 34 "Net-(Q2-B)")
+			(net 33 "Net-(Q2-B)")
 			(pintype "passive")
 			(uuid "75339c53-cd7b-4ad1-b174-77d4cfb387f2")
 		)
@@ -26992,7 +26512,7 @@
 	(footprint "LED_SMD:LED_0402_1005Metric_Pad0.77x0.64mm_HandSolder"
 		(layer "F.Cu")
 		(uuid "f8f8927c-55e9-4b47-92be-bd775cd1e6b2")
-		(at 116 84)
+		(at 116 84.25)
 		(descr "LED SMD 0402 (1005 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: http://www.tortai-tech.com/upload/download/2011102023233369053.pdf), generated with kicad-footprint-generator")
 		(tags "LED handsolder")
 		(property "Reference" "D41"
@@ -27218,7 +26738,7 @@
 	(footprint "LED_SMD:LED_0402_1005Metric_Pad0.77x0.64mm_HandSolder"
 		(layer "F.Cu")
 		(uuid "fac6d3ba-6ace-4b9f-9f28-dbd1b350d26b")
-		(at 107 73.5 180)
+		(at 107 72.25 180)
 		(descr "LED SMD 0402 (1005 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: http://www.tortai-tech.com/upload/download/2011102023233369053.pdf), generated with kicad-footprint-generator")
 		(tags "LED handsolder")
 		(property "Reference" "D24"
@@ -28089,7 +27609,7 @@
 			(at -1.45 -1.15 270)
 			(size 2.1 1.8)
 			(layers "B.Cu" "B.Paste" "B.Mask")
-			(net 35 "OSC_IN")
+			(net 34 "OSC_IN")
 			(pinfunction "1")
 			(pintype "passive")
 			(uuid "11ab13a3-6b3f-4425-9db2-d2bbc745eec9")
@@ -28107,7 +27627,7 @@
 			(at 1.45 1.15 270)
 			(size 2.1 1.8)
 			(layers "B.Cu" "B.Paste" "B.Mask")
-			(net 74 "OSC_OUT")
+			(net 72 "OSC_OUT")
 			(pinfunction "3")
 			(pintype "passive")
 			(uuid "a0e48a46-d64c-4a16-b68a-1810a5522eea")
@@ -28327,7 +27847,7 @@
 			(size 0.735 0.62)
 			(layers "B.Cu" "B.Paste" "B.Mask")
 			(roundrect_rratio 0.25)
-			(net 35 "OSC_IN")
+			(net 34 "OSC_IN")
 			(pintype "passive")
 			(uuid "8b0254b2-984b-407b-83a3-561b2cbe0329")
 		)
@@ -29231,7 +28751,7 @@
 	(footprint "Capacitor_SMD:C_0402_1005Metric_Pad0.74x0.62mm_HandSolder"
 		(layer "B.Cu")
 		(uuid "97737b33-0dfb-4572-93b9-3dc3828ef24c")
-		(at 225.8875 101 180)
+		(at 249.75 107.5 180)
 		(descr "Capacitor SMD 0402 (1005 Metric), square (rectangular) end terminal, IPC_7351 nominal with elongated pad for handsoldering. (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
 		(tags "capacitor handsolder")
 		(property "Reference" "C14"
@@ -30368,7 +29888,7 @@
 			(size 1.475 0.3)
 			(layers "B.Cu" "B.Paste" "B.Mask")
 			(roundrect_rratio 0.25)
-			(net 79 "unconnected-(U1-PC13-Pad2)")
+			(net 77 "unconnected-(U1-PC13-Pad2)")
 			(pinfunction "PC13")
 			(pintype "bidirectional")
 			(uuid "be22698a-7594-4de2-a411-b7a59faa877b")
@@ -30378,7 +29898,7 @@
 			(size 1.475 0.3)
 			(layers "B.Cu" "B.Paste" "B.Mask")
 			(roundrect_rratio 0.25)
-			(net 55 "unconnected-(U1-PC14-Pad3)")
+			(net 53 "unconnected-(U1-PC14-Pad3)")
 			(pinfunction "PC14")
 			(pintype "bidirectional")
 			(uuid "0ed252f6-1989-46b4-a645-edf5ee13c069")
@@ -30388,7 +29908,7 @@
 			(size 1.475 0.3)
 			(layers "B.Cu" "B.Paste" "B.Mask")
 			(roundrect_rratio 0.25)
-			(net 52 "unconnected-(U1-PC15-Pad4)")
+			(net 50 "unconnected-(U1-PC15-Pad4)")
 			(pinfunction "PC15")
 			(pintype "bidirectional")
 			(uuid "00491bc4-2500-4997-8aa5-d8886f866579")
@@ -30398,7 +29918,7 @@
 			(size 1.475 0.3)
 			(layers "B.Cu" "B.Paste" "B.Mask")
 			(roundrect_rratio 0.25)
-			(net 35 "OSC_IN")
+			(net 34 "OSC_IN")
 			(pinfunction "PF0")
 			(pintype "bidirectional")
 			(uuid "6435d0f8-b464-4d46-9455-6d6c3f51e8ea")
@@ -30408,7 +29928,7 @@
 			(size 1.475 0.3)
 			(layers "B.Cu" "B.Paste" "B.Mask")
 			(roundrect_rratio 0.25)
-			(net 74 "OSC_OUT")
+			(net 72 "OSC_OUT")
 			(pinfunction "PF1")
 			(pintype "bidirectional")
 			(uuid "9b86d385-f19f-455b-9853-7f93d646361f")
@@ -30448,7 +29968,7 @@
 			(size 1.475 0.3)
 			(layers "B.Cu" "B.Paste" "B.Mask")
 			(roundrect_rratio 0.25)
-			(net 59 "unconnected-(U1-PA0-Pad10)")
+			(net 57 "unconnected-(U1-PA0-Pad10)")
 			(pinfunction "PA0")
 			(pintype "bidirectional")
 			(uuid "3801316a-6550-4a28-ac49-c558f3be4b71")
@@ -30458,7 +29978,7 @@
 			(size 1.475 0.3)
 			(layers "B.Cu" "B.Paste" "B.Mask")
 			(roundrect_rratio 0.25)
-			(net 67 "unconnected-(U1-PA1-Pad11)")
+			(net 65 "unconnected-(U1-PA1-Pad11)")
 			(pinfunction "PA1")
 			(pintype "bidirectional")
 			(uuid "693e8321-89aa-459f-ba98-2ec8419cac14")
@@ -30468,7 +29988,7 @@
 			(size 1.475 0.3)
 			(layers "B.Cu" "B.Paste" "B.Mask")
 			(roundrect_rratio 0.25)
-			(net 66 "unconnected-(U1-PA2-Pad12)")
+			(net 64 "unconnected-(U1-PA2-Pad12)")
 			(pinfunction "PA2")
 			(pintype "bidirectional")
 			(uuid "68d8690f-c887-4dec-bce0-1a60d514ba8a")
@@ -30478,7 +29998,7 @@
 			(size 0.3 1.475)
 			(layers "B.Cu" "B.Paste" "B.Mask")
 			(roundrect_rratio 0.25)
-			(net 63 "unconnected-(U1-PA3-Pad13)")
+			(net 61 "unconnected-(U1-PA3-Pad13)")
 			(pinfunction "PA3")
 			(pintype "bidirectional")
 			(uuid "53117f80-f83b-45ab-b8d3-422a6fde534d")
@@ -30488,7 +30008,7 @@
 			(size 0.3 1.475)
 			(layers "B.Cu" "B.Paste" "B.Mask")
 			(roundrect_rratio 0.25)
-			(net 60 "unconnected-(U1-PA4-Pad14)")
+			(net 58 "unconnected-(U1-PA4-Pad14)")
 			(pinfunction "PA4")
 			(pintype "bidirectional")
 			(uuid "42772ecd-4d12-4327-83f8-7e41ed214ad6")
@@ -30498,7 +30018,7 @@
 			(size 0.3 1.475)
 			(layers "B.Cu" "B.Paste" "B.Mask")
 			(roundrect_rratio 0.25)
-			(net 83 "unconnected-(U1-PA5-Pad15)")
+			(net 81 "unconnected-(U1-PA5-Pad15)")
 			(pinfunction "PA5")
 			(pintype "bidirectional")
 			(uuid "e59a9ecd-c4c2-4f70-bc33-9ff256c78c7a")
@@ -30508,7 +30028,7 @@
 			(size 0.3 1.475)
 			(layers "B.Cu" "B.Paste" "B.Mask")
 			(roundrect_rratio 0.25)
-			(net 75 "unconnected-(U1-PA6-Pad16)")
+			(net 73 "unconnected-(U1-PA6-Pad16)")
 			(pinfunction "PA6")
 			(pintype "bidirectional")
 			(uuid "a3c97fb2-df8f-4621-b046-89b1e5c08c8b")
@@ -30518,7 +30038,7 @@
 			(size 0.3 1.475)
 			(layers "B.Cu" "B.Paste" "B.Mask")
 			(roundrect_rratio 0.25)
-			(net 65 "unconnected-(U1-PA7-Pad17)")
+			(net 63 "unconnected-(U1-PA7-Pad17)")
 			(pinfunction "PA7")
 			(pintype "bidirectional")
 			(uuid "5dd10f8f-036c-437e-8b38-2bf92e7bd831")
@@ -30528,7 +30048,7 @@
 			(size 0.3 1.475)
 			(layers "B.Cu" "B.Paste" "B.Mask")
 			(roundrect_rratio 0.25)
-			(net 78 "unconnected-(U1-PB0-Pad18)")
+			(net 76 "unconnected-(U1-PB0-Pad18)")
 			(pinfunction "PB0")
 			(pintype "bidirectional")
 			(uuid "bc817b12-3f81-49cd-8960-a29811c4c296")
@@ -30538,7 +30058,7 @@
 			(size 0.3 1.475)
 			(layers "B.Cu" "B.Paste" "B.Mask")
 			(roundrect_rratio 0.25)
-			(net 77 "unconnected-(U1-PB1-Pad19)")
+			(net 75 "unconnected-(U1-PB1-Pad19)")
 			(pinfunction "PB1")
 			(pintype "bidirectional")
 			(uuid "aaf20bcc-9216-481b-bb38-cb2416333861")
@@ -30548,7 +30068,7 @@
 			(size 0.3 1.475)
 			(layers "B.Cu" "B.Paste" "B.Mask")
 			(roundrect_rratio 0.25)
-			(net 73 "unconnected-(U1-PB2-Pad20)")
+			(net 71 "unconnected-(U1-PB2-Pad20)")
 			(pinfunction "PB2")
 			(pintype "bidirectional")
 			(uuid "9504d218-0623-477a-8e23-68ad3422efbc")
@@ -30558,7 +30078,7 @@
 			(size 0.3 1.475)
 			(layers "B.Cu" "B.Paste" "B.Mask")
 			(roundrect_rratio 0.25)
-			(net 82 "unconnected-(U1-PB10-Pad21)")
+			(net 80 "unconnected-(U1-PB10-Pad21)")
 			(pinfunction "PB10")
 			(pintype "bidirectional")
 			(uuid "de85cee8-0f2f-4c5d-8626-fc7d0c7d7163")
@@ -30568,7 +30088,7 @@
 			(size 0.3 1.475)
 			(layers "B.Cu" "B.Paste" "B.Mask")
 			(roundrect_rratio 0.25)
-			(net 64 "unconnected-(U1-PB11-Pad22)")
+			(net 62 "unconnected-(U1-PB11-Pad22)")
 			(pinfunction "PB11")
 			(pintype "bidirectional")
 			(uuid "535678da-1148-423b-adf3-5a704e1d7e6b")
@@ -30598,7 +30118,7 @@
 			(size 1.475 0.3)
 			(layers "B.Cu" "B.Paste" "B.Mask")
 			(roundrect_rratio 0.25)
-			(net 76 "unconnected-(U1-PB12-Pad25)")
+			(net 74 "unconnected-(U1-PB12-Pad25)")
 			(pinfunction "PB12")
 			(pintype "bidirectional")
 			(uuid "a5676925-7125-4e70-8d95-4804d7d69cd4")
@@ -30608,7 +30128,7 @@
 			(size 1.475 0.3)
 			(layers "B.Cu" "B.Paste" "B.Mask")
 			(roundrect_rratio 0.25)
-			(net 81 "unconnected-(U1-PB13-Pad26)")
+			(net 79 "unconnected-(U1-PB13-Pad26)")
 			(pinfunction "PB13")
 			(pintype "bidirectional")
 			(uuid "da6ac9ae-a9ef-4c4a-bebc-f6f4d4cc2000")
@@ -30618,7 +30138,7 @@
 			(size 1.475 0.3)
 			(layers "B.Cu" "B.Paste" "B.Mask")
 			(roundrect_rratio 0.25)
-			(net 72 "unconnected-(U1-PB14-Pad27)")
+			(net 70 "unconnected-(U1-PB14-Pad27)")
 			(pinfunction "PB14")
 			(pintype "bidirectional")
 			(uuid "795f24eb-ca97-42c4-bef8-dff68172b147")
@@ -30628,7 +30148,7 @@
 			(size 1.475 0.3)
 			(layers "B.Cu" "B.Paste" "B.Mask")
 			(roundrect_rratio 0.25)
-			(net 57 "unconnected-(U1-PB15-Pad28)")
+			(net 55 "unconnected-(U1-PB15-Pad28)")
 			(pinfunction "PB15")
 			(pintype "bidirectional")
 			(uuid "24fa4f7d-cca6-454f-b492-115bf2a217f1")
@@ -30638,7 +30158,7 @@
 			(size 1.475 0.3)
 			(layers "B.Cu" "B.Paste" "B.Mask")
 			(roundrect_rratio 0.25)
-			(net 71 "unconnected-(U1-PA8-Pad29)")
+			(net 69 "unconnected-(U1-PA8-Pad29)")
 			(pinfunction "PA8")
 			(pintype "bidirectional+no_connect")
 			(uuid "755f5309-d45c-461f-adcb-5c5f47bf5307")
@@ -30648,7 +30168,7 @@
 			(size 1.475 0.3)
 			(layers "B.Cu" "B.Paste" "B.Mask")
 			(roundrect_rratio 0.25)
-			(net 70 "unconnected-(U1-PA9-Pad30)")
+			(net 68 "unconnected-(U1-PA9-Pad30)")
 			(pinfunction "PA9")
 			(pintype "bidirectional+no_connect")
 			(uuid "70cb66eb-c263-4b6b-991f-0d228c426cd0")
@@ -30658,7 +30178,7 @@
 			(size 1.475 0.3)
 			(layers "B.Cu" "B.Paste" "B.Mask")
 			(roundrect_rratio 0.25)
-			(net 86 "unconnected-(U1-PA10-Pad31)")
+			(net 84 "unconnected-(U1-PA10-Pad31)")
 			(pinfunction "PA10")
 			(pintype "bidirectional+no_connect")
 			(uuid "f4f407c3-012f-4029-9f3a-3524dc5500db")
@@ -30668,7 +30188,7 @@
 			(size 1.475 0.3)
 			(layers "B.Cu" "B.Paste" "B.Mask")
 			(roundrect_rratio 0.25)
-			(net 69 "D-")
+			(net 67 "D-")
 			(pinfunction "PA11")
 			(pintype "bidirectional")
 			(uuid "6fd544ed-da4b-4c1e-8719-23cb7773639e")
@@ -30678,7 +30198,7 @@
 			(size 1.475 0.3)
 			(layers "B.Cu" "B.Paste" "B.Mask")
 			(roundrect_rratio 0.25)
-			(net 87 "D+")
+			(net 85 "D+")
 			(pinfunction "PA12")
 			(pintype "bidirectional")
 			(uuid "f5df4c5f-d62f-4892-b531-104337b975d2")
@@ -30688,7 +30208,7 @@
 			(size 1.475 0.3)
 			(layers "B.Cu" "B.Paste" "B.Mask")
 			(roundrect_rratio 0.25)
-			(net 58 "unconnected-(U1-PA13-Pad34)")
+			(net 56 "unconnected-(U1-PA13-Pad34)")
 			(pinfunction "PA13")
 			(pintype "bidirectional+no_connect")
 			(uuid "2c3634c5-dfde-42da-b60b-8a1f6500b898")
@@ -30718,7 +30238,7 @@
 			(size 0.3 1.475)
 			(layers "B.Cu" "B.Paste" "B.Mask")
 			(roundrect_rratio 0.25)
-			(net 68 "unconnected-(U1-PA14-Pad37)")
+			(net 66 "unconnected-(U1-PA14-Pad37)")
 			(pinfunction "PA14")
 			(pintype "bidirectional+no_connect")
 			(uuid "6cb4fa3d-e751-4205-8fea-0f9607482a47")
@@ -30728,7 +30248,7 @@
 			(size 0.3 1.475)
 			(layers "B.Cu" "B.Paste" "B.Mask")
 			(roundrect_rratio 0.25)
-			(net 62 "unconnected-(U1-PA15-Pad38)")
+			(net 60 "unconnected-(U1-PA15-Pad38)")
 			(pinfunction "PA15")
 			(pintype "bidirectional+no_connect")
 			(uuid "50d5b578-dc57-497b-922a-12d8bf05e286")
@@ -30738,7 +30258,7 @@
 			(size 0.3 1.475)
 			(layers "B.Cu" "B.Paste" "B.Mask")
 			(roundrect_rratio 0.25)
-			(net 53 "unconnected-(U1-PB3-Pad39)")
+			(net 51 "unconnected-(U1-PB3-Pad39)")
 			(pinfunction "PB3")
 			(pintype "bidirectional")
 			(uuid "04c954f8-bdaa-4592-a909-57ed00ace100")
@@ -30748,7 +30268,7 @@
 			(size 0.3 1.475)
 			(layers "B.Cu" "B.Paste" "B.Mask")
 			(roundrect_rratio 0.25)
-			(net 80 "unconnected-(U1-PB4-Pad40)")
+			(net 78 "unconnected-(U1-PB4-Pad40)")
 			(pinfunction "PB4")
 			(pintype "bidirectional")
 			(uuid "be2753cc-cbac-4866-8faa-f925ac30dd99")
@@ -30758,7 +30278,7 @@
 			(size 0.3 1.475)
 			(layers "B.Cu" "B.Paste" "B.Mask")
 			(roundrect_rratio 0.25)
-			(net 61 "unconnected-(U1-PB5-Pad41)")
+			(net 59 "unconnected-(U1-PB5-Pad41)")
 			(pinfunction "PB5")
 			(pintype "bidirectional")
 			(uuid "47480545-a5a0-4ca9-b295-e825869b9ae1")
@@ -30768,7 +30288,7 @@
 			(size 0.3 1.475)
 			(layers "B.Cu" "B.Paste" "B.Mask")
 			(roundrect_rratio 0.25)
-			(net 85 "unconnected-(U1-PB6-Pad42)")
+			(net 83 "unconnected-(U1-PB6-Pad42)")
 			(pinfunction "PB6")
 			(pintype "bidirectional")
 			(uuid "eddb68e7-d7c6-4af9-afe0-077579023f21")
@@ -30778,7 +30298,7 @@
 			(size 0.3 1.475)
 			(layers "B.Cu" "B.Paste" "B.Mask")
 			(roundrect_rratio 0.25)
-			(net 56 "unconnected-(U1-PB7-Pad43)")
+			(net 54 "unconnected-(U1-PB7-Pad43)")
 			(pinfunction "PB7")
 			(pintype "bidirectional")
 			(uuid "140134a3-b868-40b5-9ee6-56d163bf53d4")
@@ -30798,7 +30318,7 @@
 			(size 0.3 1.475)
 			(layers "B.Cu" "B.Paste" "B.Mask")
 			(roundrect_rratio 0.25)
-			(net 84 "unconnected-(U1-PB8-Pad45)")
+			(net 82 "unconnected-(U1-PB8-Pad45)")
 			(pinfunction "PB8")
 			(pintype "bidirectional")
 			(uuid "ed236315-8d29-49a8-8dff-cd7bb4c54dc9")
@@ -30808,7 +30328,7 @@
 			(size 0.3 1.475)
 			(layers "B.Cu" "B.Paste" "B.Mask")
 			(roundrect_rratio 0.25)
-			(net 54 "unconnected-(U1-PB9-Pad46)")
+			(net 52 "unconnected-(U1-PB9-Pad46)")
 			(pinfunction "PB9")
 			(pintype "bidirectional")
 			(uuid "09ac7e8f-9765-4c46-b919-a344cbe68ac0")
@@ -31039,7 +30559,7 @@
 			(size 0.735 0.62)
 			(layers "B.Cu" "B.Paste" "B.Mask")
 			(roundrect_rratio 0.25)
-			(net 74 "OSC_OUT")
+			(net 72 "OSC_OUT")
 			(pintype "passive")
 			(uuid "416c5b0f-9a1e-437e-b08b-277a12f16ab6")
 		)

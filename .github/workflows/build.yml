@@ -9,28 +9,57 @@ on:
     tags:
       - '[0-9]+.[0-9]+.[0-9]'
 jobs:
-  build:
+  schematic:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
-      - uses: actions-for-kicad/setup-kicad@v1
+
+      - name: Check out the repo
+        uses: actions/checkout@v3
+
+      - name: Set up Kicad
+        uses: actions-for-kicad/setup-kicad@v1
         with:
           version: "8.0"
-      - uses: actions-for-kicad/generate-kicad-files@v1
+
+      - name: Generate PDF
+        uses: actions-for-kicad/generate-kicad-files@v1
         with:
           file: "./clock.kicad_sch"
           type: "schematic_pdf"
           black-and-white: false
+
+
       - name: Upload
         uses: actions/upload-artifact@v4
         with:
           name: Artifacts
           path: "./clock.pdf"
+
+  pcb:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out the repo
+        uses: actions/checkout@v4
+
+      - name: Generate Images
+        uses: linalinn/kicad-render@main
+        with:
+          pcb_file: "./clock.kicad_pcb"
+          output_path: "./images/"
+      
+      - name: Upload
+        uses: actions/upload-artifact@v4
+        with:
+          name: Artifacts
+          path: "./images/"
+
+      
   release-artifacts:
     permissions:
       contents: write
     needs:
-      - build
+      - schematic
+      - pcb
     runs-on: ubuntu-latest
     steps:
       - name: Download artifacts
@@ -45,6 +74,6 @@ jobs:
           #tag: "test"
           #tag: ${{ env.TAG }}
           tag: ${{ github.ref_name }}
-          artifacts: "artifacts/*.pdf"
+          artifacts: "artifacts/*"
           prerelease: false
           body: "pdfs for a push"
