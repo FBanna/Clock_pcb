@@ -32,7 +32,7 @@ jobs:
       - name: Upload
         uses: actions/upload-artifact@v4
         with:
-          name: Artifacts
+          name: SCHEMATIC
           path: "./clock.pdf"
 
   pcb:
@@ -50,7 +50,7 @@ jobs:
       - name: Upload
         uses: actions/upload-artifact@v4
         with:
-          name: Artifacts
+          name: PCB
           path: "./images/"
 
       
