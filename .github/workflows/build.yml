@@ -10,7 +10,17 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-    - uses: emilymclean/kicad-pdf@v1
-      with:
-        input-files: clock.kicad_sch
-        output-file: clock.pdf
+      - uses: actions/checkout@v3
+      - uses: actions-for-kicad/setup-kicad@v1
+        with:
+          version: "8.0"
+      - uses: actions-for-kicad/generate-kicad-files@v1
+        with:
+          file: "./clock.kicad_sch"
+          type: "schematic_pdf"
+          black-and-white: true
+      - name: Upload
+        uses: actions/upload-artifact@v4
+        with:
+          name: "clock.pdf"
+          path: "./clock.pdf"
