@@ -13,4 +13,4 @@ jobs:
     - uses: emilymclean/kicad-pdf@v1
       with:
         input-files: clock.kicad_sch
-        output-file: schematic.pdf
+        output-file: clock.pdf
