@@ -59,7 +59,7 @@ jobs:
       contents: write
     needs:
       - schematic
-      - pcb
+      #- pcb
     runs-on: ubuntu-latest
     steps:
       - name: Download artifacts
