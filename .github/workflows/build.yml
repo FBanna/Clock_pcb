@@ -4,8 +4,10 @@
 # against bad commits.
 
 name: build
-on: push
-
+on:
+  push:
+    tags:
+      - '[0-9]+.[0-9]+.[0-9]'
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -22,5 +24,27 @@ jobs:
       - name: Upload
         uses: actions/upload-artifact@v4
         with:
-          name: "clock.pdf"
+          name: Artifacts
           path: "./clock.pdf"
+  release-artifacts:
+    permissions:
+      contents: write
+    needs:
+      - build
+    runs-on: ubuntu-latest
+    steps:
+      - name: Download artifacts
+        uses: actions/download-artifact@v4
+        with:
+          merge-multiple: true
+          path: artifacts/
+
+      - name: Release
+        uses: ncipollo/release-action@v1
+        with:
+          #tag: "test"
+          #tag: ${{ env.TAG }}
+          tag: ${{ github.ref_name }}
+          artifacts: "artifacts/*.pdf"
+          prerelease: false
+          body: "pdfs for a push"
