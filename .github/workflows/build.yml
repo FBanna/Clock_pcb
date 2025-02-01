@@ -24,7 +24,7 @@ jobs:
       - name: Generate PDF
         uses: actions-for-kicad/generate-kicad-files@v1
         with:
-          file: "./clock.kicad_sch"
+          file: ./clock.kicad_sch, ./clock.kicad_pcb
           type: "schematic_pdf"
           black-and-white: false
 
@@ -35,23 +35,23 @@ jobs:
           name: SCHEMATIC
           path: "./clock.pdf"
 
-  pcb:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Check out the repo
-        uses: actions/checkout@v4
+  # pcb:
+  #   runs-on: ubuntu-latest
+  #   steps:
+  #     - name: Check out the repo
+  #       uses: actions/checkout@v4
 
-      - name: Generate Images
-        uses: linalinn/kicad-render@main
-        with:
-          pcb_file: "./clock.kicad_pcb"
-          output_path: "./images/"
+  #     - name: Generate Images
+  #       uses: linalinn/kicad-render@main
+  #       with:
+  #         pcb_file: "./clock.kicad_pcb"
+  #         output_path: "./images/"
       
-      - name: Upload
-        uses: actions/upload-artifact@v4
-        with:
-          name: PCB
-          path: "./images/"
+  #     - name: Upload
+  #       uses: actions/upload-artifact@v4
+  #       with:
+  #         name: PCB
+  #         path: "./images/"
 
       
   release-artifacts:
