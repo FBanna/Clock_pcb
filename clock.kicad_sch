@@ -6579,7 +6579,7 @@
 	)
 	(wire
 		(pts
-			(xy 55.88 29.21) (xy 59.69 29.21)
+			(xy 64.77 29.21) (xy 68.58 29.21)
 		)
 		(stroke
 			(width 0)
@@ -6739,7 +6739,7 @@
 	)
 	(wire
 		(pts
-			(xy 46.99 29.21) (xy 48.26 29.21)
+			(xy 46.99 29.21) (xy 57.15 29.21)
 		)
 		(stroke
 			(width 0)
@@ -7442,6 +7442,16 @@
 			)
 		)
 		(uuid "da8faa9b-2e14-4f3f-b61a-434655d31054")
+	)
+	(label "VBUS"
+		(at 49.53 29.21 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "5092dca0-ef7c-4c09-8940-e3058eee2f0c")
 	)
 	(global_label "OSC_OUT"
 		(shape input)
@@ -10270,7 +10280,7 @@
 	)
 	(symbol
 		(lib_id "power:+5V")
-		(at 59.69 29.21 0)
+		(at 68.58 29.21 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -10279,7 +10289,7 @@
 		(fields_autoplaced yes)
 		(uuid "5f6f789c-1f3b-45c1-bc2e-06e334e34240")
 		(property "Reference" "#PWR04"
-			(at 59.69 33.02 0)
+			(at 68.58 33.02 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10288,7 +10298,7 @@
 			)
 		)
 		(property "Value" "+5V"
-			(at 59.69 24.13 0)
+			(at 68.58 24.13 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10296,7 +10306,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 59.69 29.21 0)
+			(at 68.58 29.21 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10305,7 +10315,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 59.69 29.21 0)
+			(at 68.58 29.21 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10314,7 +10324,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 59.69 29.21 0)
+			(at 68.58 29.21 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12188,7 +12198,7 @@
 	)
 	(symbol
 		(lib_id "Device:Polyfuse")
-		(at 52.07 29.21 90)
+		(at 60.96 29.21 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -12197,7 +12207,7 @@
 		(fields_autoplaced yes)
 		(uuid "a4cc5704-7b71-408e-9719-5bc2bde9b9fc")
 		(property "Reference" "F1"
-			(at 52.07 22.86 90)
+			(at 60.96 22.86 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12205,7 +12215,7 @@
 			)
 		)
 		(property "Value" "Polyfuse"
-			(at 52.07 25.4 90)
+			(at 60.96 25.4 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12213,7 +12223,7 @@
 			)
 		)
 		(property "Footprint" "Fuse:Fuse_0805_2012Metric_Pad1.15x1.40mm_HandSolder"
-			(at 57.15 27.94 0)
+			(at 66.04 27.94 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12223,7 +12233,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 52.07 29.21 0)
+			(at 60.96 29.21 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12232,7 +12242,7 @@
 			)
 		)
 		(property "Description" "Resettable fuse, polymeric positive temperature coefficient"
-			(at 52.07 29.21 0)
+			(at 60.96 29.21 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12873,7 +12883,6 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "c08695e4-2a1d-42c7-9c1e-8148d5ae8d05")
 		(property "Reference" "U4"
 			(at 138.0841 72.39 0)
