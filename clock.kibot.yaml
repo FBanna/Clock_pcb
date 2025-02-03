@@ -111,20 +111,32 @@ outputs:
     comment: 'Exports the PCB to the most common exchange format. Suitable for printing.'
     type: 'pdf_sch_print'
 
-  - name: 'pdf_pcb_print'
-    comment: 'Exports the PCB to the most common exchange format. Suitable for printing.'
+  - name: 'PCB Top PDF'
+    comment: "PDF print of circuit board top side"
     type: 'pcb_print'
+    options:
+      pages:
+        - 
+          # Layers to plot.  Order is important -- last entry in the list will be plotted on top.
+          # By default it seems to choose colors randomly, so override the colors to be the same as the schematic editor.
+          layers:
+          - layer: 'B.Cu'
+            color: "#2E5384"
+          - layer: 'F.Cu'
+            color: "#C83434"
+          - layer: 'F.SilkS'
+            color: "#F2EDA1"
+          - layer: 'Edge.Cuts'
+            color: "#D0D2CD"
 
     #options:
       #dnf_filter: anything_in_Config
 
-  # - name: 'pcbdraw_svg'
-  #   comment: 'Exports the PCB as a 2D model (SVG, PNG or JPG).'
-  #   type: 'pcbdraw'
-  #   dir: 'release'
-  #   options:
-  #     format: 'svg'
-  #     dnf_filter: anything_in_Config
+  - name: 'pcbdraw_svg'
+    comment: 'Exports the PCB as a 2D model (SVG, PNG or JPG).'
+    type: 'pcbdraw'
+    options:
+      format: 'svg'
 
   # - name: 'pcbdraw_png'
   #   comment: 'Exports the PCB as a 2D model (SVG, PNG or JPG).'
