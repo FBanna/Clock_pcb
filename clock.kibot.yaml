@@ -111,7 +111,7 @@ outputs:
     comment: 'Exports the PCB to the most common exchange format. Suitable for printing.'
     type: 'pdf_sch_print'
     dir: 'release'
-    options:
+    #options:
       #dnf_filter: anything_in_Config
 
   # - name: 'pcbdraw_svg'
