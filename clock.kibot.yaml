@@ -110,7 +110,7 @@ outputs:
   - name: 'pdf_sch_print'
     comment: 'Exports the PCB to the most common exchange format. Suitable for printing.'
     type: 'pdf_sch_print'
-    dir: 'release'
+
     #options:
       #dnf_filter: anything_in_Config
 
@@ -122,12 +122,12 @@ outputs:
   #     format: 'svg'
   #     dnf_filter: anything_in_Config
 
-  - name: 'pcbdraw_png'
-    comment: 'Exports the PCB as a 2D model (SVG, PNG or JPG).'
-    type: 'pcbdraw'
-    dir: 'release'
-    options:
-      format: 'png'
+  # - name: 'pcbdraw_png'
+  #   comment: 'Exports the PCB as a 2D model (SVG, PNG or JPG).'
+  #   type: 'pcbdraw'
+  #   dir: 'release'
+  #   options:
+  #     format: 'png'
       #dnf_filter: anything_in_Config
 
   # - name: 'pcbdraw_svg_bottom'
