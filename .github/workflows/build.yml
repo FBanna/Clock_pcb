@@ -7,7 +7,7 @@ name: build
 on:
   push:
     tags:
-      - '([0-9]+)\.([0-9]+)\.([0-9]+)(?:-([0-9A-Za-z-]+(?:\.[0-9A-Za-z-]+)*))?(?:\+[0-9A-Za-z-]+)?'
+      - '[1-9]*.[0-9]*.[0-9]*'
 jobs:
   schematic:
     runs-on: ubuntu-latest
