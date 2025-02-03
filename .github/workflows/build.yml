@@ -12,34 +12,48 @@ jobs:
   schematic:
     runs-on: ubuntu-latest
     steps:
-
       - name: Check out the repo
         uses: actions/checkout@v3
-
-      - name: Generate PDF
-        uses: emilymclean/kicad-pdf@v1
+      - name: Kibot
+        uses: INTI-CMNB/KiBot@v2_k8
         with:
-          input-files: clock.kicad_sch, clock.kicad_pcb
-          output-file: clock.pdf
+          config: clock.kibot.yaml
+          dir: output
+          schema: clock.kicad_sch
+          board: clock.kicad_pcb
 
-      # - name: Set up Kicad
-      #   uses: actions-for-kicad/setup-kicad@v1
-      #   with:
-      #     version: "8.0"
+  # schematic:
+  #   runs-on: ubuntu-latest
+  #   steps:
 
-      # - name: Generate PDF
-      #   uses: actions-for-kicad/generate-kicad-files@v1
-      #   with:
-      #     file: ./clock.kicad_sch, ./clock.kicad_pcb]
-      #     type: "schematic_pdf"
-      #     black-and-white: false
+  #     - name: Check out the repo
+  #       uses: actions/checkout@v3
+
+  #     - name: Generate PDF
+  #       uses: emilymclean/kicad-pdf@v1
+  #       with:
+  #         input-files: clock.kicad_sch, clock.kicad_pcb
+  #         output-file: clock.pdf
+
+  #     # - name: Set up Kicad
+  #     #   uses: actions-for-kicad/setup-kicad@v1
+  #     #   with:
+  #     #     version: "8.0"
+
+  #     # - name: Generate PDF
+  #     #   uses: actions-for-kicad/generate-kicad-files@v1
+  #     #   with:
+  #     #     file: ./clock.kicad_sch, ./clock.kicad_pcb]
+  #     #     type: "schematic_pdf"
+  #     #     black-and-white: false
 
 
       - name: Upload
         uses: actions/upload-artifact@v4
         with:
           name: SCHEMATIC
-          path: "./clock.pdf"
+          #path: "./clock.pdf"
+          path: ./output/*
 
   pcb:
     runs-on: ubuntu-latest
