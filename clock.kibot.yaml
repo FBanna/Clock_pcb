@@ -113,7 +113,7 @@ outputs:
 
   - name: 'pdf_pcb_print'
     comment: 'Exports the PCB to the most common exchange format. Suitable for printing.'
-    type: 'pdf_pcb_print'
+    type: 'pcb_print'
 
     #options:
       #dnf_filter: anything_in_Config
