@@ -132,11 +132,11 @@ outputs:
     #options:
       #dnf_filter: anything_in_Config
 
-  - name: 'pcbdraw_svg'
-    comment: 'Exports the PCB as a 2D model (SVG, PNG or JPG).'
-    type: 'pcbdraw'
-    options:
-      format: 'svg'
+  # - name: 'pcbdraw_svg'
+  #   comment: 'Exports the PCB as a 2D model (SVG, PNG or JPG).'
+  #   type: 'pcbdraw'
+  #   options:
+  #     format: 'svg'
 
   # - name: 'pcbdraw_png'
   #   comment: 'Exports the PCB as a 2D model (SVG, PNG or JPG).'
