@@ -119,15 +119,18 @@ outputs:
         - 
           # Layers to plot.  Order is important -- last entry in the list will be plotted on top.
           # By default it seems to choose colors randomly, so override the colors to be the same as the schematic editor.
-          layers:
-          - layer: 'B.Cu'
-            color: "#2E5384"
-          - layer: 'F.Cu'
-            color: "#C83434"
-          - layer: 'F.SilkS'
-            color: "#F2EDA1"
-          - layer: 'Edge.Cuts'
-            color: "#D0D2CD"
+          layers: 'selected'
+          # layers:
+          # - layer: 'B.Cu'
+          #   color: "#2E5384"
+          # - layer: 'F.Cu'
+          #   color: "#C83434"
+          # - layer: 'F.SilkS'
+          #   color: "#F2EDA1"
+          # - layer: 'B.SilkS'
+          #   color: "#E8B2A7FF"
+          # - layer: 'Edge.Cuts'
+          #   color: "#D0D2CD"
 
     #options:
       #dnf_filter: anything_in_Config
