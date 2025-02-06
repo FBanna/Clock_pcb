@@ -7443,6 +7443,17 @@
 		)
 		(uuid "da8faa9b-2e14-4f3f-b61a-434655d31054")
 	)
+	(label "BAT"
+		(at 162.56 90.17 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "3edabe27-7045-4427-851f-3a7b2715e33c")
+	)
 	(label "VBUS"
 		(at 49.53 29.21 0)
 		(fields_autoplaced yes)
@@ -9258,7 +9269,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_JST:JST_PH_S2B-PH-K_1x02_P2.00mm_Horizontal"
 			(at 176.53 90.17 0)
 			(effects
 				(font
