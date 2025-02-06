@@ -7445,7 +7445,6 @@
 	)
 	(label "BAT"
 		(at 162.56 90.17 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -7456,7 +7455,6 @@
 	)
 	(label "VBUS"
 		(at 49.53 29.21 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -7665,7 +7663,7 @@
 	)
 	(global_label "LBO"
 		(shape input)
-		(at 24.13 143.51 180)
+		(at 54.61 151.13 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -7675,7 +7673,7 @@
 		)
 		(uuid "2713ea91-b3ae-4a52-9b33-7af4b27ab034")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 17.5162 143.51 0)
+			(at 47.9962 151.13 0)
 			(effects
 				(font
 					(size 1.27 1.27)
