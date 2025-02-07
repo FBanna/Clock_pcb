@@ -4771,24 +4771,22 @@
 				)
 			)
 		)
-		(symbol "Switch:SW_Push"
-			(pin_numbers hide)
+		(symbol "Switch:SW_SPDT"
 			(pin_names
-				(offset 1.016) hide)
+				(offset 0) hide)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
 			(property "Reference" "SW"
-				(at 1.27 2.54 0)
+				(at 0 5.08 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(justify left)
 				)
 			)
-			(property "Value" "SW_Push"
-				(at 0 -1.524 0)
+			(property "Value" "SW_SPDT"
+				(at 0 -5.08 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -4796,7 +4794,7 @@
 				)
 			)
 			(property "Footprint" ""
-				(at 0 5.08 0)
+				(at 0 0 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -4805,7 +4803,7 @@
 				)
 			)
 			(property "Datasheet" "~"
-				(at 0 5.08 0)
+				(at 0 -7.62 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -4813,7 +4811,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "Push button switch, generic, two pins"
+			(property "Description" "Switch, single pole double throw"
 				(at 0 0 0)
 				(effects
 					(font
@@ -4822,7 +4820,7 @@
 					(hide yes)
 				)
 			)
-			(property "ki_keywords" "switch normally-open pushbutton push-button"
+			(property "ki_keywords" "switch single-pole double-throw spdt ON-ON"
 				(at 0 0 0)
 				(effects
 					(font
@@ -4831,10 +4829,10 @@
 					(hide yes)
 				)
 			)
-			(symbol "SW_Push_0_1"
+			(symbol "SW_SPDT_0_1"
 				(circle
 					(center -2.032 0)
-					(radius 0.508)
+					(radius 0.4572)
 					(stroke
 						(width 0)
 						(type default)
@@ -4845,19 +4843,7 @@
 				)
 				(polyline
 					(pts
-						(xy 0 1.27) (xy 0 3.048)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 2.54 1.27) (xy -2.54 1.27)
+						(xy -1.651 0.254) (xy 1.651 2.286)
 					)
 					(stroke
 						(width 0)
@@ -4868,20 +4854,44 @@
 					)
 				)
 				(circle
-					(center 2.032 0)
-					(radius 0.508)
+					(center 2.032 -2.54)
+					(radius 0.4572)
 					(stroke
 						(width 0)
 						(type default)
 					)
 					(fill
 						(type none)
+					)
+				)
+				(circle
+					(center 2.032 2.54)
+					(radius 0.4572)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "SW_SPDT_1_1"
+				(rectangle
+					(start -3.175 3.81)
+					(end 3.175 -3.81)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type background)
 					)
 				)
 				(pin passive line
-					(at -5.08 0 0)
+					(at 5.08 2.54 180)
 					(length 2.54)
-					(name "1"
+					(name "A"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -4897,9 +4907,9 @@
 					)
 				)
 				(pin passive line
-					(at 5.08 0 180)
+					(at -5.08 0 0)
 					(length 2.54)
-					(name "2"
+					(name "B"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -4907,6 +4917,24 @@
 						)
 					)
 					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 5.08 -2.54 180)
+					(length 2.54)
+					(name "C"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -6639,7 +6667,7 @@
 	)
 	(wire
 		(pts
-			(xy 99.06 168.91) (xy 101.6 168.91)
+			(xy 99.06 166.37) (xy 101.6 166.37)
 		)
 		(stroke
 			(width 0)
@@ -8842,7 +8870,7 @@
 	)
 	(symbol
 		(lib_id "power:+5V")
-		(at 99.06 168.91 0)
+		(at 99.06 166.37 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -8851,7 +8879,7 @@
 		(fields_autoplaced yes)
 		(uuid "20e8bbdd-eef7-43d2-876b-c8d92582e2ce")
 		(property "Reference" "#PWR021"
-			(at 99.06 172.72 0)
+			(at 99.06 170.18 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8860,7 +8888,7 @@
 			)
 		)
 		(property "Value" "+5V"
-			(at 99.06 163.83 0)
+			(at 99.06 161.29 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8868,7 +8896,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 99.06 168.91 0)
+			(at 99.06 166.37 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8877,7 +8905,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 99.06 168.91 0)
+			(at 99.06 166.37 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8886,7 +8914,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 99.06 168.91 0)
+			(at 99.06 166.37 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9510,6 +9538,74 @@
 		)
 	)
 	(symbol
+		(lib_id "Switch:SW_SPST")
+		(at 212.09 53.34 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "468da1fd-ec0b-434d-a07d-b1fdffe4cf2a")
+		(property "Reference" "SW5"
+			(at 212.09 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SW_SPST"
+			(at 212.09 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "FB_clock_lib:SW_push"
+			(at 212.09 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 212.09 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Single Pole Single Throw (SPST) switch"
+			(at 212.09 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "83b899d3-b2ca-43ac-afa6-305cdbf58d0d")
+		)
+		(pin "2"
+			(uuid "f6cc982f-4471-4ac6-8f6c-4c84c21ba4e7")
+		)
+		(instances
+			(project ""
+				(path "/959d2641-02eb-4caa-b1c6-84a86321825f"
+					(reference "SW5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Simulation_SPICE:NPN")
 		(at 237.49 90.17 0)
 		(unit 1)
@@ -9951,16 +10047,16 @@
 	)
 	(symbol
 		(lib_id "Switch:SW_SPST")
-		(at 106.68 168.91 0)
+		(at 264.16 53.34 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "52c3349a-6650-4277-866f-94ab9223b5fe")
-		(property "Reference" "SW4"
-			(at 106.68 162.56 0)
+		(uuid "528bbdb3-1d89-45a8-b9bd-b62b97306324")
+		(property "Reference" "SW2"
+			(at 264.16 46.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9968,15 +10064,15 @@
 			)
 		)
 		(property "Value" "SW_SPST"
-			(at 106.68 165.1 0)
+			(at 264.16 49.53 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Footprint" ""
-			(at 106.68 168.91 0)
+		(property "Footprint" "FB_clock_lib:SW_push"
+			(at 264.16 53.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9985,7 +10081,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 106.68 168.91 0)
+			(at 264.16 53.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9994,7 +10090,7 @@
 			)
 		)
 		(property "Description" "Single Pole Single Throw (SPST) switch"
-			(at 106.68 168.91 0)
+			(at 264.16 53.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10003,15 +10099,15 @@
 			)
 		)
 		(pin "1"
-			(uuid "fb904409-5213-4453-859c-97e41c0a6448")
+			(uuid "ffec4102-85b3-46e9-804d-fb9b35677c2e")
 		)
 		(pin "2"
-			(uuid "f9705f73-9d04-4e9d-8b37-9ce1807fa826")
+			(uuid "13006d71-2e00-407b-b057-1a2e069c8f89")
 		)
 		(instances
 			(project "clock"
 				(path "/959d2641-02eb-4caa-b1c6-84a86321825f"
-					(reference "SW4")
+					(reference "SW2")
 					(unit 1)
 				)
 			)
@@ -11404,6 +11500,77 @@
 		)
 	)
 	(symbol
+		(lib_id "Switch:SW_SPDT")
+		(at 106.68 166.37 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "87f73a2b-57de-43c1-884a-e3ed0ec5d8bf")
+		(property "Reference" "SW4"
+			(at 106.68 157.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SW_SPDT"
+			(at 106.68 160.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 106.68 166.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 106.68 173.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Switch, single pole double throw"
+			(at 106.68 166.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "24e8c3f0-bb41-412b-9412-436b70924df0")
+		)
+		(pin "1"
+			(uuid "93ba8cf2-2917-4adf-aec0-513b04987a46")
+		)
+		(pin "3"
+			(uuid "bb1ffd95-7d47-491c-b3be-0b3c986cec77")
+		)
+		(instances
+			(project ""
+				(path "/959d2641-02eb-4caa-b1c6-84a86321825f"
+					(reference "SW4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 101.6 82.55 270)
 		(unit 1)
@@ -11933,74 +12100,6 @@
 			(project "clock"
 				(path "/959d2641-02eb-4caa-b1c6-84a86321825f"
 					(reference "#PWR019")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Switch:SW_Push")
-		(at 212.09 53.34 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "a44cf2cf-4e88-4d07-b331-190a866d935b")
-		(property "Reference" "SW1"
-			(at 212.09 45.72 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "SW_Push"
-			(at 212.09 48.26 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 212.09 48.26 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 212.09 48.26 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Push button switch, generic, two pins"
-			(at 212.09 53.34 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "6e0726fe-6270-45d2-93d8-e5b6f7043ec8")
-		)
-		(pin "2"
-			(uuid "aa95e317-baed-4f1d-890b-6e68b5c54e10")
-		)
-		(instances
-			(project "clock"
-				(path "/959d2641-02eb-4caa-b1c6-84a86321825f"
-					(reference "SW1")
 					(unit 1)
 				)
 			)
@@ -13421,74 +13520,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Switch:SW_Push")
-		(at 264.16 53.34 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "cc3748d1-95ff-4bd0-b576-640f82a10624")
-		(property "Reference" "SW3"
-			(at 264.16 45.72 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "SW_Push"
-			(at 264.16 48.26 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 264.16 48.26 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 264.16 48.26 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Push button switch, generic, two pins"
-			(at 264.16 53.34 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "e177afb2-1ed6-444d-a38a-46169684e997")
-		)
-		(pin "2"
-			(uuid "02fc0770-71fd-4e47-90bc-6958de619efc")
-		)
-		(instances
-			(project "clock"
-				(path "/959d2641-02eb-4caa-b1c6-84a86321825f"
-					(reference "SW3")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:R")
 		(at 168.91 111.76 0)
 		(unit 1)
@@ -13894,7 +13925,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Switch:SW_Push")
+		(lib_id "Switch:SW_SPST")
 		(at 237.49 53.34 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -13902,25 +13933,25 @@
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "df83703b-2431-4313-a022-9b18bb108678")
-		(property "Reference" "SW2"
-			(at 237.49 45.72 0)
+		(uuid "dee25495-a225-4ab1-a342-8a2aaa9582a5")
+		(property "Reference" "SW1"
+			(at 237.49 46.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Value" "SW_Push"
-			(at 237.49 48.26 0)
+		(property "Value" "SW_SPST"
+			(at 237.49 49.53 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Footprint" ""
-			(at 237.49 48.26 0)
+		(property "Footprint" "FB_clock_lib:SW_push"
+			(at 237.49 53.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13929,7 +13960,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 237.49 48.26 0)
+			(at 237.49 53.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13937,7 +13968,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Push button switch, generic, two pins"
+		(property "Description" "Single Pole Single Throw (SPST) switch"
 			(at 237.49 53.34 0)
 			(effects
 				(font
@@ -13947,15 +13978,15 @@
 			)
 		)
 		(pin "1"
-			(uuid "9d2169f4-b9fa-4ee5-ae98-af0c42cd1c84")
+			(uuid "e0169deb-963c-4e0e-bfa7-1529ea7e0372")
 		)
 		(pin "2"
-			(uuid "4d78cee6-90b7-475a-9348-d67a590be66a")
+			(uuid "d7fa11fc-86d7-4423-9eda-4f7da9f0a8d7")
 		)
 		(instances
 			(project "clock"
 				(path "/959d2641-02eb-4caa-b1c6-84a86321825f"
-					(reference "SW2")
+					(reference "SW1")
 					(unit 1)
 				)
 			)
