@@ -6667,16 +6667,6 @@
 	)
 	(wire
 		(pts
-			(xy 99.06 166.37) (xy 101.6 166.37)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "598a1bcb-a577-4f58-8419-8810a6a33e2c")
-	)
-	(wire
-		(pts
 			(xy 252.73 26.67) (xy 262.89 26.67)
 		)
 		(stroke
@@ -7581,22 +7571,22 @@
 	)
 	(global_label "5V_TEST"
 		(shape input)
-		(at 24.13 139.7 180)
+		(at 87.63 115.57 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify right)
+			(justify left)
 		)
 		(uuid "0d0605bd-3c0b-45e1-af1c-e27cc6014c3a")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 13.5854 139.7 0)
+			(at 98.1746 115.57 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
+				(justify left)
 				(hide yes)
 			)
 		)
@@ -7691,7 +7681,7 @@
 	)
 	(global_label "LBO"
 		(shape input)
-		(at 54.61 151.13 180)
+		(at 54.61 153.67 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -7701,7 +7691,7 @@
 		)
 		(uuid "2713ea91-b3ae-4a52-9b33-7af4b27ab034")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 47.9962 151.13 0)
+			(at 47.9962 153.67 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7845,7 +7835,7 @@
 	)
 	(global_label "CE"
 		(shape input)
-		(at 24.13 147.32 180)
+		(at 54.61 151.13 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -7855,7 +7845,7 @@
 		)
 		(uuid "58a4e85f-fee6-45af-8931-df3ad12fe13b")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 18.7258 147.32 0)
+			(at 49.2058 151.13 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7905,6 +7895,28 @@
 					(size 1.27 1.27)
 				)
 				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "BUZZER"
+		(shape input)
+		(at 87.63 118.11 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "718723fd-7f83-433f-ae2b-39a23daa62c9")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 98.0537 118.11 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
 				(hide yes)
 			)
 		)
@@ -8399,6 +8411,71 @@
 	)
 	(symbol
 		(lib_id "power:GND")
+		(at 101.6 166.37 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "01bd9f7e-5097-4633-bd5a-938500515e9b")
+		(property "Reference" "#PWR012"
+			(at 95.25 166.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 97.028 166.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 101.6 166.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 101.6 166.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 101.6 166.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "762875a2-5141-4fca-ae4b-6f623c030e42")
+		)
+		(instances
+			(project "clock"
+				(path "/959d2641-02eb-4caa-b1c6-84a86321825f"
+					(reference "#PWR012")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
 		(at 158.75 97.79 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -8870,7 +8947,7 @@
 	)
 	(symbol
 		(lib_id "power:+5V")
-		(at 99.06 166.37 0)
+		(at 101.6 171.45 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -8879,7 +8956,7 @@
 		(fields_autoplaced yes)
 		(uuid "20e8bbdd-eef7-43d2-876b-c8d92582e2ce")
 		(property "Reference" "#PWR021"
-			(at 99.06 170.18 0)
+			(at 105.41 171.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8888,15 +8965,16 @@
 			)
 		)
 		(property "Value" "+5V"
-			(at 99.06 161.29 0)
+			(at 97.79 171.4499 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
 		(property "Footprint" ""
-			(at 99.06 166.37 0)
+			(at 101.6 171.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8905,7 +8983,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 99.06 166.37 0)
+			(at 101.6 171.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8914,7 +8992,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 99.06 166.37 0)
+			(at 101.6 171.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11501,7 +11579,7 @@
 	)
 	(symbol
 		(lib_id "Switch:SW_SPDT")
-		(at 106.68 166.37 0)
+		(at 106.68 168.91 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -11510,14 +11588,6 @@
 		(fields_autoplaced yes)
 		(uuid "87f73a2b-57de-43c1-884a-e3ed0ec5d8bf")
 		(property "Reference" "SW4"
-			(at 106.68 157.48 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "SW_SPDT"
 			(at 106.68 160.02 0)
 			(effects
 				(font
@@ -11525,8 +11595,16 @@
 				)
 			)
 		)
-		(property "Footprint" ""
-			(at 106.68 166.37 0)
+		(property "Value" "SW_SPDT"
+			(at 106.68 162.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "FB_clock_lib:SW_slide"
+			(at 106.68 168.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11535,7 +11613,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 106.68 173.99 0)
+			(at 106.68 161.29 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11544,7 +11622,7 @@
 			)
 		)
 		(property "Description" "Switch, single pole double throw"
-			(at 106.68 166.37 0)
+			(at 106.68 168.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12132,7 +12210,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Diode_SMD:D_SOD-123F"
 			(at 240.03 81.28 90)
 			(effects
 				(font
@@ -13206,7 +13284,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
 			(at 127.9652 71.12 0)
 			(effects
 				(font
@@ -13391,7 +13469,7 @@
 		(dnp no)
 		(uuid "ca425f13-a19a-4cff-b7b0-54b6af1ce4bc")
 		(property "Reference" "R31"
-			(at 106.172 172.466 0)
+			(at 116.078 172.466 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13400,7 +13478,7 @@
 			)
 		)
 		(property "Value" "300R"
-			(at 106.172 175.006 0)
+			(at 116.078 175.006 0)
 			(effects
 				(font
 					(size 1.27 1.27)
