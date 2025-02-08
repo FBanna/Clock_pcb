@@ -7463,6 +7463,7 @@
 	)
 	(label "BAT"
 		(at 162.56 90.17 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -7473,6 +7474,7 @@
 	)
 	(label "VBUS"
 		(at 49.53 29.21 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -8766,7 +8768,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Crystal:Crystal_SMD_3225-4Pin_3.2x2.5mm_HandSoldering"
 			(at 171.45 25.4 0)
 			(effects
 				(font
@@ -9029,7 +9031,7 @@
 				)
 			)
 		)
-		(property "Value" "1k"
+		(property "Value" "2k"
 			(at 107.696 90.678 90)
 			(effects
 				(font
@@ -9037,7 +9039,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric_Pad0.72x0.64mm_HandSolder"
 			(at 110.49 94.488 90)
 			(effects
 				(font
@@ -9877,7 +9879,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric_Pad0.72x0.64mm_HandSolder"
 			(at 110.49 104.648 90)
 			(effects
 				(font
@@ -11117,7 +11119,7 @@
 				)
 			)
 		)
-		(property "Value" "5k"
+		(property "Value" "100k"
 			(at 107.95 99.822 90)
 			(effects
 				(font
@@ -11125,7 +11127,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric_Pad0.72x0.64mm_HandSolder"
 			(at 110.49 99.568 90)
 			(effects
 				(font
