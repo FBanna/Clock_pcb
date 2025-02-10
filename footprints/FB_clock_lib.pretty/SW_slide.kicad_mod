@@ -67,66 +67,6 @@
 		)
 	)
 	(attr smd)
-	(fp_line
-		(start -1.5 -2.85)
-		(end -0.2 -2.85)
-		(stroke
-			(width 0.05)
-			(type default)
-		)
-		(layer "F.SilkS")
-		(uuid "10a3397e-e761-4d78-9595-8ddb587f85b9")
-	)
-	(fp_line
-		(start -1.5 -1.35)
-		(end -1.5 -2.85)
-		(stroke
-			(width 0.05)
-			(type default)
-		)
-		(layer "F.SilkS")
-		(uuid "9bcbe0e5-c904-4336-9f95-dfc2ca45d8c7")
-	)
-	(fp_line
-		(start -0.2 -2.85)
-		(end -0.2 -1.35)
-		(stroke
-			(width 0.05)
-			(type default)
-		)
-		(layer "F.SilkS")
-		(uuid "10158e1c-b970-45da-a8df-d31fb25056d8")
-	)
-	(fp_line
-		(start 0.2 -2.85)
-		(end 1.5 -2.85)
-		(stroke
-			(width 0.05)
-			(type default)
-		)
-		(layer "F.SilkS")
-		(uuid "61dd78cc-7f91-4fe9-b89d-314db4657a8b")
-	)
-	(fp_line
-		(start 0.2 -1.35)
-		(end 0.2 -2.85)
-		(stroke
-			(width 0.05)
-			(type default)
-		)
-		(layer "F.SilkS")
-		(uuid "e3e44312-6938-498c-b0eb-ffe32e03ba92")
-	)
-	(fp_line
-		(start 1.5 -1.35)
-		(end 1.5 -2.85)
-		(stroke
-			(width 0.05)
-			(type default)
-		)
-		(layer "F.SilkS")
-		(uuid "5def254a-0632-4228-9b5d-0dda39e033b5")
-	)
 	(fp_rect
 		(start -3.3 -1.35)
 		(end 3.3 1.35)
@@ -148,6 +88,66 @@
 		(fill none)
 		(layer "F.CrtYd")
 		(uuid "24240f62-9e0c-4e4d-a859-afbfac552a67")
+	)
+	(fp_line
+		(start -1.5 -2.85)
+		(end -0.2 -2.85)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(layer "User.1")
+		(uuid "10a3397e-e761-4d78-9595-8ddb587f85b9")
+	)
+	(fp_line
+		(start -1.5 -1.35)
+		(end -1.5 -2.85)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(layer "User.1")
+		(uuid "9bcbe0e5-c904-4336-9f95-dfc2ca45d8c7")
+	)
+	(fp_line
+		(start -0.2 -2.85)
+		(end -0.2 -1.35)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(layer "User.1")
+		(uuid "10158e1c-b970-45da-a8df-d31fb25056d8")
+	)
+	(fp_line
+		(start 0.2 -2.85)
+		(end 1.5 -2.85)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(layer "User.1")
+		(uuid "61dd78cc-7f91-4fe9-b89d-314db4657a8b")
+	)
+	(fp_line
+		(start 0.2 -1.35)
+		(end 0.2 -2.85)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(layer "User.1")
+		(uuid "e3e44312-6938-498c-b0eb-ffe32e03ba92")
+	)
+	(fp_line
+		(start 1.5 -1.35)
+		(end 1.5 -2.85)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(layer "User.1")
+		(uuid "5def254a-0632-4228-9b5d-0dda39e033b5")
 	)
 	(fp_text user "${REFERENCE}"
 		(at 0 0 0)
