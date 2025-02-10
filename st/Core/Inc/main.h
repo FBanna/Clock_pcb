@@ -57,6 +57,38 @@ void Error_Handler(void);
 /* USER CODE END EFP */
 
 /* Private defines -----------------------------------------------------------*/
+#define RIGHT_Pin GPIO_PIN_0
+#define RIGHT_GPIO_Port GPIOA
+#define SELECT_Pin GPIO_PIN_1
+#define SELECT_GPIO_Port GPIOA
+#define LEFT_Pin GPIO_PIN_2
+#define LEFT_GPIO_Port GPIOA
+#define FV_TEST_Pin GPIO_PIN_3
+#define FV_TEST_GPIO_Port GPIOA
+#define BUZZER_Pin GPIO_PIN_4
+#define BUZZER_GPIO_Port GPIOA
+#define M2_Pin GPIO_PIN_5
+#define M2_GPIO_Port GPIOA
+#define M3_Pin GPIO_PIN_6
+#define M3_GPIO_Port GPIOA
+#define M4_Pin GPIO_PIN_7
+#define M4_GPIO_Port GPIOA
+#define M1_Pin GPIO_PIN_0
+#define M1_GPIO_Port GPIOB
+#define M5_Pin GPIO_PIN_1
+#define M5_GPIO_Port GPIOB
+#define M8_Pin GPIO_PIN_2
+#define M8_GPIO_Port GPIOB
+#define M7_Pin GPIO_PIN_10
+#define M7_GPIO_Port GPIOB
+#define COLON_Pin GPIO_PIN_12
+#define COLON_GPIO_Port GPIOB
+#define M6_Pin GPIO_PIN_13
+#define M6_GPIO_Port GPIOB
+#define CE_Pin GPIO_PIN_3
+#define CE_GPIO_Port GPIOB
+#define LBO_Pin GPIO_PIN_4
+#define LBO_GPIO_Port GPIOB
 
 /* USER CODE BEGIN Private defines */
 
