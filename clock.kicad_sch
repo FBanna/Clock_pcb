@@ -7965,7 +7965,7 @@
 	)
 	(global_label "BUZZER"
 		(shape input)
-		(at 257.81 87.63 180)
+		(at 224.79 90.17 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -7975,7 +7975,7 @@
 		)
 		(uuid "96b444f1-0d90-4289-9d41-c4d113f34a53")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 247.3863 87.63 0)
+			(at 214.3663 90.17 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8361,7 +8361,7 @@
 	)
 	(symbol
 		(lib_id "Device:Buzzer")
-		(at 260.35 90.17 0)
+		(at 246.38 81.28 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -8370,7 +8370,7 @@
 		(fields_autoplaced yes)
 		(uuid "010c8a20-30f6-46cb-88a8-905a616b614b")
 		(property "Reference" "BZ1"
-			(at 264.16 88.8999 0)
+			(at 250.19 80.0099 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8379,7 +8379,7 @@
 			)
 		)
 		(property "Value" "Buzzer"
-			(at 264.16 91.4399 0)
+			(at 250.19 82.5499 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8388,7 +8388,7 @@
 			)
 		)
 		(property "Footprint" "Buzzer_Beeper:MagneticBuzzer_CUI_CMT-8504-100-SMT"
-			(at 259.715 87.63 90)
+			(at 245.745 78.74 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8397,7 +8397,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 259.715 87.63 90)
+			(at 245.745 78.74 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8406,7 +8406,7 @@
 			)
 		)
 		(property "Description" "Buzzer, polarized"
-			(at 260.35 90.17 0)
+			(at 246.38 81.28 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11326,7 +11326,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 257.81 92.71 270)
+		(at 240.03 95.25 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -11335,7 +11335,7 @@
 		(fields_autoplaced yes)
 		(uuid "755dade6-870f-4d48-9666-d1b41f9cb2ed")
 		(property "Reference" "#PWR09"
-			(at 251.46 92.71 0)
+			(at 240.03 101.6 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11344,15 +11344,16 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 256.54 88.9 90)
+			(at 242.57 96.5199 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
 		(property "Footprint" ""
-			(at 257.81 92.71 0)
+			(at 240.03 95.25 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11361,7 +11362,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 257.81 92.71 0)
+			(at 240.03 95.25 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11370,7 +11371,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 257.81 92.71 0)
+			(at 240.03 95.25 0)
 			(effects
 				(font
 					(size 1.27 1.27)
