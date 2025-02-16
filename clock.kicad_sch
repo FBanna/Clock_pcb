@@ -6232,24 +6232,72 @@
 		(uuid "34b788a3-5ea1-45c9-921f-0fb0e1652064")
 	)
 	(no_connect
+		(at 43.18 163.83)
+		(uuid "38e3cd24-1ad8-473e-b28b-ef88bb18d248")
+	)
+	(no_connect
 		(at 153.67 102.87)
 		(uuid "3abad8d4-6280-4700-b5c7-95b8b2444480")
+	)
+	(no_connect
+		(at 43.18 140.97)
+		(uuid "57b1ce32-5075-4047-be7d-4c7506450c40")
 	)
 	(no_connect
 		(at 76.2 156.21)
 		(uuid "6a1b57b0-0da2-4137-80fd-07cccd4f3412")
 	)
 	(no_connect
+		(at 43.18 184.15)
+		(uuid "70bf5c05-60b0-4db2-b8e2-395200d80c5f")
+	)
+	(no_connect
 		(at 76.2 153.67)
 		(uuid "7788c079-6238-47de-97d2-bf2d4e41924b")
+	)
+	(no_connect
+		(at 43.18 138.43)
+		(uuid "831c28ce-55b8-4f25-b6ca-f42f1843755b")
+	)
+	(no_connect
+		(at 43.18 173.99)
+		(uuid "84491c7f-bf84-488d-b310-147df9a204ae")
 	)
 	(no_connect
 		(at 153.67 110.49)
 		(uuid "8674f8e1-3fa2-491e-8a73-f9e32e18da7a")
 	)
 	(no_connect
+		(at 43.18 135.89)
+		(uuid "8ddc99bd-5b90-4264-bba0-40688bfb1ede")
+	)
+	(no_connect
+		(at 43.18 161.29)
+		(uuid "927be914-ca4d-4446-8dd4-a94d9d1da985")
+	)
+	(no_connect
+		(at 43.18 166.37)
+		(uuid "9b158dd1-ac1b-44d9-9088-bd7368081c72")
+	)
+	(no_connect
 		(at 76.2 140.97)
 		(uuid "a23b488b-2c17-4b08-888a-6c32aa5a7bb3")
+	)
+	(no_connect
+		(at 43.18 168.91)
+		(uuid "ac434881-dfdb-40f2-ab60-d0074ae48cce")
+	)
+	(no_connect
+		(at 43.18 181.61)
+		(uuid "bf32bcbf-8edd-42e6-9088-d08d66c8f845")
+	)
+	(no_connect
+		(at 76.2 128.27)
+		(uuid "ea71bdb7-ad83-4b24-8130-8c90c7e14a28")
+	)
+	(no_connect
+		(at 43.18 158.75)
+		(uuid "fc161195-293d-42e2-9be8-2dd2681a6025")
 	)
 	(wire
 		(pts
@@ -7599,6 +7647,7 @@
 	)
 	(label "BAT"
 		(at 162.56 90.17 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -7609,6 +7658,7 @@
 	)
 	(label "VBUS"
 		(at 49.53 29.21 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -9165,8 +9215,8 @@
 				)
 			)
 		)
-		(property "Value" "500R"
-			(at 107.696 90.678 90)
+		(property "Value" "1.1k / 500R for 900/1000"
+			(at 79.756 92.71 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11321,8 +11371,8 @@
 				)
 			)
 		)
-		(property "Value" "20k"
-			(at 107.95 99.822 90)
+		(property "Value" "30k / 20k for 900/1000"
+			(at 80.772 97.79 90)
 			(effects
 				(font
 					(size 1.27 1.27)

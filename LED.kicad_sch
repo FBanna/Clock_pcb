@@ -3457,6 +3457,7 @@
 	)
 	(label "R3"
 		(at 30.48 81.28 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3467,6 +3468,7 @@
 	)
 	(label "R4"
 		(at 30.48 96.52 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3477,6 +3479,7 @@
 	)
 	(label "R5"
 		(at 30.48 111.76 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3487,6 +3490,7 @@
 	)
 	(label "R8"
 		(at 30.48 157.48 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3497,6 +3501,7 @@
 	)
 	(label "R1"
 		(at 30.48 50.8 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3507,6 +3512,7 @@
 	)
 	(label "R6"
 		(at 30.48 127 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3517,6 +3523,7 @@
 	)
 	(label "R7"
 		(at 30.48 142.24 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3527,6 +3534,7 @@
 	)
 	(label "R2"
 		(at 30.48 66.04 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
