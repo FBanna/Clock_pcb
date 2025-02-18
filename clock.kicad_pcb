@@ -31060,15 +31060,15 @@
 			(pintype "passive")
 			(uuid "625b1bcc-4c15-44a3-81bb-cdd4616d8f4c")
 		)
-		(model "${KIPRJMOD}/models/USB-C-SMD_TYPE-C16PIN.wrl"
+		(model "${KICAD8_3DMODEL_DIR}/Connector_USB.3dshapes/USB_C_Receptacle_GCT_USB4105-xx-A_16P_TopMnt_Horizontal.wrl"
 			(offset
-				(xyz 0 -2.25 0)
+				(xyz 0 -1.5 0)
 			)
 			(scale
 				(xyz 1 1 1)
 			)
 			(rotate
-				(xyz 0 0 180)
+				(xyz 0 0 0)
 			)
 		)
 	)
