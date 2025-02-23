@@ -525,14 +525,14 @@
   "pcbnew": {
     "last_paths": {
       "gencad": "",
-      "idf": "",
+      "idf": "../../../../Downloads/clock.emn",
       "netlist": "",
       "plot": "",
       "pos_files": "",
       "specctra_dsn": "",
       "step": "../../../../Downloads/clock.step",
       "svg": "",
-      "vrml": ""
+      "vrml": "../../../../Downloads/clock.wrl"
     },
     "page_layout_descr_file": ""
   },
