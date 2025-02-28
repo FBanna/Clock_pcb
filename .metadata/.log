@@ -493,3 +493,81 @@ org.eclipse.ui.PartInitException: Invalid State: Most probably trying to open 'c
 
 !ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2025-02-17 20:36:51.765
 !MESSAGE Started RMI Server, listening on port 41337
+!SESSION 2025-02-21 21:47:01.045 -----------------------------------------------
+eclipse.buildId=Version 1.17.0
+java.version=21.0.3
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_GB
+Framework arguments:  C:\Users\Findlay\Desktop\My Stuff\clock\clock\st\.project
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 C:\Users\Findlay\Desktop\My Stuff\clock\clock\st\.project
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2025-02-21 21:47:17.416
+!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2025-02-21 21:47:17.422
+!MESSAGE Log4j2 initialized with config file C:\Users\Findlay\Desktop\My Stuff\clock\clock\st\.metadata\.log4j2.xml
+!SESSION 2025-02-21 21:48:34.563 -----------------------------------------------
+eclipse.buildId=Version 1.17.0
+java.version=21.0.3
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_GB
+Framework arguments:  C:\Users\Findlay\Desktop\My Stuff\clock\clock\st\.project
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 C:\Users\Findlay\Desktop\My Stuff\clock\clock\st\.project
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2025-02-21 21:48:41.495
+!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2025-02-21 21:48:41.504
+!MESSAGE Log4j2 initialized with config file C:\Users\Findlay\Desktop\My Stuff\clock\clock\st\.metadata\.log4j2.xml
+!SESSION 2025-02-21 21:50:30.867 -----------------------------------------------
+eclipse.buildId=Version 1.17.0
+java.version=21.0.3
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_GB
+Framework arguments:  C:\Users\Findlay\Desktop\My Stuff\clock\clock\st\.project
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 C:\Users\Findlay\Desktop\My Stuff\clock\clock\st\.project
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2025-02-21 21:50:43.491
+!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2025-02-21 21:50:43.500
+!MESSAGE Log4j2 initialized with config file C:\Users\Findlay\Desktop\My Stuff\clock\clock\.metadata\.log4j2.xml
+!SESSION 2025-02-21 21:51:16.762 -----------------------------------------------
+eclipse.buildId=Version 1.17.0
+java.version=21.0.3
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_GB
+Framework arguments:  C:\Users\Findlay\Desktop\My Stuff\clock\clock\st\.project
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 C:\Users\Findlay\Desktop\My Stuff\clock\clock\st\.project
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2025-02-21 21:51:27.500
+!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2025-02-21 21:51:27.504
+!MESSAGE Log4j2 initialized with config file C:\Users\Findlay\Desktop\My Stuff\clock\clock\.metadata\.log4j2.xml
+!SESSION 2025-02-21 21:52:01.399 -----------------------------------------------
+eclipse.buildId=Version 1.17.0
+java.version=21.0.3
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_GB
+Framework arguments:  C:\Users\Findlay\Desktop\My Stuff\clock\clock\st\.cproject
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 C:\Users\Findlay\Desktop\My Stuff\clock\clock\st\.cproject
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2025-02-21 21:52:19.382
+!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2025-02-21 21:52:19.390
+!MESSAGE Log4j2 initialized with config file C:\Users\Findlay\Desktop\My Stuff\clock\clock\.metadata\.log4j2.xml
+!SESSION 2025-02-21 22:00:39.539 -----------------------------------------------
+eclipse.buildId=Version 1.17.0
+java.version=21.0.3
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_GB
+Framework arguments:  C:\Users\Findlay\Desktop\My Stuff\clock\clock\st\.project
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 C:\Users\Findlay\Desktop\My Stuff\clock\clock\st\.project
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2025-02-21 22:00:51.600
+!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2025-02-21 22:00:51.607
+!MESSAGE Log4j2 initialized with config file C:\Users\Findlay\Desktop\My Stuff\clock\clock\.metadata\.log4j2.xml
