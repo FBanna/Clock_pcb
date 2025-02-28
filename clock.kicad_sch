@@ -7623,7 +7623,7 @@
 		)
 		(uuid "cbe75456-f4bc-4df4-b204-c2365d572bd2")
 	)
-	(text "MIGHT BE WRONG\n"
+	(text "NOT WRONG\n"
 		(exclude_from_sim no)
 		(at 140.97 179.578 0)
 		(effects

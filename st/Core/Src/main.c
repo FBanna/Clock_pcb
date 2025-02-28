@@ -99,17 +99,22 @@ int main(void)
   MX_RTC_Init();
   /* USER CODE BEGIN 2 */
 
+  HAL_GPIO_WritePin(GPIOB, COLON_Pin, 1);
+  HAL_GPIO_WritePin(GPIOB, M1_Pin, 0);
+  HAL_GPIO_WritePin(GPIOB, M5_Pin, 1);
+
   /* USER CODE END 2 */
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
+
   while (1)
   {
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
 
-	  HAL_GPIO_WritePin(GPIOB, COLON_Pin, 1);
+
   }
   /* USER CODE END 3 */
 }
@@ -355,6 +360,11 @@ static void MX_GPIO_Init(void)
   HAL_GPIO_Init(GPIOB, &GPIO_InitStruct);
 
 /* USER CODE BEGIN MX_GPIO_Init_2 */
+
+  //GPIO_InitStruct.Pin = M2_Pin;
+  //GPIO_InitStruct.Mode = GPIO_MODE_;
+
+
 /* USER CODE END MX_GPIO_Init_2 */
 }
 
