@@ -103,6 +103,16 @@ int main(void)
   HAL_GPIO_WritePin(GPIOB, M1_Pin, 0);
   HAL_GPIO_WritePin(GPIOB, M5_Pin, 1);
 
+  reg = M2_GPIO_Port->MODER;
+  reg &= ~(0b11 << (M2_Pin * 2u));
+  M2_GPIO_Port->MODER=reg;
+
+//  reg = M2_GPIO_Port->PUPDR;
+//  reg &= ~(GPIO_PUPDR_PUPDR0 << (position * 2u));
+//  reg |= ((GPIO_Init->Pull) << (position * 2u));
+
+
+
   /* USER CODE END 2 */
 
   /* Infinite loop */
