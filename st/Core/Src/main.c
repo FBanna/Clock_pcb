@@ -48,6 +48,50 @@ PCD_HandleTypeDef hpcd_USB_FS;
 
 /* USER CODE BEGIN PV */
 
+GPIO_TypeDef *pin_ports[] = {M1_GPIO_Port, M2_GPIO_Port, M3_GPIO_Port, M4_GPIO_Port, M5_GPIO_Port, M6_GPIO_Port, M7_GPIO_Port, M8_GPIO_Port};
+const int pin_numbers[] = {0,5,6,7,1,13,10,2};
+//int numbers[][8] = {
+//		{0,1,2,3,4,5}, 		//0
+//		{2,3},				//1
+//		{1,2,4,5,6},		//2
+//		{1,2,3,4,6},		//3
+//		{0,2,3,6},			//4
+//		{0,1,3,4,6},		//5
+//		{0,1,3,4,5,6},		//6
+//		{1,2,3},			//7
+//		{0,1,2,3,4,5,6},	//8
+//		{0,1,2,3,6}			//9
+//};
+
+const uint8_t numbers[10] = {
+		0b01111110,
+		0b00011000,
+		0b00110111,
+		0b00111101,
+		0b01011001,
+		0b01101101,
+		0b01101111,
+		0b00111000,
+		0b01111111,
+		0b01111001
+};
+
+enum menu_enum {
+	TIME,
+	SET_TIME
+};
+
+enum menu_enum menu = TIME;
+
+int button_pressed = 0;
+uint8_t time[4];
+
+int selected_digit = 0;
+
+RTC_TimeTypeDef currTime = {0};
+RTC_DateTypeDef currDate = {0};
+
+
 /* USER CODE END PV */
 
 /* Private function prototypes -----------------------------------------------*/
@@ -58,10 +102,161 @@ static void MX_TIM1_Init(void);
 static void MX_RTC_Init(void);
 /* USER CODE BEGIN PFP */
 
+void set_mode(GPIO_TypeDef *gpio, int pin, uint32_t mode);
+void set_level(GPIO_TypeDef *gpio, int pin, int level);
+void update_buttons(void);
+int change_digit(int digit, int change);
+
 /* USER CODE END PFP */
 
 /* Private user code ---------------------------------------------------------*/
 /* USER CODE BEGIN 0 */
+
+void set_LED(int digit, int row){
+	int i;
+
+	for(i = 0; i < 8; i++){
+		if(i == digit){
+			//set pin high
+			continue;
+
+//			set_mode(pin_ports[i], pin_numbers[i], 0b01);
+//			set_level(pin_ports[i], pin_numbers[i], 1);
+
+
+		} else if(digit <= row && row == (i-1)){
+
+			//set pin low
+
+			set_mode(pin_ports[i], pin_numbers[i], 0b01);
+			set_level(pin_ports[i], pin_numbers[i], 0);
+
+			//set_mode(pin_ports[i], pin_numbers[i], 0b00);
+
+
+			//i += 1;
+
+		} else if(digit > row && row == i){
+
+			//set pin low
+
+			set_mode(pin_ports[i], pin_numbers[i], 0b01);
+			set_level(pin_ports[i], pin_numbers[i], 0);
+
+		} else {
+			//set pin high z
+			set_mode(pin_ports[i], pin_numbers[i], 0b00);
+		}
+	}
+}
+
+
+void set_mode(GPIO_TypeDef *gpio, int pin, uint32_t mode){
+	uint32_t reg;
+
+	reg = gpio->MODER;
+	//reg &= ~(mode << (pin * 2u));
+
+	reg &= ~(0b11 << (pin * 2));
+	reg |= (mode) << (pin * 2);
+
+
+	gpio->MODER=reg;
+
+}
+
+void set_level(GPIO_TypeDef *gpio, int pin, int level){
+	uint32_t reg;
+
+	//gpio->ODR |= (level<<pin);
+
+
+	reg = gpio->ODR;
+
+	reg &= ~(1 << pin);
+	reg |= (level << pin);
+
+	gpio->ODR = reg;
+
+}
+
+
+int change_digit(int digit, int change){
+	int new_digit = digit + change;
+
+	if(new_digit > 9){
+		return 0;
+	} else if (new_digit < 0){
+		return 9;
+	} else {
+		return new_digit;
+	}
+
+
+}
+void update_buttons(void){
+
+	if (HAL_GPIO_ReadPin(SELECT_GPIO_Port, SELECT_Pin) == 0) {
+
+		if( button_pressed == 0) {
+			button_pressed = 1;
+
+			if(menu == TIME){
+				time[0] = 0;
+				time[1] = 0;
+				time[2] = 0;
+				time[3] = 0;
+
+				selected_digit = 0;
+
+				menu = SET_TIME;
+			} else if (menu == SET_TIME){
+
+				if(selected_digit < 3){
+					selected_digit++;
+				} else {
+
+
+					currTime.Hours = (time[0] * 10) + time[1];
+					currTime.Minutes = (time[2] * 10) + time [3];
+					currTime.Seconds = 0;
+
+					HAL_RTC_SetTime(&hrtc, &currTime, RTC_FORMAT_BIN);
+
+
+					menu = TIME;
+
+				}
+			}
+		}
+
+	} else if (HAL_GPIO_ReadPin(LEFT_GPIO_Port, LEFT_Pin) == 0){
+
+		if( button_pressed == 0) {
+			button_pressed = 1;
+
+			time[selected_digit] = change_digit(time[selected_digit], -1);
+
+
+		}
+
+	} else if (HAL_GPIO_ReadPin(RIGHT_GPIO_Port, RIGHT_Pin) == 0){
+
+		if( button_pressed == 0) {
+			button_pressed = 1;
+
+			time[selected_digit] = change_digit(time[selected_digit], 1);
+
+
+		}
+
+	} else {
+
+		button_pressed = 0;
+
+	}
+}
+
 
 /* USER CODE END 0 */
 
@@ -100,16 +295,35 @@ int main(void)
   /* USER CODE BEGIN 2 */
 
   HAL_GPIO_WritePin(GPIOB, COLON_Pin, 1);
-  HAL_GPIO_WritePin(GPIOB, M1_Pin, 0);
-  HAL_GPIO_WritePin(GPIOB, M5_Pin, 1);
 
-  reg = M2_GPIO_Port->MODER;
-  reg &= ~(0b11 << (M2_Pin * 2u));
-  M2_GPIO_Port->MODER=reg;
+
+
+  //HAL_GPIO_WritePin(GPIOB, M5_Pin, 1);
+
+  //HAL_GPIO_WritePin(GPIOB, M1_Pin, 0);
+
+//  set_mode(M5_GPIO_Port, 1, 0b10);
+//  set_level(M5_GPIO_Port, 1, 1);
+
+
+
 
 //  reg = M2_GPIO_Port->PUPDR;
 //  reg &= ~(GPIO_PUPDR_PUPDR0 << (position * 2u));
 //  reg |= ((GPIO_Init->Pull) << (position * 2u));
+
+//  set_mode(M2_GPIO_Port, 5, 0b11);
+//  set_mode(M3_GPIO_Port, 6, 0b11);
+//  set_mode(M4_GPIO_Port, 7, 0b11);
+//  set_mode(M6_GPIO_Port, 13, 0b11);
+//  set_mode(M7_GPIO_Port, 10, 0b11);
+//  set_mode(M8_GPIO_Port, 2, 0b11);
+
+  //set_LED(4, 2);
+
+  //HAL_TIM_PWM_Start(&htim1, TIM_CHANNEL_1);
+
+  //HAL_GPIO_WritePin(BUZZER_GPIO_Port, BUZZER_Pin, 1);
 
 
 
@@ -118,11 +332,111 @@ int main(void)
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
 
+//  int digit = 0;
+//  int row = 0;
+
+  int i;
+  int k;
+  uint32_t tick;
+  uint32_t elapsed_time;
+
+
   while (1)
   {
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
+
+	  update_buttons();
+
+
+	  if(menu == TIME){
+		  HAL_RTC_GetTime(&hrtc, &currTime, RTC_FORMAT_BIN);
+		  HAL_RTC_GetDate(&hrtc, &currDate, RTC_FORMAT_BIN);
+
+		  time[0] = currTime.Hours / 10;
+		  time[1] = currTime.Hours % 10;
+		  time[2] = currTime.Minutes / 10;
+		  time[3] = currTime.Minutes % 10;
+	  } else {
+
+	  }
+
+
+
+
+//	  set_LED(digit, row);
+//
+//	  HAL_Delay(500);
+//
+//	  row += 1;
+//
+//
+//	  if (row > 6){
+//		  row = 0;
+//
+//		  digit +=1;
+//
+//		  if (digit > 4){
+//			  digit = 0;
+//		  }
+//	  }
+
+	  tick = HAL_GetTick();
+
+	  for(i = 0; i < 4; i++){ // for each digit
+
+		  // turn on the digit pin
+
+		  set_mode(pin_ports[i], pin_numbers[i], 0b01);
+		  set_level(pin_ports[i], pin_numbers[i], 1);
+
+		  // turn on the needed lights
+
+		  for(k = 0; k < 7; k++){
+			  if(numbers[time[i]] & (1 << (6-k))){
+				  set_LED(i, k);
+				  HAL_Delay(0.1);
+
+			  }
+		  }
+
+		  //turn off the digit pin
+
+		  set_level(pin_ports[i], pin_numbers[i], 0);
+	  }
+
+	  // turns last light off
+	  set_level(pin_ports[3], pin_numbers[3], 0);
+
+
+
+
+	  elapsed_time = HAL_GetTick() - tick; // Time taken in ms
+
+	  float remaining_time = (1000.0/40.0) - elapsed_time;
+
+	  if (remaining_time > 0){
+		  HAL_GPIO_WritePin(COLON_GPIO_Port, COLON_Pin, 1);
+		  HAL_Delay((uint32_t)remaining_time);
+	  } else {
+		  HAL_GPIO_WritePin(COLON_GPIO_Port, COLON_Pin, 0);
+	  }
+
+
+
+
+//	  time++;
+//
+//	  if(time == 10){
+//		  time = 0;
+//	  }
+
+
+
+
+
+
 
 
   }
@@ -188,6 +502,9 @@ static void MX_RTC_Init(void)
 
   /* USER CODE END RTC_Init 0 */
 
+  RTC_TimeTypeDef sTime = {0};
+  RTC_DateTypeDef sDate = {0};
+
   /* USER CODE BEGIN RTC_Init 1 */
 
   /* USER CODE END RTC_Init 1 */
@@ -197,11 +514,36 @@ static void MX_RTC_Init(void)
   hrtc.Instance = RTC;
   hrtc.Init.HourFormat = RTC_HOURFORMAT_24;
   hrtc.Init.AsynchPrediv = 127;
-  hrtc.Init.SynchPrediv = 255;
+  hrtc.Init.SynchPrediv = 1952;
   hrtc.Init.OutPut = RTC_OUTPUT_DISABLE;
   hrtc.Init.OutPutPolarity = RTC_OUTPUT_POLARITY_HIGH;
   hrtc.Init.OutPutType = RTC_OUTPUT_TYPE_OPENDRAIN;
   if (HAL_RTC_Init(&hrtc) != HAL_OK)
+  {
+    Error_Handler();
+  }
+
+  /* USER CODE BEGIN Check_RTC_BKUP */
+
+  /* USER CODE END Check_RTC_BKUP */
+
+  /** Initialize RTC and set the Time and Date
+  */
+  sTime.Hours = 0x0;
+  sTime.Minutes = 0x0;
+  sTime.Seconds = 0x0;
+  sTime.DayLightSaving = RTC_DAYLIGHTSAVING_NONE;
+  sTime.StoreOperation = RTC_STOREOPERATION_RESET;
+  if (HAL_RTC_SetTime(&hrtc, &sTime, RTC_FORMAT_BCD) != HAL_OK)
+  {
+    Error_Handler();
+  }
+  sDate.WeekDay = RTC_WEEKDAY_MONDAY;
+  sDate.Month = RTC_MONTH_JANUARY;
+  sDate.Date = 0x1;
+  sDate.Year = 0x0;
+
+  if (HAL_RTC_SetDate(&hrtc, &sDate, RTC_FORMAT_BCD) != HAL_OK)
   {
     Error_Handler();
   }
@@ -234,10 +576,10 @@ static void MX_TIM1_Init(void)
   htim1.Instance = TIM1;
   htim1.Init.Prescaler = 0;
   htim1.Init.CounterMode = TIM_COUNTERMODE_UP;
-  htim1.Init.Period = 65535;
+  htim1.Init.Period = 4000;
   htim1.Init.ClockDivision = TIM_CLOCKDIVISION_DIV1;
   htim1.Init.RepetitionCounter = 0;
-  htim1.Init.AutoReloadPreload = TIM_AUTORELOAD_PRELOAD_DISABLE;
+  htim1.Init.AutoReloadPreload = TIM_AUTORELOAD_PRELOAD_ENABLE;
   if (HAL_TIM_Base_Init(&htim1) != HAL_OK)
   {
     Error_Handler();
@@ -258,7 +600,7 @@ static void MX_TIM1_Init(void)
     Error_Handler();
   }
   sConfigOC.OCMode = TIM_OCMODE_PWM1;
-  sConfigOC.Pulse = 0;
+  sConfigOC.Pulse = 2000;
   sConfigOC.OCPolarity = TIM_OCPOLARITY_HIGH;
   sConfigOC.OCNPolarity = TIM_OCNPOLARITY_HIGH;
   sConfigOC.OCFastMode = TIM_OCFAST_DISABLE;
@@ -341,14 +683,14 @@ static void MX_GPIO_Init(void)
   HAL_GPIO_WritePin(GPIOB, M1_Pin|M5_Pin|M8_Pin|M7_Pin
                           |COLON_Pin|M6_Pin, GPIO_PIN_RESET);
 
-  /*Configure GPIO pins : RIGHT_Pin SELECT_Pin LEFT_Pin FV_TEST_Pin */
-  GPIO_InitStruct.Pin = RIGHT_Pin|SELECT_Pin|LEFT_Pin|FV_TEST_Pin;
+  /*Configure GPIO pin : FV_TEST_Pin */
+  GPIO_InitStruct.Pin = FV_TEST_Pin;
   GPIO_InitStruct.Mode = GPIO_MODE_INPUT;
   GPIO_InitStruct.Pull = GPIO_NOPULL;
-  HAL_GPIO_Init(GPIOA, &GPIO_InitStruct);
+  HAL_GPIO_Init(FV_TEST_GPIO_Port, &GPIO_InitStruct);
 
   /*Configure GPIO pins : BUZZER_Pin M2_Pin M3_Pin M4_Pin */
-  GPIO_InitStruct.Pin = BUZZER_Pin|M2_Pin|M3_Pin|M4_Pin;
+  GPIO_InitStruct.Pin = M2_Pin|M3_Pin|M4_Pin;
   GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
   GPIO_InitStruct.Pull = GPIO_NOPULL;
   GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
@@ -371,8 +713,18 @@ static void MX_GPIO_Init(void)
 
 /* USER CODE BEGIN MX_GPIO_Init_2 */
 
-  //GPIO_InitStruct.Pin = M2_Pin;
-  //GPIO_InitStruct.Mode = GPIO_MODE_;
+  GPIO_InitStruct.Pin = RIGHT_Pin|SELECT_Pin|LEFT_Pin;
+  GPIO_InitStruct.Mode = GPIO_MODE_INPUT;
+  GPIO_InitStruct.Pull = GPIO_PULLUP;
+  HAL_GPIO_Init(GPIOA, &GPIO_InitStruct);
+
+
+  GPIO_InitStruct.Pin = BUZZER_Pin;
+  GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
+  GPIO_InitStruct.Pull = GPIO_PULLDOWN;
+  GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
+  HAL_GPIO_Init(GPIOA, &GPIO_InitStruct);
+
 
 
 /* USER CODE END MX_GPIO_Init_2 */
