@@ -78,7 +78,8 @@ const uint8_t numbers[10] = {
 
 enum menu_enum {
 	TIME,
-	SET_TIME
+	SET_TIME,
+	SLEEP
 };
 
 enum menu_enum menu = TIME;
@@ -201,7 +202,11 @@ void update_buttons(void){
 		if( button_pressed == 0) {
 			button_pressed = 1;
 
-			if(menu == TIME){
+			if(menu == SLEEP){
+
+				menu == TIME;
+
+			} else if(menu == TIME){
 				time[0] = 0;
 				time[1] = 0;
 				time[2] = 0;
@@ -232,7 +237,11 @@ void update_buttons(void){
 
 	} else if (HAL_GPIO_ReadPin(LEFT_GPIO_Port, LEFT_Pin) == 0){
 
-		if( button_pressed == 0) {
+		if(menu == SLEEP){
+
+			menu == TIME;
+
+		} else if( button_pressed == 0) {
 			button_pressed = 1;
 
 			time[selected_digit] = change_digit(time[selected_digit], -1);
@@ -242,7 +251,11 @@ void update_buttons(void){
 
 	} else if (HAL_GPIO_ReadPin(RIGHT_GPIO_Port, RIGHT_Pin) == 0){
 
-		if( button_pressed == 0) {
+		if(menu == SLEEP){
+
+			menu == TIME;
+
+		} else if( button_pressed == 0) {
 			button_pressed = 1;
 
 			time[selected_digit] = change_digit(time[selected_digit], 1);
@@ -339,6 +352,7 @@ int main(void)
   int k;
   uint32_t tick;
   uint32_t elapsed_time;
+  int colon;
 
 
   while (1)
@@ -350,18 +364,31 @@ int main(void)
 	  update_buttons();
 
 
+	  HAL_RTC_GetTime(&hrtc, &currTime, RTC_FORMAT_BIN);
+	  HAL_RTC_GetDate(&hrtc, &currDate, RTC_FORMAT_BIN);
+
 	  if(menu == TIME){
-		  HAL_RTC_GetTime(&hrtc, &currTime, RTC_FORMAT_BIN);
-		  HAL_RTC_GetDate(&hrtc, &currDate, RTC_FORMAT_BIN);
+
 
 		  time[0] = currTime.Hours / 10;
 		  time[1] = currTime.Hours % 10;
 		  time[2] = currTime.Minutes / 10;
 		  time[3] = currTime.Minutes % 10;
-	  } else {
 
+
+		  // COLON on if even seconds
+		  if (currTime.Seconds % 2 == 0){
+			  if(colon == 0) {
+				  HAL_GPIO_WritePin(COLON_GPIO_Port, COLON_Pin, 1);
+				  colon = 1;
+			  }
+		  } else {
+			  if (colon == 1) {
+				  HAL_GPIO_WritePin(COLON_GPIO_Port, COLON_Pin, 0);
+				  colon = 0;
+			  }
+		  }
 	  }
-
 
 
 
@@ -385,6 +412,10 @@ int main(void)
 	  tick = HAL_GetTick();
 
 	  for(i = 0; i < 4; i++){ // for each digit
+
+		  if (menu == SET_TIME && i == selected_digit && currTime.Seconds%2 == 0){
+			  continue;
+		  }
 
 		  // turn on the digit pin
 
@@ -417,10 +448,10 @@ int main(void)
 	  float remaining_time = (1000.0/40.0) - elapsed_time;
 
 	  if (remaining_time > 0){
-		  HAL_GPIO_WritePin(COLON_GPIO_Port, COLON_Pin, 1);
+		  //HAL_GPIO_WritePin(COLON_GPIO_Port, COLON_Pin, 1);
 		  HAL_Delay((uint32_t)remaining_time);
 	  } else {
-		  HAL_GPIO_WritePin(COLON_GPIO_Port, COLON_Pin, 0);
+		  //HAL_GPIO_WritePin(COLON_GPIO_Port, COLON_Pin, 0);
 	  }
 
 
