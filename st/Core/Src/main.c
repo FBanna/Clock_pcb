@@ -76,6 +76,8 @@ const uint8_t numbers[10] = {
 		0b01111001
 };
 
+const uint8_t time_out_val = 60; //seconds
+
 enum menu_enum {
 	TIME,
 	SET_TIME,
@@ -91,6 +93,8 @@ int selected_digit = 0;
 
 RTC_TimeTypeDef currTime = {0};
 RTC_DateTypeDef currDate = {0};
+
+int time_out = 0;
 
 
 /* USER CODE END PV */
@@ -108,6 +112,7 @@ void set_level(GPIO_TypeDef *gpio, int pin, int level);
 void update_buttons(void);
 int change_digit(int digit, int change);
 void disable_battery(void);
+void check_time_out(void);
 
 /* USER CODE END PFP */
 
@@ -200,12 +205,15 @@ void update_buttons(void){
 
 	if (HAL_GPIO_ReadPin(SELECT_GPIO_Port, SELECT_Pin) == 0) {
 
+		time_out = 0;
+
 		if( button_pressed == 0) {
 			button_pressed = 1;
 
 			if(menu == SLEEP){
 
-				menu == TIME;
+				menu = TIME;
+
 
 			} else if(menu == TIME){
 				time[0] = 0;
@@ -238,9 +246,11 @@ void update_buttons(void){
 
 	} else if (HAL_GPIO_ReadPin(LEFT_GPIO_Port, LEFT_Pin) == 0){
 
+		time_out = 0;
+
 		if(menu == SLEEP){
 
-			menu == TIME;
+			menu = TIME;
 
 		} else if( button_pressed == 0) {
 			button_pressed = 1;
@@ -252,9 +262,11 @@ void update_buttons(void){
 
 	} else if (HAL_GPIO_ReadPin(RIGHT_GPIO_Port, RIGHT_Pin) == 0){
 
+		time_out = 0;
+
 		if(menu == SLEEP){
 
-			menu == TIME;
+			menu = TIME;
 
 		} else if( button_pressed == 0) {
 			button_pressed = 1;
@@ -277,6 +289,14 @@ void disable_battery(void){
 		//FV is on
 	}
 
+}
+
+void check_time_out(void){
+	time_out++;
+
+	if(time_out >= time_out_val){
+		menu = SLEEP;
+	}
 }
 
 
@@ -316,7 +336,7 @@ int main(void)
   MX_RTC_Init();
   /* USER CODE BEGIN 2 */
 
-  HAL_GPIO_WritePin(GPIOB, COLON_Pin, 1);
+  //HAL_GPIO_WritePin(GPIOB, COLON_Pin, 1);
 
 
 
@@ -361,7 +381,8 @@ int main(void)
   int k;
   uint32_t tick;
   uint32_t elapsed_time;
-  int colon;
+  int colon = 0;
+
 
 
   while (1)
@@ -369,6 +390,8 @@ int main(void)
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
+
+	  tick = HAL_GetTick();
 
 	  update_buttons();
 
@@ -387,15 +410,17 @@ int main(void)
 
 
 		  // COLON on if even seconds
-		  if (currTime.Seconds % 2 == 0){
+		  if ((currTime.Seconds%10) & 1){
 			  if(colon == 0) {
 				  HAL_GPIO_WritePin(COLON_GPIO_Port, COLON_Pin, 1);
 				  colon = 1;
+				  check_time_out();
 			  }
 		  } else {
 			  if (colon == 1) {
 				  HAL_GPIO_WritePin(COLON_GPIO_Port, COLON_Pin, 0);
 				  colon = 0;
+				  check_time_out();
 			  }
 		  }
 	  }
@@ -419,36 +444,41 @@ int main(void)
 //		  }
 //	  }
 
-	  tick = HAL_GetTick();
 
-	  for(i = 0; i < 4; i++){ // for each digit
 
-		  if (menu == SET_TIME && i == selected_digit && currTime.Seconds%2 == 0){
-			  continue;
-		  }
+	  if(menu == TIME || menu == SET_TIME){
+		  for(i = 0; i < 4; i++){ // for each digit
 
-		  // turn on the digit pin
+		  		  if (menu == SET_TIME && i == selected_digit && (currTime.Seconds%10) & 1){
+		  			  continue;
+		  		  }
 
-		  set_mode(pin_ports[i], pin_numbers[i], 0b01);
-		  set_level(pin_ports[i], pin_numbers[i], 1);
+		  		  // turn on the digit pin
 
-		  // turn on the needed lights
+		  		  set_mode(pin_ports[i], pin_numbers[i], 0b01);
+		  		  set_level(pin_ports[i], pin_numbers[i], 1);
 
-		  for(k = 0; k < 7; k++){
-			  if(numbers[time[i]] & (1 << (6-k))){
-				  set_LED(i, k);
-				  HAL_Delay(0.1);
+		  		  // turn on the needed lights
 
-			  }
-		  }
+		  		  for(k = 0; k < 7; k++){
+		  			  if(numbers[time[i]] & (1 << (6-k))){
+		  				  set_LED(i, k);
+		  				  HAL_Delay(0.1);
 
-		  //turn off the digit pin
+		  			  }
+		  		  }
 
-		  set_level(pin_ports[i], pin_numbers[i], 0);
+		  		  //turn off the digit pin
+
+		  		  set_level(pin_ports[i], pin_numbers[i], 0);
+		  	  }
+
+		  	  // turns last light off
+		  	  set_level(pin_ports[3], pin_numbers[3], 0);
 	  }
 
-	  // turns last light off
-	  set_level(pin_ports[3], pin_numbers[3], 0);
+
+
 
 
 
