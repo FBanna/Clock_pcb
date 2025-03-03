@@ -107,6 +107,7 @@ void set_mode(GPIO_TypeDef *gpio, int pin, uint32_t mode);
 void set_level(GPIO_TypeDef *gpio, int pin, int level);
 void update_buttons(void);
 int change_digit(int digit, int change);
+void disable_battery(void);
 
 /* USER CODE END PFP */
 
@@ -270,6 +271,14 @@ void update_buttons(void){
 	}
 }
 
+void disable_battery(void){
+
+	if(HAL_GPIO_ReadPin(FV_TEST_GPIO_Port, FV_TEST_Pin) == 1) {
+		//FV is on
+	}
+
+}
+
 
 /* USER CODE END 0 */
 
@@ -363,6 +372,7 @@ int main(void)
 
 	  update_buttons();
 
+	  disable_battery();
 
 	  HAL_RTC_GetTime(&hrtc, &currTime, RTC_FORMAT_BIN);
 	  HAL_RTC_GetDate(&hrtc, &currDate, RTC_FORMAT_BIN);
