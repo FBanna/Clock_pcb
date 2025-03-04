@@ -81,7 +81,8 @@ const uint8_t time_out_val = 60; //seconds
 enum menu_enum {
 	TIME,
 	SET_TIME,
-	SLEEP
+	SLEEP,
+	SET_ALARM
 };
 
 enum menu_enum menu = TIME;
@@ -203,7 +204,14 @@ int change_digit(int digit, int change){
 }
 void update_buttons(void){
 
-	if (HAL_GPIO_ReadPin(SELECT_GPIO_Port, SELECT_Pin) == 0) {
+	if( // all pins down go into set time
+			HAL_GPIO_ReadPin(SELECT_GPIO_Port, SELECT_Pin) == 0 &&
+			HAL_GPIO_ReadPin(LEFT_GPIO_Port, LEFT_Pin) == 0 &&
+			HAL_GPIO_ReadPin(RIGHT_GPIO_Port, RIGHT_Pin) == 0
+	){
+		selected_digit = 0;
+		menu = SET_TIME;
+	} else if (HAL_GPIO_ReadPin(SELECT_GPIO_Port, SELECT_Pin) == 0) {
 
 		time_out = 0;
 
@@ -223,7 +231,7 @@ void update_buttons(void){
 
 				selected_digit = 0;
 
-				menu = SET_TIME;
+				menu = SET_ALARM;
 			} else if (menu == SET_TIME){
 
 				if(selected_digit < 3){
@@ -241,6 +249,37 @@ void update_buttons(void){
 					menu = TIME;
 
 				}
+			} else if (menu == SET_ALARM){
+
+
+				if(selected_digit < 3){
+					selected_digit++;
+				} else {
+
+					RTC_AlarmTypeDef sAlarm = {0};
+
+					sAlarm.AlarmTime.Hours = (time[0] * 10) + time[1];
+					sAlarm.AlarmTime.Minutes =(time[2] * 10) + time [3];
+					sAlarm.AlarmTime.Seconds = 0;
+					sAlarm.AlarmTime.SubSeconds = 0;
+					sAlarm.AlarmTime.DayLightSaving = RTC_DAYLIGHTSAVING_NONE;
+					sAlarm.AlarmTime.StoreOperation = RTC_STOREOPERATION_RESET;
+					sAlarm.AlarmMask = RTC_ALARMMASK_NONE;
+					sAlarm.AlarmSubSecondMask = RTC_ALARMSUBSECONDMASK_ALL;
+					sAlarm.AlarmDateWeekDaySel = RTC_ALARMDATEWEEKDAYSEL_WEEKDAY;
+					sAlarm.AlarmDateWeekDay = RTC_WEEKDAY_MONDAY;
+					sAlarm.Alarm = RTC_ALARM_A;
+
+					HAL_RTC_SetAlarm_IT(&hrtc, &sAlarm, RTC_FORMAT_BCD);
+
+					menu = TIME;
+
+				}
+
+
+
+
+
 			}
 		}
 
@@ -283,28 +322,30 @@ void update_buttons(void){
 	}
 }
 
+void HAL_RTC_AlarmAEventCallback(RTC_HandleTypeDef *hrtc){
+	HAL_TIM_PWM_Start(&htim1, TIM_CHANNEL_1);
+}
+
 void disable_battery(void){
 
 	if(HAL_GPIO_ReadPin(FV_TEST_GPIO_Port, FV_TEST_Pin) == 1) {
 
-		//FV is on
+		//  plugged into 5V, want to cancel charge -> disable charge
+		// turn CE on
 
-		//Stat 1 is low when LBO meaning that LBO pin is low.
+		HAL_GPIO_WritePin(CE_GPIO_Port, CE_Pin, 1);
 
-		if(HAL_GPIO_ReadPin(LBO_GPIO_Port, LBO_Pin) == 0){
 
-			// low battery, plugged into 5V, want to cancel charge -> disable charge
-			// turn CE on
+//		//Stat 1 is low when LBO meaning that LBO pin is low.
+//
+//		if(HAL_GPIO_ReadPin(LBO_GPIO_Port, LBO_Pin) == 0){
 
-			HAL_GPIO_WritePin(CE_GPIO_Port, CE_Pin, 1);
 
-		} else {
+	} else {
 
-			// turn off CE, enabling charging
+		// turn off CE, enabling charging
 
-			HAL_GPIO_WritePin(CE_GPIO_Port, CE_Pin, 0);
-		}
-
+		HAL_GPIO_WritePin(CE_GPIO_Port, CE_Pin, 0);
 	}
 
 }
@@ -314,6 +355,7 @@ void check_time_out(void){
 
 	if(time_out >= time_out_val){
 		menu = SLEEP;
+		HAL_GPIO_WritePin(COLON_GPIO_Port, COLON_Pin, 0);
 	}
 }
 
@@ -382,6 +424,7 @@ int main(void)
   //set_LED(4, 2);
 
   //HAL_TIM_PWM_Start(&htim1, TIM_CHANNEL_1);
+  //HAL_TIM_PWM_Start(&htim1, TIM_CHANNEL_1);
 
   //HAL_GPIO_WritePin(BUZZER_GPIO_Port, BUZZER_Pin, 1);
 
@@ -427,7 +470,7 @@ int main(void)
 		  time[3] = currTime.Minutes % 10;
 
 
-		  // COLON on if even seconds
+		  // COLON on if even seconds or battery is low
 		  if ((currTime.Seconds%10) & 1){
 			  if(colon == 0) {
 				  HAL_GPIO_WritePin(COLON_GPIO_Port, COLON_Pin, 1);
@@ -436,7 +479,13 @@ int main(void)
 			  }
 		  } else {
 			  if (colon == 1) {
-				  HAL_GPIO_WritePin(COLON_GPIO_Port, COLON_Pin, 0);
+
+				  // if battery is low dont turn off the COLON
+
+				  //if(HAL_GPIO_ReadPin(LBO_GPIO_Port, LBO_Pin) == 0){
+					  HAL_GPIO_WritePin(COLON_GPIO_Port, COLON_Pin, 0);
+				  //}
+
 				  colon = 0;
 				  check_time_out();
 			  }
@@ -464,10 +513,10 @@ int main(void)
 
 
 
-	  if(menu == TIME || menu == SET_TIME){
+	  if(menu != SLEEP){
 		  for(i = 0; i < 4; i++){ // for each digit
 
-		  		  if (menu == SET_TIME && i == selected_digit && (currTime.Seconds%10) & 1){
+		  		  if ((menu == SET_TIME || menu == SET_ALARM) && i == selected_digit && (currTime.Seconds%10) & 1){
 		  			  continue;
 		  		  }
 
@@ -594,6 +643,7 @@ static void MX_RTC_Init(void)
   RTC_TimeTypeDef sTime = {0};
   RTC_DateTypeDef sDate = {0};
 
+
   /* USER CODE BEGIN RTC_Init 1 */
 
   /* USER CODE END RTC_Init 1 */
@@ -636,6 +686,10 @@ static void MX_RTC_Init(void)
   {
     Error_Handler();
   }
+
+  /** Enable the Alarm A
+  */
+
   /* USER CODE BEGIN RTC_Init 2 */
 
   /* USER CODE END RTC_Init 2 */
@@ -770,7 +824,7 @@ static void MX_GPIO_Init(void)
 
   /*Configure GPIO pin Output Level */
   HAL_GPIO_WritePin(GPIOB, M1_Pin|M5_Pin|M8_Pin|M7_Pin
-                          |COLON_Pin|M6_Pin, GPIO_PIN_RESET);
+                          |COLON_Pin|M6_Pin|CE_Pin, GPIO_PIN_RESET);
 
   /*Configure GPIO pin : FV_TEST_Pin */
   GPIO_InitStruct.Pin = FV_TEST_Pin;
@@ -779,26 +833,26 @@ static void MX_GPIO_Init(void)
   HAL_GPIO_Init(FV_TEST_GPIO_Port, &GPIO_InitStruct);
 
   /*Configure GPIO pins : BUZZER_Pin M2_Pin M3_Pin M4_Pin */
-  GPIO_InitStruct.Pin = M2_Pin|M3_Pin|M4_Pin;
+  GPIO_InitStruct.Pin = BUZZER_Pin|M2_Pin|M3_Pin|M4_Pin;
   GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
   GPIO_InitStruct.Pull = GPIO_NOPULL;
   GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
   HAL_GPIO_Init(GPIOA, &GPIO_InitStruct);
 
   /*Configure GPIO pins : M1_Pin M5_Pin M8_Pin M7_Pin
-                           COLON_Pin M6_Pin */
+                           COLON_Pin M6_Pin CE_Pin */
   GPIO_InitStruct.Pin = M1_Pin|M5_Pin|M8_Pin|M7_Pin
-                          |COLON_Pin|M6_Pin;
+                          |COLON_Pin|M6_Pin|CE_Pin;
   GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
   GPIO_InitStruct.Pull = GPIO_NOPULL;
   GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
   HAL_GPIO_Init(GPIOB, &GPIO_InitStruct);
 
-  /*Configure GPIO pins : CE_Pin LBO_Pin */
-  GPIO_InitStruct.Pin = CE_Pin|LBO_Pin;
+  /*Configure GPIO pin : LBO_Pin */
+  GPIO_InitStruct.Pin = LBO_Pin;
   GPIO_InitStruct.Mode = GPIO_MODE_INPUT;
   GPIO_InitStruct.Pull = GPIO_NOPULL;
-  HAL_GPIO_Init(GPIOB, &GPIO_InitStruct);
+  HAL_GPIO_Init(LBO_GPIO_Port, &GPIO_InitStruct);
 
 /* USER CODE BEGIN MX_GPIO_Init_2 */
 
@@ -808,11 +862,12 @@ static void MX_GPIO_Init(void)
   HAL_GPIO_Init(GPIOA, &GPIO_InitStruct);
 
 
-  GPIO_InitStruct.Pin = BUZZER_Pin;
-  GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
-  GPIO_InitStruct.Pull = GPIO_PULLDOWN;
-  GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
-  HAL_GPIO_Init(GPIOA, &GPIO_InitStruct);
+
+//  GPIO_InitStruct.Pin = BUZZER_Pin;
+//  GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
+//  GPIO_InitStruct.Pull = GPIO_PULLDOWN;
+//  GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
+//  HAL_GPIO_Init(GPIOA, &GPIO_InitStruct);
 
 
 
