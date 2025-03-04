@@ -286,7 +286,25 @@ void update_buttons(void){
 void disable_battery(void){
 
 	if(HAL_GPIO_ReadPin(FV_TEST_GPIO_Port, FV_TEST_Pin) == 1) {
+
 		//FV is on
+
+		//Stat 1 is low when LBO meaning that LBO pin is low.
+
+		if(HAL_GPIO_ReadPin(LBO_GPIO_Port, LBO_Pin) == 0){
+
+			// low battery, plugged into 5V, want to cancel charge -> disable charge
+			// turn CE on
+
+			HAL_GPIO_WritePin(CE_GPIO_Port, CE_Pin, 1);
+
+		} else {
+
+			// turn off CE, enabling charging
+
+			HAL_GPIO_WritePin(CE_GPIO_Port, CE_Pin, 0);
+		}
+
 	}
 
 }
