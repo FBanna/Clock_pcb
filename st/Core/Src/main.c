@@ -82,7 +82,8 @@ enum menu_enum {
 	TIME,
 	SET_TIME,
 	SLEEP,
-	SET_ALARM
+	SET_ALARM,
+	BUZZ
 };
 
 enum menu_enum menu = TIME;
@@ -209,6 +210,18 @@ void update_buttons(void){
 			HAL_GPIO_ReadPin(LEFT_GPIO_Port, LEFT_Pin) == 0 &&
 			HAL_GPIO_ReadPin(RIGHT_GPIO_Port, RIGHT_Pin) == 0
 	){
+
+		// ensure time is up to date
+
+		HAL_RTC_GetTime(&hrtc, &currTime, RTC_FORMAT_BIN);
+		HAL_RTC_GetDate(&hrtc, &currDate, RTC_FORMAT_BIN);
+
+		time[0] = currTime.Hours / 10;
+		time[1] = currTime.Hours % 10;
+		time[2] = currTime.Minutes / 10;
+		time[3] = currTime.Minutes % 10;
+
+
 		selected_digit = 0;
 		menu = SET_TIME;
 	} else if (HAL_GPIO_ReadPin(SELECT_GPIO_Port, SELECT_Pin) == 0) {
@@ -218,7 +231,10 @@ void update_buttons(void){
 		if( button_pressed == 0) {
 			button_pressed = 1;
 
-			if(menu == SLEEP){
+			if(menu == BUZZ){
+				HAL_TIM_PWM_Stop(&htim1, TIM_CHANNEL_1);
+				menu = TIME;
+			} else if(menu == SLEEP){
 
 				menu = TIME;
 
@@ -259,27 +275,27 @@ void update_buttons(void){
 					RTC_AlarmTypeDef sAlarm = {0};
 
 					sAlarm.AlarmTime.Hours = (time[0] * 10) + time[1];
-					sAlarm.AlarmTime.Minutes =(time[2] * 10) + time [3];
-					sAlarm.AlarmTime.Seconds = 0;
-					sAlarm.AlarmTime.SubSeconds = 0;
+					sAlarm.AlarmTime.Minutes = (time[2] * 10) + time [3];
+					sAlarm.AlarmTime.Seconds = 0x0;
+					sAlarm.AlarmTime.SubSeconds = 0x0;
 					sAlarm.AlarmTime.DayLightSaving = RTC_DAYLIGHTSAVING_NONE;
 					sAlarm.AlarmTime.StoreOperation = RTC_STOREOPERATION_RESET;
-					sAlarm.AlarmMask = RTC_ALARMMASK_DATEWEEKDAY|RTC_ALARMMASK_HOURS|RTC_ALARMMASK_MINUTES;
+					sAlarm.AlarmMask = RTC_ALARMMASK_NONE;
 					sAlarm.AlarmSubSecondMask = RTC_ALARMSUBSECONDMASK_ALL;
 					sAlarm.AlarmDateWeekDaySel = RTC_ALARMDATEWEEKDAYSEL_WEEKDAY;
-					sAlarm.AlarmDateWeekDay = RTC_WEEKDAY_MONDAY;
+					sAlarm.AlarmDateWeekDay = 1;
 					sAlarm.Alarm = RTC_ALARM_A;
-
-					HAL_RTC_SetAlarm_IT(&hrtc, &sAlarm, RTC_FORMAT_BCD);
+					if (HAL_RTC_SetAlarm_IT(&hrtc, &sAlarm, RTC_FORMAT_BIN) != HAL_OK)
+					{
+					Error_Handler();
+					}
 
 					menu = TIME;
 
 				}
 
-
-
-
-
+			} else if (menu == BUZZ){
+				menu = TIME;
 			}
 		}
 
@@ -287,15 +303,19 @@ void update_buttons(void){
 
 		time_out = 0;
 
-		if(menu == SLEEP){
-
-			menu = TIME;
-
-		} else if( button_pressed == 0) {
+		if( button_pressed == 0) {
 			button_pressed = 1;
 
-			time[selected_digit] = change_digit(time[selected_digit], -1);
+			if(menu == BUZZ){
+				HAL_TIM_PWM_Stop(&htim1, TIM_CHANNEL_1);
+				menu = TIME;
+			} else if(menu == SLEEP){
+				menu = TIME;
+			} else if(menu == SET_ALARM || menu == SET_TIME){
 
+				time[selected_digit] = change_digit(time[selected_digit], -1);
+
+			}
 
 		}
 
@@ -303,15 +323,19 @@ void update_buttons(void){
 
 		time_out = 0;
 
-		if(menu == SLEEP){
-
-			menu = TIME;
-
-		} else if( button_pressed == 0) {
+		if( button_pressed == 0) {
 			button_pressed = 1;
 
-			time[selected_digit] = change_digit(time[selected_digit], 1);
+			if(menu == BUZZ){
+				HAL_TIM_PWM_Stop(&htim1, TIM_CHANNEL_1);
+				menu = TIME;
+			} else if(menu == SLEEP){
+				menu = TIME;
+			} else if(menu == SET_ALARM || menu == SET_TIME){
 
+				time[selected_digit] = change_digit(time[selected_digit], 1);
+
+			}
 
 		}
 
@@ -322,8 +346,14 @@ void update_buttons(void){
 	}
 }
 
-void HAL_RTC_AlarmAEventCallback(RTC_HandleTypeDef *hrtc){
-	HAL_TIM_PWM_Start(&htim1, TIM_CHANNEL_1);
+//void HAL_RTC_AlarmAEventCallback(RTC_HandleTypeDef *hrtc){
+//	HAL_TIM_PWM_Start(&htim1, TIM_CHANNEL_1);
+//}
+
+void HAL_RTC_AlarmAEventCallback(RTC_HandleTypeDef *hrtc) {
+	//HAL_TIM_PWM_Start(&htim1, TIM_CHANNEL_1);
+	menu = BUZZ;
+	time_out = 0;
 }
 
 void disable_battery(void){
@@ -461,7 +491,7 @@ int main(void)
 	  HAL_RTC_GetTime(&hrtc, &currTime, RTC_FORMAT_BIN);
 	  HAL_RTC_GetDate(&hrtc, &currDate, RTC_FORMAT_BIN);
 
-	  if(menu == TIME){
+	  if(menu == TIME || menu == BUZZ){
 
 
 		  time[0] = currTime.Hours / 10;
@@ -475,7 +505,13 @@ int main(void)
 			  if(colon == 0) {
 				  HAL_GPIO_WritePin(COLON_GPIO_Port, COLON_Pin, 1);
 				  colon = 1;
-				  check_time_out();
+
+
+				  if(menu == BUZZ){
+					  HAL_TIM_PWM_Start(&htim1, TIM_CHANNEL_1);
+				  } else {
+					  check_time_out();
+				  }
 			  }
 		  } else {
 			  if (colon == 1) {
@@ -483,11 +519,17 @@ int main(void)
 				  // if battery is low dont turn off the COLON
 
 				  //if(HAL_GPIO_ReadPin(LBO_GPIO_Port, LBO_Pin) == 0){
-					  HAL_GPIO_WritePin(COLON_GPIO_Port, COLON_Pin, 0);
+				  HAL_GPIO_WritePin(COLON_GPIO_Port, COLON_Pin, 0);
 				  //}
 
 				  colon = 0;
-				  check_time_out();
+
+
+				  if(menu == BUZZ){
+					  HAL_TIM_PWM_Stop(&htim1, TIM_CHANNEL_1);
+				  } else {
+					  check_time_out();
+				  }
 			  }
 		  }
 	  }
@@ -642,7 +684,7 @@ static void MX_RTC_Init(void)
 
   RTC_TimeTypeDef sTime = {0};
   RTC_DateTypeDef sDate = {0};
-
+  //RTC_AlarmTypeDef sAlarm = {0};
 
   /* USER CODE BEGIN RTC_Init 1 */
 
@@ -668,25 +710,27 @@ static void MX_RTC_Init(void)
 
   /** Initialize RTC and set the Time and Date
   */
-  sTime.Hours = 0x0;
-  sTime.Minutes = 0x0;
-  sTime.Seconds = 0x0;
+  sTime.Hours = 0;
+  sTime.Minutes = 0;
+  sTime.Seconds = 0;
   sTime.DayLightSaving = RTC_DAYLIGHTSAVING_NONE;
   sTime.StoreOperation = RTC_STOREOPERATION_RESET;
-  if (HAL_RTC_SetTime(&hrtc, &sTime, RTC_FORMAT_BCD) != HAL_OK)
+  if (HAL_RTC_SetTime(&hrtc, &sTime, RTC_FORMAT_BIN) != HAL_OK)
   {
     Error_Handler();
   }
   sDate.WeekDay = RTC_WEEKDAY_MONDAY;
   sDate.Month = RTC_MONTH_JANUARY;
-  sDate.Date = 0x1;
-  sDate.Year = 0x0;
+  sDate.Date = 1;
+  sDate.Year = 0;
 
-  if (HAL_RTC_SetDate(&hrtc, &sDate, RTC_FORMAT_BCD) != HAL_OK)
+  if (HAL_RTC_SetDate(&hrtc, &sDate, RTC_FORMAT_BIN) != HAL_OK)
   {
     Error_Handler();
   }
 
+  /** Enable the Alarm A
+  */
   /* USER CODE BEGIN RTC_Init 2 */
 
   /* USER CODE END RTC_Init 2 */
