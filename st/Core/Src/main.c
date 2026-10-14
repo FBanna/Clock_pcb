@@ -43,6 +43,7 @@
 RTC_HandleTypeDef hrtc;
 
 TIM_HandleTypeDef htim1;
+TIM_HandleTypeDef htim2;
 
 PCD_HandleTypeDef hpcd_USB_FS;
 
@@ -105,8 +106,9 @@ int time_out = 0;
 void SystemClock_Config(void);
 static void MX_GPIO_Init(void);
 static void MX_USB_PCD_Init(void);
-static void MX_TIM1_Init(void);
 static void MX_RTC_Init(void);
+static void MX_TIM2_Init(void);
+static void MX_TIM1_Init(void);
 /* USER CODE BEGIN PFP */
 
 void set_mode(GPIO_TypeDef *gpio, int pin, uint32_t mode);
@@ -350,6 +352,15 @@ void update_buttons(void){
 //	HAL_TIM_PWM_Start(&htim1, TIM_CHANNEL_1);
 //}
 
+
+void delay_us (uint32_t us)
+{
+	__HAL_TIM_SET_COUNTER(&htim2, 0);
+	while (__HAL_TIM_GET_COUNTER(&htim2) < us);
+}
+
+
+
 void HAL_RTC_AlarmAEventCallback(RTC_HandleTypeDef *hrtc) {
 	//HAL_TIM_PWM_Start(&htim1, TIM_CHANNEL_1);
 	menu = BUZZ;
@@ -422,8 +433,9 @@ int main(void)
   /* Initialize all configured peripherals */
   MX_GPIO_Init();
   MX_USB_PCD_Init();
-  MX_TIM1_Init();
   MX_RTC_Init();
+  MX_TIM2_Init();
+  MX_TIM1_Init();
   /* USER CODE BEGIN 2 */
 
   //HAL_GPIO_WritePin(GPIOB, COLON_Pin, 1);
@@ -470,11 +482,14 @@ int main(void)
 
   int i;
   int k;
-  uint32_t tick;
+//  uint32_t tick; // us
   uint32_t elapsed_time;
   int colon = 0;
 
+  uint32_t CLOCK_PERIOD = 10000;
 
+
+  HAL_TIM_Base_Start(&htim2);
 
   while (1)
   {
@@ -482,7 +497,9 @@ int main(void)
 
     /* USER CODE BEGIN 3 */
 
-	  tick = HAL_GetTick();
+	  //tick = HAL_GetTick();
+
+	  __HAL_TIM_SET_COUNTER(&htim2, 0); // reset clock
 
 	  update_buttons();
 
@@ -571,8 +588,12 @@ int main(void)
 
 		  		  for(k = 0; k < 7; k++){
 		  			  if(numbers[time[i]] & (1 << (6-k))){
+
 		  				  set_LED(i, k);
-		  				  HAL_Delay(0.1);
+		  				  delay_us(300);
+
+		  				  //HAL_Delay(0.1);
+
 
 		  			  }
 		  		  }
@@ -589,16 +610,18 @@ int main(void)
 
 
 
+	  // Target 100 Hz => 10 ms cycle
+	  // 28 LED's with 1/2 of cycle dedicated to LED's that is 0.2 ms
 
 
+	  elapsed_time = __HAL_TIM_GET_COUNTER(&htim2); // time in microseconds elapsed
 
-	  elapsed_time = HAL_GetTick() - tick; // Time taken in ms
-
-	  float remaining_time = (1000.0/40.0) - elapsed_time;
+	  float remaining_time = CLOCK_PERIOD - elapsed_time;
 
 	  if (remaining_time > 0){
 		  //HAL_GPIO_WritePin(COLON_GPIO_Port, COLON_Pin, 1);
-		  HAL_Delay((uint32_t)remaining_time);
+//		  HAL_Delay((uint32_t)remaining_time);
+		  delay_us(remaining_time);
 	  } else {
 		  //HAL_GPIO_WritePin(COLON_GPIO_Port, COLON_Pin, 0);
 	  }
@@ -641,7 +664,7 @@ void SystemClock_Config(void)
   RCC_OscInitStruct.HSI48State = RCC_HSI48_ON;
   RCC_OscInitStruct.PLL.PLLState = RCC_PLL_ON;
   RCC_OscInitStruct.PLL.PLLSource = RCC_PLLSOURCE_HSE;
-  RCC_OscInitStruct.PLL.PLLMUL = RCC_PLL_MUL2;
+  RCC_OscInitStruct.PLL.PLLMUL = RCC_PLL_MUL4;
   RCC_OscInitStruct.PLL.PREDIV = RCC_PREDIV_DIV1;
   if (HAL_RCC_OscConfig(&RCC_OscInitStruct) != HAL_OK)
   {
@@ -656,7 +679,7 @@ void SystemClock_Config(void)
   RCC_ClkInitStruct.AHBCLKDivider = RCC_SYSCLK_DIV1;
   RCC_ClkInitStruct.APB1CLKDivider = RCC_HCLK_DIV1;
 
-  if (HAL_RCC_ClockConfig(&RCC_ClkInitStruct, FLASH_LATENCY_0) != HAL_OK)
+  if (HAL_RCC_ClockConfig(&RCC_ClkInitStruct, FLASH_LATENCY_1) != HAL_OK)
   {
     Error_Handler();
   }
@@ -684,7 +707,7 @@ static void MX_RTC_Init(void)
 
   RTC_TimeTypeDef sTime = {0};
   RTC_DateTypeDef sDate = {0};
-  //RTC_AlarmTypeDef sAlarm = {0};
+  RTC_AlarmTypeDef sAlarm = {0};
 
   /* USER CODE BEGIN RTC_Init 1 */
 
@@ -731,6 +754,21 @@ static void MX_RTC_Init(void)
 
   /** Enable the Alarm A
   */
+  sAlarm.AlarmTime.Hours = 0;
+  sAlarm.AlarmTime.Minutes = 0;
+  sAlarm.AlarmTime.Seconds = 0;
+  sAlarm.AlarmTime.SubSeconds = 0;
+  sAlarm.AlarmTime.DayLightSaving = RTC_DAYLIGHTSAVING_NONE;
+  sAlarm.AlarmTime.StoreOperation = RTC_STOREOPERATION_RESET;
+  sAlarm.AlarmMask = RTC_ALARMMASK_NONE;
+  sAlarm.AlarmSubSecondMask = RTC_ALARMSUBSECONDMASK_ALL;
+  sAlarm.AlarmDateWeekDaySel = RTC_ALARMDATEWEEKDAYSEL_WEEKDAY;
+  sAlarm.AlarmDateWeekDay = 1;
+  sAlarm.Alarm = RTC_ALARM_A;
+  if (HAL_RTC_SetAlarm_IT(&hrtc, &sAlarm, RTC_FORMAT_BIN) != HAL_OK)
+  {
+    Error_Handler();
+  }
   /* USER CODE BEGIN RTC_Init 2 */
 
   /* USER CODE END RTC_Init 2 */
@@ -760,10 +798,10 @@ static void MX_TIM1_Init(void)
   htim1.Instance = TIM1;
   htim1.Init.Prescaler = 0;
   htim1.Init.CounterMode = TIM_COUNTERMODE_UP;
-  htim1.Init.Period = 4000;
+  htim1.Init.Period = 65535;
   htim1.Init.ClockDivision = TIM_CLOCKDIVISION_DIV1;
   htim1.Init.RepetitionCounter = 0;
-  htim1.Init.AutoReloadPreload = TIM_AUTORELOAD_PRELOAD_ENABLE;
+  htim1.Init.AutoReloadPreload = TIM_AUTORELOAD_PRELOAD_DISABLE;
   if (HAL_TIM_Base_Init(&htim1) != HAL_OK)
   {
     Error_Handler();
@@ -784,7 +822,7 @@ static void MX_TIM1_Init(void)
     Error_Handler();
   }
   sConfigOC.OCMode = TIM_OCMODE_PWM1;
-  sConfigOC.Pulse = 2000;
+  sConfigOC.Pulse = 0;
   sConfigOC.OCPolarity = TIM_OCPOLARITY_HIGH;
   sConfigOC.OCNPolarity = TIM_OCNPOLARITY_HIGH;
   sConfigOC.OCFastMode = TIM_OCFAST_DISABLE;
@@ -809,6 +847,51 @@ static void MX_TIM1_Init(void)
 
   /* USER CODE END TIM1_Init 2 */
   HAL_TIM_MspPostInit(&htim1);
+
+}
+
+/**
+  * @brief TIM2 Initialization Function
+  * @param None
+  * @retval None
+  */
+static void MX_TIM2_Init(void)
+{
+
+  /* USER CODE BEGIN TIM2_Init 0 */
+
+  /* USER CODE END TIM2_Init 0 */
+
+  TIM_ClockConfigTypeDef sClockSourceConfig = {0};
+  TIM_MasterConfigTypeDef sMasterConfig = {0};
+
+  /* USER CODE BEGIN TIM2_Init 1 */
+
+  /* USER CODE END TIM2_Init 1 */
+  htim2.Instance = TIM2;
+  htim2.Init.Prescaler = 31;
+  htim2.Init.CounterMode = TIM_COUNTERMODE_UP;
+  htim2.Init.Period = 4294967295;
+  htim2.Init.ClockDivision = TIM_CLOCKDIVISION_DIV1;
+  htim2.Init.AutoReloadPreload = TIM_AUTORELOAD_PRELOAD_DISABLE;
+  if (HAL_TIM_Base_Init(&htim2) != HAL_OK)
+  {
+    Error_Handler();
+  }
+  sClockSourceConfig.ClockSource = TIM_CLOCKSOURCE_INTERNAL;
+  if (HAL_TIM_ConfigClockSource(&htim2, &sClockSourceConfig) != HAL_OK)
+  {
+    Error_Handler();
+  }
+  sMasterConfig.MasterOutputTrigger = TIM_TRGO_RESET;
+  sMasterConfig.MasterSlaveMode = TIM_MASTERSLAVEMODE_DISABLE;
+  if (HAL_TIMEx_MasterConfigSynchronization(&htim2, &sMasterConfig) != HAL_OK)
+  {
+    Error_Handler();
+  }
+  /* USER CODE BEGIN TIM2_Init 2 */
+
+  /* USER CODE END TIM2_Init 2 */
 
 }
 
